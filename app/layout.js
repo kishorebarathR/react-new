@@ -10,16 +10,16 @@ import Footer from "../Components/SharedComponents/Footer"
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <link
+      <link
         href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
         rel="stylesheet"
-      /> */}
+      />
 
       <body>
         <Header />
         {children}
         <Footer />
-        {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" /> */}
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" />
       </body>
     </html>
   )
