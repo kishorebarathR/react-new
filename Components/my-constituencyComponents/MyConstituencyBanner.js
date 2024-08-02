@@ -10,12 +10,9 @@ const MyConstituencyBanner = () => {
   }
   return (
     <div>
-      <div
-        className="bg-[url('/home_images/home_banner2.png')] mx-auto w-full h-full relative bg-cover bg-center "
-        onClick={handleImageClick}
-      >
+      <div>
         {!isVideoVisible ? (
-          <div className="relative">
+          <div className="relative h-[100vh] w-full">
             <Image
               src="/my_constituency/group.png "
               width={1000}
@@ -34,7 +31,6 @@ const MyConstituencyBanner = () => {
                 onClick={handleImageClick}
               />
             </div>
-           
           </div>
         ) : (
           <iframe
@@ -46,6 +42,7 @@ const MyConstituencyBanner = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            className="h-[100vh]"
           ></iframe>
         )}
       </div>
