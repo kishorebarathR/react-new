@@ -5,9 +5,9 @@ import Footer from "../Components/SharedComponents/Footer"
 const page = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <HomeComponents />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
