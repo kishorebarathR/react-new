@@ -14,7 +14,7 @@ const MeUnfiltered = () => {
     }
   }, [])
   return (
-    <div className="relative w-100 h-[100vh]">
+    <div className="relative w-100 ">
       <div className="bg-[url('/home_images/gallery-img-07.png')] bg-cover bg-center w-full h-full">
         <span className="absolute inset-0 bg-black opacity-70"></span>
         {/* Overlay */}
