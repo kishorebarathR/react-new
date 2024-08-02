@@ -51,16 +51,21 @@ const Headerpage = () => {
         </div>
       </nav>
 
-      <div className="fixed top-7 right-5">
+      <div className="fixed top-7 right-5 z-40">
         <button
           className="px-5 py-2.5 mb-2 mt-2"
           type="button"
           onClick={() => setDrawerOpen(!drawerOpen)}
           aria-label="Toggle Menu"
         >
-          <Image className="h-auto w-full" src="/home_images/menu.svg" alt="Menu" width={100} height={100}  />
+          <Image
+            className="h-auto w-full relative "
+            src="/home_images/menu.svg"
+            alt="Menu"
+            width={100}
+            height={100}
+          />
         </button>
-        
       </div>
 
       <div
@@ -72,7 +77,7 @@ const Headerpage = () => {
       >
         <button
           type="button"
-          className="text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg p-2 absolute top-2 right-2 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
+          className="text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg p-2 absolute top-2 right-2 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white "
           onClick={handleCloseButtonClick}
         >
           <svg
