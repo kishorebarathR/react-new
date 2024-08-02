@@ -9,29 +9,29 @@ const MyConstituencyBanner = () => {
     setIsVideoVisible(true)
   }
   return (
-    <div>
+    <>
       <div>
         {!isVideoVisible ? (
           <div className="relative h-[100vh] w-full">
-          <Image
-            src="/home_images/home_banner.png"
-            alt="Banner"
-            className="w-full h-[100vh] cursor-pointer bg-no-repeat object-cover"
-            width={1000}
-            height={1000}
-            onClick={handleImageClick}
-          />
-          <div className="absolute inset-0 flex items-center justify-center ">
             <Image
-              src="/home_images/play_button.svg"
-              alt="Play Button"
-              className="w-16 h-16 cursor-pointer bg-white rounded-full"
+              src="/home_images/home_banner.png"
+              alt="Banner"
+              className="w-full h-[100vh] cursor-pointer bg-no-repeat object-cover"
               width={1000}
               height={1000}
               onClick={handleImageClick}
             />
+            <div className="absolute inset-0 flex items-center justify-center ">
+              <Image
+                src="/home_images/play_button.svg"
+                alt="Play Button"
+                className="w-16 h-16 cursor-pointer bg-white rounded-full"
+                width={1000}
+                height={1000}
+                onClick={handleImageClick}
+              />
+            </div>
           </div>
-        </div>
         ) : (
           <iframe
             width="100%"
@@ -44,9 +44,10 @@ const MyConstituencyBanner = () => {
             allowFullScreen
             className="h-[100vh]"
           ></iframe>
+          
         )}
       </div>
-    </div>
+    </>
   )
 }
 
