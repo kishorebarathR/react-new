@@ -13,25 +13,25 @@ const MyConstituencyBanner = () => {
       <div>
         {!isVideoVisible ? (
           <div className="relative h-[100vh] w-full">
+          <Image
+            src="/home_images/home_banner.png"
+            alt="Banner"
+            className="w-full h-[100vh] cursor-pointer bg-no-repeat object-cover"
+            width={1000}
+            height={1000}
+            onClick={handleImageClick}
+          />
+          <div className="absolute inset-0 flex items-center justify-center ">
             <Image
-              src="/my_constituency/group.png "
+              src="/home_images/play_button.svg"
+              alt="Play Button"
+              className="w-16 h-16 cursor-pointer bg-white rounded-full"
               width={1000}
               height={1000}
-              alt="Banner"
-              className="w-full h-auto cursor-pointer bg-no-repeat "
               onClick={handleImageClick}
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Image
-                src="/home_images/play_button.svg"
-                width={1000}
-                height={1000}
-                alt="Play Button"
-                className="w-16 h-16 cursor-pointer bg-white rounded-full"
-                onClick={handleImageClick}
-              />
-            </div>
           </div>
+        </div>
         ) : (
           <iframe
             width="100%"

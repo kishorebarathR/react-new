@@ -20,7 +20,7 @@ const Homepage = () => {
             height={1000}
             onClick={handleImageClick}
           />
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center ">
             <Image
               src="/home_images/play_button.svg"
               alt="Play Button"
