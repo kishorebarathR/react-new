@@ -16,7 +16,7 @@ const MeUnfiltered = () => {
   return (
     <div className="relative">
       <div className="bg-[url('/home_images/gallery-img-07.png')] bg-cover bg-center w-full h-full">
-        <div className="absolute inset-0 bg-black opacity-70"></div>{" "}
+        <span className="absolute inset-0 bg-black opacity-70"></span>
         {/* Overlay */}
         <div className="relative z-10 container mx-auto">
           <h1 className="text-4xl font-bold mb-14 text-center text-white pt-10 ">
