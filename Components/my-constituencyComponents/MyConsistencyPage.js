@@ -2,7 +2,9 @@ import React from 'react'
 
 const MyConsistencyPage = () => {
   return (
-    <div>MyConsistencyPage</div>
+    <div>
+      MyConsistencyPage
+      </div>
   )
 }
 

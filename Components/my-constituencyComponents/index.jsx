@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
+import MyConstituencyBanner from "./MyConstituencyBanner"
 import MyConsistencyPage from "./MyConsistencyPage";
-import MyConstituencyBanner from "./MyConstituencyBanner";
 
 const index = () => {
   return (
@@ -8,7 +8,7 @@ const index = () => {
       <MyConstituencyBanner />
       <MyConsistencyPage />
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index
