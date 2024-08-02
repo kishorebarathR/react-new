@@ -1,10 +1,14 @@
-import React from 'react'
+import React from "react"
 import HomeComponents from "../Components/HomeComponents"
+import Header from "../Components/SharedComponents/Header"
+import Footer from "../Components/SharedComponents/Footer"
 const page = () => {
   return (
     <div>
-    <HomeComponents/>
-      </div>
+      <Header />
+      <HomeComponents />
+      <Footer />
+    </div>
   )
 }
 
