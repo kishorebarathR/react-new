@@ -13,13 +13,16 @@ const Footerpage = () => {
 
   return (
     <div>
-      <div className="grid lg:grid-cols-3 bg-[url('/footer_images/Get-in-touch-background.png')] p-5 shadow">
+      <div
+        className="grid lg:grid-cols-3 p-5 shadow"
+        style={{ backgroundImage: "url('/footer_images/Get-in-touch-background.png')" }}
+      >
         {/* Related Websites Section */}
         <div className="text-white merriweather-regular">
           <h3 className="text-3xl font-bold p-5">Related Websites</h3>
           <div className="text-xl">
             <Link href="https://www.inc.in/">
-              <p className="p-5 ">Indian National Congress</p>
+              <p className="p-5">Indian National Congress</p>
             </Link>
             <Link href="https://www.kpcc.org.in/">
               <p className="p-5">Kerala Pradesh Congress Committee</p>
@@ -99,7 +102,7 @@ const Footerpage = () => {
                 required
               />
             </div>
-            <div className="mb-5 py-3 ">
+            <div className="mb-5 py-3">
               <input
                 type="email"
                 id="email"
@@ -136,12 +139,12 @@ const Footerpage = () => {
             Profile Visitors
           </p>
           <div className="flex mb-5 justify-center py-5">
-            <Image width={20} height={50} src="/footer_images/0.gif" alt="footer_images"  />
-            <Image width={20} height={50} src="/footer_images/0.gif"alt="footer_images"   />
-            <Image width={20} height={50} src="/footer_images/0.gif" alt="footer_images"  />
-            <Image width={20} height={50} src="/footer_images/5.gif"alt="footer_images"   />
-            <Image width={20} height={50} src="/footer_images/9.gif"alt="footer_images"   />
-            <Image width={20} height={50} src="/footer_images/1.gif"alt="footer_images"   />
+            <Image width={20} height={50} src="/footer_images/0.gif" alt="footer_images" />
+            <Image width={20} height={50} src="/footer_images/0.gif" alt="footer_images" />
+            <Image width={20} height={50} src="/footer_images/0.gif" alt="footer_images" />
+            <Image width={20} height={50} src="/footer_images/5.gif" alt="footer_images" />
+            <Image width={20} height={50} src="/footer_images/9.gif" alt="footer_images" />
+            <Image width={20} height={50} src="/footer_images/1.gif" alt="footer_images" />
           </div>
         </div>
       </div>
