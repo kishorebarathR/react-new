@@ -7,6 +7,7 @@ const Homepage = () => {
 
   const handleImageClick = () => {
     setIsVideoVisible(true)
+    
   }
   return (
     <div>
