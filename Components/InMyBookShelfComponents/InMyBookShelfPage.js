@@ -60,6 +60,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book-1.png"
+            alt="mybook"
           />
           <Image
             data-aos="fade-up"
@@ -68,6 +69,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book_4.png"
+            alt="mybook"
           />
           <Image
             data-aos="fade-up"
@@ -76,6 +78,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book_7.png"
+            alt="mybook"
           />
         </div>
         <div className="w-full ">
@@ -86,6 +89,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book-2.png"
+            alt="mybook"
           />
 
           <Image
@@ -95,6 +99,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book_5.png"
+            alt="mybook"
           />
           <Image
             data-aos="fade-up"
@@ -103,6 +108,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book_8.png"
+            alt="mybook"
           />
         </div>
         <div className="w-full">
@@ -113,6 +119,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book-3.png"
+            alt="mybook"
           />
           <Image
             data-aos="fade-up"
@@ -121,6 +128,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book_6.png"
+            alt="mybook"
           />
 
           <Image
@@ -130,6 +138,7 @@ const InMyBookShelfPage = () => {
             height={200}
             className="p-5"
             src="/in_my_book_shelf/book_9.png"
+            alt="mybook"
           />
         </div>
       </div>

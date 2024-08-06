@@ -1,9 +1,10 @@
 import  React from 'react';
-import PressreleasesComponents from "../../components/PressReleasesComponents"
+import PressreleasesComponents from "../../Components/PressReleasesComponents"
 const page = () => {
     return (
         <>             
           <PressreleasesComponents/>  
+          
         </>
     );
 };

@@ -46,7 +46,7 @@ const MyConsistencyPage = () => {
     </p>
   </div>
   <div className="lg:w-[32%]  p-4">
-    <img
+    <Image
       width={400}
       height={350}
       src="/my_constituency/About_paravur.png"
