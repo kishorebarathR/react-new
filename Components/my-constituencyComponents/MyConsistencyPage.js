@@ -9,7 +9,7 @@ const MyConsistencyPage = () => {
           In the Public Eye
         </p>
 
-        <div className="flex flex-col md:flex-row lg:px-10 pt-10 pb-10">
+        <div className="flex flex-col md:flex-row lg:px-10 pt-10 pb-10 merriweather-regular">
   <div className="lg:w-[68%] h-full p-4">
     <p className="text-xl">
       North Paravur is an area with a rich and vibrant history. Paravur

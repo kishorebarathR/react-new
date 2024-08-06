@@ -113,11 +113,7 @@ const Journey = () => {
           </h6>
 
           <div className="lg:flex w-full text-xl">
-            <p
-              className="p-4 lg:w-4/6"
-              data-aos="fade-in"
-              data-aos-duration="800"
-            >
+            <p className="p-4 lg:w-4/6">
               <span className="font-bold">Nettoor:</span> I was born on May 31,
               1964 to my parents, K Damodara Menon and Smt. V Vilasini Amma in
               Nettoor, Eranakulam. Growing up in a middle-class household as one
@@ -155,14 +151,8 @@ const Journey = () => {
               height={300}
               src="/sincere_images/thiruvanadhapuram-vds-speech.png"
               alt="sincere_images"
-              data-aos="fade-in"
-              data-aos-duration="800"
             />
-            <div
-              className="lg:p-5 p-2"
-              data-aos="fade-in"
-              data-aos-duration="800"
-            >
+            <div className="lg:p-5 p-2">
               <p>
                 <b>Thiruvananthapuram:</b> I stepped into students’ politics
                 during my undergraduate days, and my aspiration to keep serving
@@ -180,11 +170,7 @@ const Journey = () => {
             My Work So Far
           </h3>
           <div className="lg:flex p-4 gap-2 text-xl">
-            <p
-              className=" lg:border-r-2 border-black mb-9 lg:w-6/12 px-1"
-              data-aos="fade-in"
-              data-aos-duration="800"
-            >
+            <p className=" lg:border-r-2 border-black mb-9 lg:w-6/12 px-1">
               As a politician, I have always been passionate about serving the
               people, and I have been fortunate to hold various positions that
               have allowed me to do so. In my previous organisational positions,
@@ -195,11 +181,7 @@ const Journey = () => {
               Legislative Party in Kerala. Furthermore, I served as the Vice
               President of the Kerala Pradesh Congress Committee.
             </p>
-            <p
-              className="px-1 lg:w-6/12"
-              data-aos="fade-in"
-              data-aos-duration="800 "
-            >
+            <p className="px-1 lg:w-6/12">
               As a five-time Member of the Kerala Legislative Assembly, my
               unwavering commitment has always been to represent the people.
               During my tenure, I have served as a valuable member of the UDF
@@ -214,11 +196,7 @@ const Journey = () => {
 
           {/* My Interests Start */}
           <h3 className="text-5xl ms-4  font-semibold ">My Interests</h3>
-          <p
-            className="p-4 lg:w-9/12 text-xl "
-            data-aos="fade-in"
-            data-aos-duration="800"
-          >
+          <p className="p-4 lg:w-9/12 text-xl ">
             Ever since I was a child, I have been captivated by a wide range of
             interests that have shaped my life. My love for reading was the
             first to blossom, and as I grew older, my curiosity was piqued by
@@ -257,7 +235,7 @@ const Journey = () => {
 
           <div className="lg:flex p-3 border-b-2 ms-4 border-black text-xl">
             <h6>
-              <ul className="list-disc p-4" data-aos="fade-in">
+              <ul className="list-disc p-4">
                 <li>Cochin Refineries Employees Association</li>
                 <li>Premier Tyres Workers Union </li>
                 <li>TCC Employees Union</li>
@@ -275,7 +253,7 @@ const Journey = () => {
             </h6>
             <div className="lg:ms-20 p-4">
               <h6>
-                <ul className="list-disc" data-aos="fade-in">
+                <ul className="list-disc">
                   <li>HMT Employees Union, Kalamassery </li>
                   <li> KMML Employees Union, Kollam</li>
                   <li> CIAL Officers Association, Nedumbassery</li>
@@ -305,10 +283,7 @@ const Journey = () => {
           <div className="lg:ms-4">
             <div className="lg:border-4 border-[#173A5B] mx-auto m-0 ">
               <div className="relative bg-[#173A5B] text-xl">
-                <p
-                  className=" text-white lg:p-24 p-9 lg:w-9/12 "
-                  data-aos="fade-in"
-                >
+                <p className=" text-white lg:p-24 p-9 lg:w-9/12 ">
                   My passion for serving the people as a politician has been
                   unwavering for the last 20 years. Throughout this time, I have
                   been dedicated to making sure that the voices of the people
@@ -323,10 +298,7 @@ const Journey = () => {
                   alt="sincere_images"
                 />
               </div>
-              <div
-                className="lg:flex lg:p-3 lg:ms-10 text-xl"
-                data-aos="fade-in"
-              >
+              <div className="lg:flex lg:p-3 lg:ms-10 text-xl">
                 <h6>
                   <ul className="list-disc lg:p-4 ms-8">
                     <li> AA Rahim Memorial Award for Best Parliamentarian</li>
@@ -395,9 +367,6 @@ const Journey = () => {
           {/* Awards and  Recognitions End */}
         </div>
       </div>
-
-
-      
     </>
   )
 }
