@@ -1,5 +1,5 @@
 import React from 'react';
-import  InmyBookShelfComponents from "../../components/InMyBookShelfComponents"
+import  InmyBookShelfComponents from "@/Components/InMyBookShelfComponents"
 const page = () => {
     return (
         <>

@@ -1,12 +1,11 @@
-import  React from 'react';
-import PressreleasesComponents from "../../Components/PressReleasesComponents"
+import React from "react"
+import PressreleasesComponents from "@/Components/PressReleasesComponents"
 const page = () => {
-    return (
-        <>             
-          <PressreleasesComponents/>  
-          
-        </>
-    );
-};
+  return (
+    <>
+      <PressreleasesComponents />
+    </>
+  )
+}
 
-export default page;
+export default page
