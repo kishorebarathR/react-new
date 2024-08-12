@@ -80,3 +80,43 @@ body {
     transform: scale(1);
   }
 }
+
+
+.carousel-container {
+  width: 80%; /* Adjust based on your requirement */
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adjust the border-radius for rounded corners */
+}
+
+.slick-dots li button:before {
+  color: #fff; /* Color of the dots */
+}
+
+
+/* my-journey arousel-slide */
+.carousel-slide {
+  transition: transform 0.5s ease, z-index 0.5s ease;
+  z-index: 0;
+}
+
+.slick-center .carousel-slide {
+  transform: scale(1); /* Zoom the centered slide by 40% */
+  z-index: 1;
+}
+
+.slick-slide:not(.slick-center) .carousel-slide {
+  transform: scale(0.8); /* Scale down non-centered slides */
+  z-index: 0;
+  opacity: 0.7; /* Slight opacity to give a behind effect */
+}
+
+
