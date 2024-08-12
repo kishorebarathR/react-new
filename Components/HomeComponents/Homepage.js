@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import Image from "next/image"
-
+import HomeSlider from "@/Components/HomeComponents/HomeSlider"
 const Homepage = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false)
 
@@ -98,7 +98,9 @@ const Homepage = () => {
 
           {/* <!-- Third column --> */}
           <div className="lg:w-[55%] px-2">
-            <div className="w-full h-full bg-[#233876]"></div>
+            <div className="w-full h-full bg-[#233876]"> 
+              <HomeSlider/>
+            </div>
           </div>
 
           {/* <!-- Fourth column --> */}
