@@ -7,7 +7,6 @@ const Homepage = () => {
 
   const handleImageClick = () => {
     setIsVideoVisible(true)
-    
   }
   return (
     <div>
@@ -73,40 +72,8 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="lg:flex p-4 lg:mx-8">
-          {/* <!-- First column --> */}
-          <div className="lg:w-[20%] bg-blue-900 text-white p-6 flex flex-col justify-center items-center ">
-            <h2 className="text-4xl font-bold text-center">Catch Up with Me</h2>
-          </div>
-
-          {/* <!-- Second column --> */}
-          <div className="lg:w-[20%] px-2 p-5 ">
-            <h3 className="bg-red-800 text-white p-2 mb-2 text-center">
-              Highlights of the Week
-            </h3>
-            <div className="relative">
-              <Image
-                width={500}
-                height={550}
-                src="/home_images/vds_video_img_high.png"
-                alt="Video thumbnail"
-                className="w-full "
-              />
-              <button className="absolute inset-0 m-auto w-12 h-12 flex items-center justify-center"></button>
-            </div>
-          </div>
-
-          {/* <!-- Third column --> */}
-          <div className="lg:w-[55%]   mt-10">
-            <div className="w-full h-full "> 
-              <HomeSlider/>
-            </div>
-          </div>
-
-          {/* <!-- Fourth column --> */}
-          <div className="lg:w-[5%] px-2">
-            <div className="w-full h-full bg-[#233876]"></div>
-          </div>
+        <div className=" p-4 lg:mx-8">
+          <HomeSlider />
         </div>
       </div>
     </div>
