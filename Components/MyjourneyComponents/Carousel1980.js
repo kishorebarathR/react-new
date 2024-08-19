@@ -13,16 +13,15 @@ export default function SimpleSlider() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true, // Enable center mode
-    centerPadding: "0", // Ensure no padding around the centered slide
+   
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "0",
+       
+          
         },
       },
       {

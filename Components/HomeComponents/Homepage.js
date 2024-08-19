@@ -84,7 +84,7 @@ const Homepage = () => {
             <h3 className="bg-red-800 text-white p-2 mb-2 text-center">
               Highlights of the Week
             </h3>
-            <div className="relative ">
+            <div className="relative">
               <Image
                 width={500}
                 height={550}
@@ -97,8 +97,8 @@ const Homepage = () => {
           </div>
 
           {/* <!-- Third column --> */}
-          <div className="lg:w-[55%] px-2">
-            <div className="w-full h-full bg-[#233876]"> 
+          <div className="lg:w-[55%]   mt-10">
+            <div className="w-full h-full "> 
               <HomeSlider/>
             </div>
           </div>

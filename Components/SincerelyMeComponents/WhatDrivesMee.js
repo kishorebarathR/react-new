@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
-import Slider from "react-slick"
 import Image from "next/image"
+import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { FaArrowCircleLeft, FaArrowRight } from "react-icons/fa"
@@ -52,8 +52,10 @@ export default function SimpleSlider() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -74,7 +76,20 @@ export default function SimpleSlider() {
 
   return (
     <>
-       <Slider {...settings} className="mx-auto container flex-1 px-2 ">
+      <div className="text-2xl font-semibold text-center lg:p-10 p-2 pt-10">
+        <p className="text-2xl">
+          Stay updated with the latest announcements and updates on my efforts
+          to create positive change in the country.
+        </p>
+      </div>
+      <div className="flex container mx-auto pb-8 mt-4">
+        <div className="w-1/6 bg-[#233876] flex items-center justify-center px-2">
+          <p className="text-white text-2xl font-semibold p-4 text-center">
+            What Drives Me
+          </p>
+        </div>
+        <div className="w-3/4">
+          <Slider {...settings} className="mx-auto container flex-1 px-2 ">
             <div className="p-2">
               <div className="relative group">
                 <Image
@@ -180,6 +195,12 @@ export default function SimpleSlider() {
               </div>
             </div>
           </Slider>
+        </div>
+
+        <div className="w-1/6 p-2 flex-1">
+          <div className="w-full h-full bg-[#233876]"></div>
+        </div>
+      </div>
     </>
   )
 }
