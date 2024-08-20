@@ -8,22 +8,33 @@ import "slick-carousel/slick/slick-theme.css"
 export default function SimpleSlider() {
   const settings = {
     dots: true,
-    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-   
+    initialSlide: 0,
+    className: "center",
+    centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,  
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -31,48 +42,65 @@ export default function SimpleSlider() {
       },
     ],
   }
-
   return (
-    <div className="bg-[#F2EBCD]  p-10">
-      <div className="bg-white shadow-2xl rounded-3xl p-5">
-        <Slider {...settings} className="mx-auto container mb-10 pt-10">
-          <div className="carousel-slide ">
-            <div className="block w-full rounded-2xl h-96 ">
-              <Image
-                width={500}
-                height={550}
-                src="/my-journey/carousel-img-1.png"
-                alt="Video thumbnail"
-                className="w-full h-full rounded-3xl"
-              />
-            </div>
-          </div>
+    <div className="mx-auto container my-10 bg-gray-200 carosel-body">
+      <Slider {...settings}>
+        <div className="w-full rounded-2xl h-80">
+          <Image
+            width={500}
+            height={550}
+            src="/my-journey/carousel-img-1.png"
+            alt="Video thumbnail"
+            className="w-full h-full rounded-3xl img-s"
+          />
+        </div>
+        <div className="w-full rounded-2xl h-80">
+          <Image
+            width={500}
+            height={550}
+            src="/my-journey/carousel-img-2.png"
+            alt="Video thumbnail"
+            className="w-full h-full rounded-3xl img-s"
+          />
+        </div>
+        <div className="w-full rounded-2xl h-80">
+          <Image
+            width={500}
+            height={550}
+            src="/my-journey/carousel-img-3.png"
+            alt="Video thumbnail"
+            className="w-full h-full rounded-3xl img-s"
+          />
+        </div>
 
-          <div className="carousel-slide">
-            <div className="block w-full h-96 rounded-2xl">
-              <Image
-                width={500}
-                height={550}
-                src="/my-journey/carousel-img-2.png"
-                alt="Video thumbnail"
-                className="w-full h-full rounded-3xl"
-              />
-            </div>
-          </div>
-
-          <div className="carousel-slide">
-            <div className="block w-full h-96 rounded-2xl">
-              <Image
-                width={500}
-                height={550}
-                src="/my-journey/carousel-img-3.png"
-                alt="Video thumbnail"
-                className="w-full h-full rounded-3xl"
-              />
-            </div>
-          </div>
-        </Slider>
-      </div>
+        <div className="w-full rounded-2xl h-80">
+          <Image
+            width={500}
+            height={550}
+            src="/my-journey/carousel-img-1.png"
+            alt="Video thumbnail"
+            className="w-full h-full rounded-3xl img-s"
+          />
+        </div>
+        <div className="w-full rounded-2xl h-80">
+          <Image
+            width={500}
+            height={550}
+            src="/my-journey/carousel-img-2.png"
+            alt="Video thumbnail"
+            className="w-full h-full rounded-3xl img-s"
+          />
+        </div>
+        <div className="w-full rounded-2xl h-80">
+          <Image
+            width={500}
+            height={550}
+            src="/my-journey/carousel-img-3.png"
+            alt="Video thumbnail"
+            className="w-full h-full rounded-3xl img-s"
+          />
+        </div>
+      </Slider>
     </div>
   )
 }

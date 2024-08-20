@@ -130,7 +130,7 @@ export default function SimpleSlider() {
                   className="w-full"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-xl">Women's Rights</p>
+                  <p className="text-white text-xl">Women`&apos;`s Rights</p>
                 </div>
               </div>
             </div>
