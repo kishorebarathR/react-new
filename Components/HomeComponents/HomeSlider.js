@@ -84,13 +84,13 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <div className="flex container mx-auto pb-8 mt-5">
-        <div className="w-[15%] bg-[#233876] flex items-center justify-center px-2">
+      <div className="lg:flex container mx-auto pb-8 mt-5">
+        <div className="lg:w-[15%] bg-[#233876] flex items-center justify-center px-2">
           <p className="text-white text-2xl font-semibold p-4 text-center">
             Catch Up with Me
           </p>
         </div>
-        <div className="relative w-[23%] px-5">
+        <div className="relative lg:w-[23%] px-5">
           <p className="text-center font-semibold p-2 bg-[#7C1910] text-white">
             Highlights of the Week
           </p>
@@ -103,19 +103,20 @@ export default function SimpleSlider() {
           />
           <button className="absolute inset-0 m-auto w-12 h-12 flex items-center justify-center"></button>
         </div>
-        <div className="w-[57%]">
-          <Slider {...settings} className="mx-auto container flex-1 px-2">
+        <div className="lg:w-[57%] flex justify-center items-center">
+          <Slider {...settings} className="mx-auto container flex-1  px-2">
             <div className="p-2">
               <div
                 className="relative group cursor-pointer"
                 onClick={() =>
-                  openPopup("https://www.youtube.com/embed/lBqFlHEhDP0")
+                  openPopup("https://www.youtube.com/embed/lBqFlHEhDP0?rel=0")
                 }
               >
                 <iframe
                   width="166"
                   height="160"
-                  src="https://www.youtube.com/embed/lBqFlHEhDP0"
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/lBqFlHEhDP0?rel=0"
                   title="vaikkom sathyagraham @100 | വൈക്കം സത്യഗ്രഹത്തിന് 100 വയസ്"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -139,6 +140,7 @@ export default function SimpleSlider() {
                 <iframe
                   width="166"
                   height="160"
+                  className="w-full h-full"
                   src="https://www.youtube.com/embed/a9K_i_H5UVw"
                   title="സംഘപരിവാർ ഫാസിസത്തിനെതിരെ നിരന്തരം ചോദ്യങ്ങൾ ഉയരും"
                   frameBorder="0"
@@ -163,6 +165,7 @@ export default function SimpleSlider() {
                 <iframe
                   width="166"
                   height="160"
+                  className="w-full h-full"
                   src="https://www.youtube.com/embed/WzchbN_bZZI"
                   title="ഇരിക്കുന്ന സ്ഥാനത്തോടെങ്കിലും മാന്യത കാണിക്കണം മുഖ്യമന്ത്രി"
                   frameBorder="0"
@@ -187,6 +190,7 @@ export default function SimpleSlider() {
                 <iframe
                   width="166"
                   height="160"
+                  className="w-full h-full"
                   src="https://www.youtube.com/embed/nj-OLjaZ8Ws"
                   title="ദൗര്‍ഭാഗ്യകരമായ സംഭവങ്ങളാണ് നിയമസഭയ്ക്കുള്ളിലും സ്പീക്കറുടെ ഓഫീസിന് മുന്നിലും നടന്നത്."
                   frameBorder="0"
@@ -212,6 +216,7 @@ export default function SimpleSlider() {
                 <iframe
                   width="166"
                   height="160"
+                  className="w-full h-full"
                   src="https://www.youtube.com/embed/4k9bDn88XUs"
                   title="Walkout Speech Brahmapuram | ബ്രഹ്‌മപുരം നിയമസഭയിൽ"
                   frameBorder="0"
@@ -236,10 +241,11 @@ export default function SimpleSlider() {
                 <iframe
                   width="166"
                   height="160"
+                  className="w-full h-full"
                   src="https://www.youtube.com/embed/ULmwv-_Ly2M"
                   title="Brahmapuram Public Debate | ബ്രഹ്മപുരം ജനപക്ഷ സംവാദം"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="accelerometer; modestbranding=1; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 ></iframe>
@@ -261,6 +267,7 @@ export default function SimpleSlider() {
                 <iframe
                   width="166"
                   height="160"
+                  className="w-full h-full"
                   src="https://www.youtube.com/embed/luIuD3xbtSQ"
                   title="  കുട്ടനാടൻ നെൽകർഷക സമര സംഗമം ഉദ്ഘാടന പ്രസംഗം"
                   frameBorder="0"
