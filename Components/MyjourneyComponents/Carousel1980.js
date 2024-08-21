@@ -106,6 +106,7 @@ export default function SimpleSlider() {
               src="/my-journey/carousel-img-1.png"
               alt="Video thumbnail"
               className="w-full h-full rounded-3xl img-s"
+              
             />
           </div>
        
@@ -121,7 +122,7 @@ export default function SimpleSlider() {
           debate and speech competitions. In addition to his academic
           achievements, he held leadership positions, serving as the KSU unit
           president and Kanayannur Taluk president. VD Satheeshan also pursued a
-          Bachelor's degree in Sociology from Kerala University during this
+          Bachelor&apos;s degree in Sociology from Kerala University during this
           period.
         </p>
       </div>
