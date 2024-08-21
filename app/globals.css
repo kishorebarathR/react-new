@@ -102,7 +102,7 @@ body {
 }
 
 
-/* my-journey arousel-slide */
+/* my-journey carousel-slide  START*/
 
 .slick-initialized .slick-slide {
   padding:   1rem 0;
@@ -117,3 +117,22 @@ body {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
 }
+
+/* Limit dots to 3 */
+.slick-dots li {
+  display: none;
+}
+.slick-dots li:nth-child(-n+3) {
+  display: block;
+}
+
+/* Hide the first three dots */
+.slick-dots li:nth-child(-n+3) {
+  display: none;
+}
+
+.slick-dots {
+  justify-content: flex-start;
+}
+
+/* my-journey carousel-slide  END*/
