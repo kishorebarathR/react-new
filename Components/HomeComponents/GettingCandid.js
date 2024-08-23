@@ -327,10 +327,11 @@ const VideoPlayer = () => {
 
             {/* Playlist */}
             <div className="w-full lg:w-1/3">
-              <h2 className="text-xl bg-red-700 me-4 mt-7 text-white  text-center">
+             
+              <div className="flex flex-col gap-2 h-[100vh] p-3 mt-7  overflow-y-auto bg-[#880505] rounded-lg">
+              <h2 className="text-xl bg-[#880505] rounded-lg me-4  text-white  text-center">
                 Playlist
               </h2>
-              <div className="flex flex-col gap-2 h-[100vh] p-3   overflow-y-auto">
                 {videos.map((video, index) => (
                   <div
                     key={index}
