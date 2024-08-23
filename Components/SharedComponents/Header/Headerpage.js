@@ -139,7 +139,7 @@ const Headerpage = () => {
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className="">
+            <li onClick={handleLinkClick} className="border-b">
               <Link href="/newsletters" passHref>
                 <div className="flex items-center py-5 rounded-lg cursor-pointer">
                   <span className="ms-3">Newsletters</span>

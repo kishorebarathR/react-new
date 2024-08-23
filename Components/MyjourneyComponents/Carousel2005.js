@@ -51,7 +51,7 @@ export default function SimpleSlider() {
     <div className="bg-[#F2EBCD] carosel-body  ">
       <div className="container mx-auto p-5">
         <p className=" text-3xl font-semibold p-3 bg-[#398AF5] w-44 text-center  text-white   ">
-          1985-90
+          2005-2010
         </p>
         <div className="bg-white  rounded-3xl p-3 mt-5 ">
           <Slider {...settings}>
@@ -59,7 +59,7 @@ export default function SimpleSlider() {
               <Image
                 width={500}
                 height={550}
-                src="/my-journey/carousel-img-5.png"
+                src="/my-journey/carousel-img-17.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
               />
@@ -68,7 +68,7 @@ export default function SimpleSlider() {
               <Image
                 width={500}
                 height={550}
-                src="/my-journey/carousel-img-6.png"
+                src="/my-journey/carousel-img-18.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
               />
@@ -77,16 +77,17 @@ export default function SimpleSlider() {
               <Image
                 width={500}
                 height={550}
-                src="/my-journey/carousel-img-4.png"
+                src="/my-journey/carousel-img-16.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
               />
             </div>
+
             <div className="w-full rounded-2xl h-80 ">
               <Image
                 width={500}
                 height={550}
-                src="/my-journey/carousel-img-5.png"
+                src="/my-journey/carousel-img-17.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
               />
@@ -95,7 +96,7 @@ export default function SimpleSlider() {
               <Image
                 width={500}
                 height={550}
-                src="/my-journey/carousel-img-6.png"
+                src="/my-journey/carousel-img-18.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
               />
@@ -104,21 +105,20 @@ export default function SimpleSlider() {
               <Image
                 width={500}
                 height={550}
-                src="/my-journey/carousel-img-4.png"
+                src="/my-journey/carousel-img-16.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
               />
             </div>
-           
           </Slider>
           <p className="text-black text-xl merriweather-regular text-left p-5 mt-5">
-            Continuing his commitment to education and leadership, VD Satheeshan
-            joined the postgraduate diploma course in social service at Rajagiri
-            College of Social Science, Kalamassery. His dedication to student
-            politics continued, and he was elected as a councillor to the MG
-            University union. Notably, he rose to prominence by being elected as
-            the chairman of the MG University union. In parallel, he pursued an
-            LLB degree from Kerala Law Academy Law College.
+            Securing re-election to the assembly, VD Satheeshan continued his
+            role as the whip of the legislative party. He also played a vital
+            role as a member of the opposition, raising numerous allegations
+            against the government and its ministers while highlighting
+            important issues in the assembly. One of the notable moments during
+            this period was a public debate he engaged in with the then Finance
+            Minister about the lottery scam.
           </p>
           <div className="flex flex-row px-4 pb-5">
             <div className="flex-col">
