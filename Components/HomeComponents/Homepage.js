@@ -2,6 +2,7 @@
 import React, { useState } from "react"
 import Image from "next/image"
 import HomeSlider from "@/Components/HomeComponents/HomeSlider"
+import TimeLine from "./TimeLine"
 const Homepage = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false)
 
@@ -45,6 +46,7 @@ const Homepage = () => {
         ></iframe>
       )}
       {/* </div> */}
+      <TimeLine/>
       <div className="  bg-[url('/home_images/about_satheesan_background.png')] mx-auto  w-full h-full">
         <div className="grid lg:grid-cols-2 grid-flow-row gap-4 p-5 lg:mx-5">
           <div className="flex justify-center mt-10 ">

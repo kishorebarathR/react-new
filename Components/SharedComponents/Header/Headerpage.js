@@ -30,10 +30,10 @@ const Headerpage = () => {
                     alt="vds"
                   />
                   <div className="self-center ml-4">
-                    <h6 className="text-white text-4xl font-bold mb-1 lg:text-center merriweather-regular">
+                    <h6 className="text-white text-4xl  font-semibold  mb-1 lg:text-center merriweather-regular">
                       V D Satheesan
                     </h6>
-                    <p className="text-white text-[23px] merriweather-light">
+                    <p className="text-white text-[23px] merriweather-regular ms-2 font-semibold">
                       For the people
                     </p>
                   </div>
@@ -42,7 +42,7 @@ const Headerpage = () => {
             </div>
 
             <div className="flex lg:grid lg:grid-col lg:py-0 lg:grid-flow-row justify-center items-center lg:w-[50%] ">
-              <p className="text-white lg:m-5 ms-2 font-mono  text-[20px]">
+              <p className="text-white lg:m-5  merriweather-regular italic  text-[23px]">
                 “People respect us not for our ability to make laws, but because
                 of our ability to undo the injustice done to our people.”
               </p>

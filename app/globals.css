@@ -136,3 +136,33 @@ body {
 }
 
 /* my-journey carousel-slide  END*/
+
+
+/* Time Line START */
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 60px;
+  background-color: #0066cc;
+  padding: 10px 0;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.year {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.tick {
+  width: 1px;
+  height: 10px;
+  background-color: white;
+}

@@ -85,7 +85,7 @@ export default function SimpleSlider() {
   return (
     <>
       <div className="lg:flex container mx-auto pb-8 mt-5">
-        <div className="lg:w-[15%] bg-[#233876] flex items-center justify-center px-2">
+        <div className="lg:w-[15%] h-72 bg-[#233876] flex items-center justify-center px-2">
           <p className="text-white text-2xl font-semibold p-4 text-center">
             Catch Up with Me
           </p>
@@ -285,8 +285,8 @@ export default function SimpleSlider() {
           </Slider>
         </div>
 
-        <div className="w-[5%] p-2 flex-1">
-          <div className="w-full h-full bg-[#233876]"></div>
+        <div className="w-[5%] p-2 flex-1 hidden md:block">
+          <div className="w-full lg:h-72 bg-[#233876]"></div>
         </div>
       </div>
 
