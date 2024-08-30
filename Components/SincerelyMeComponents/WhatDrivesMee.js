@@ -83,8 +83,8 @@ export default function SimpleSlider() {
           to create positive change in the country.
         </p>
       </div>
-      <div className="flex container mx-auto ">
-        <div className="lg:w-[15%] my-10 bg-[#233876] flex items-center justify-center px-2">
+      <div className="lg:flex container mx-auto ">
+        <div className="lg:w-[15%] lg:my-10 bg-[#233876] flex items-center justify-center px-2">
           <p className="text-white text-2xl font-semibold p-4 text-center ">
             What Drives Me
           </p>
@@ -198,7 +198,7 @@ export default function SimpleSlider() {
           </Slider>
         </div>
 
-        <div className="lg:w-[5%] my-10 ">
+        <div className="w-[5%] lg:my-10 hidden md:block ">
           <div className="w-full h-full bg-[#233876]  flex-1 "></div>
         </div>
       </div>

@@ -66,6 +66,7 @@ export default function SimpleSlider() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
@@ -79,7 +80,7 @@ export default function SimpleSlider() {
           to create positive change in the country.
         </p>
       </div>
-      <Slider {...settings} className="mx-auto container mb-10">
+      <Slider {...settings} className="mx-auto container lg:mb-10">
         <div className="lg:p-4 p-10">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>17/04/2023</h5>
