@@ -11,9 +11,9 @@ const PublicEye = () => {
 
   return (
     <div>
-      <div className=" mx-auto">
+      <div className=" ">
         <div className="bg-[url('/home_images/about_satheesan_background.png')] ">
-          <p className="text-4xl text-[#035C96] text-center font-semibold pt-10">
+          <p className="text-4xl text-[#035C96] text-center font-semibold ">
             In the Public Eye
           </p>
           {/* start */}

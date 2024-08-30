@@ -82,13 +82,13 @@ export default function SimpleSlider() {
           to create positive change in the country.
         </p>
       </div>
-      <div className="flex container mx-auto pb-8 mt-4">
-        <div className="w-1/6 bg-[#233876] flex items-center justify-center px-2">
-          <p className="text-white text-2xl font-semibold p-4 text-center">
+      <div className="flex container mx-auto ">
+        <div className="lg:w-[15%] my-10 bg-[#233876] flex items-center justify-center px-2">
+          <p className="text-white text-2xl font-semibold p-4 text-center ">
             What Drives Me
           </p>
         </div>
-        <div className="w-3/4">
+        <div className="lg:w-[80%] ">
           <Slider {...settings} className="mx-auto container flex-1 px-2 ">
             <div className="p-2">
               <div className="relative group">
@@ -130,7 +130,7 @@ export default function SimpleSlider() {
                   className="w-full"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-xl">Women`&apos;`s Rights</p>
+                  <p className="text-white text-xl">Women&apos;s Rights</p>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function SimpleSlider() {
                   height={550}
                   src="/sincere_images/what_drives_me_images/speech_img.png"
                   alt="Slide 2"
-                  className="w-full lg:  "
+                  className="w-full "
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl">Personal Freedom</p>
@@ -197,8 +197,8 @@ export default function SimpleSlider() {
           </Slider>
         </div>
 
-        <div className="w-1/6 p-2 flex-1">
-          <div className="w-full h-full bg-[#233876]"></div>
+        <div className="lg:w-[5%] my-10 ">
+          <div className="w-full h-full bg-[#233876]  flex-1 "></div>
         </div>
       </div>
     </>
