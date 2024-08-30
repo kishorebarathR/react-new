@@ -56,6 +56,7 @@ export default function SimpleSlider() {
     autoplaySpeed: 3000,
     // nextArrow: <NextArrow />,
     // prevArrow: <PrevArrow />,
+    
     responsive: [
       {
         breakpoint: 1024,
