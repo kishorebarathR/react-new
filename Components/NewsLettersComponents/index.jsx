@@ -1,6 +1,6 @@
 import React from "react";
-import NewsLettersPage from "@/Components/my-constituencyComponents/MyConsistencyPage"
-import NewsLettersBanner from "@/Components/my-constituencyComponents/MyConstituencyBanner"
+import NewsLettersPage from "@/Components/NewsLettersComponents/NewsLettersPage"
+import NewsLettersBanner from "@/Components/NewsLettersComponents/NewsLettersBanner"
 
 const index = () => {
   return (
