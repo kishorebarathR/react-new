@@ -13,7 +13,7 @@ const Homepage = () => {
     <div>
       {!isVideoVisible ? (
         <div className="relative h-[100vh] w-full">
-          <Image
+             <Image
             src="/home_images/home_banner.png"
             alt="Banner"
             className="w-full h-[100vh] cursor-pointer bg-no-repeat object-cover"
@@ -22,12 +22,13 @@ const Homepage = () => {
             onClick={handleImageClick}
           />
           <div className="absolute inset-0 flex items-center justify-center h-full w-full">
-            <Image
-              src="/home_images/play_button.svg"
+           <Image
+              src="/play-button1.svg"
               alt="Play Button"
-              className="w-16 h-16 cursor-pointer bg-white rounded-full"
+              className="w-24 h-24 cursor-pointer rounded-full"
               width={1000}
               height={1000}
+            
               onClick={handleImageClick}
             />
           </div>

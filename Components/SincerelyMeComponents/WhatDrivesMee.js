@@ -78,10 +78,10 @@ export default function SimpleSlider() {
   return (
     <>
       <div className="text-2xl font-semibold text-center lg:p-10 p-2 pt-10">
-        <p className="text-2xl">
+        {/* <p className="text-2xl">
           Stay updated with the latest announcements and updates on my efforts
           to create positive change in the country.
-        </p>
+        </p> */}
       </div>
       <div className="lg:flex container mx-auto ">
         <div className="lg:w-[15%] lg:my-10 bg-[#233876] flex items-center justify-center px-2">
@@ -89,7 +89,7 @@ export default function SimpleSlider() {
             What Drives Me
           </p>
         </div>
-        <div className="lg:w-[80%] ">
+        <div className="lg:w-[82%] ">
           <Slider {...settings} className="mx-auto container flex-1 px-2 ">
             <div className="p-2">
               <div className="relative group">
@@ -198,7 +198,7 @@ export default function SimpleSlider() {
           </Slider>
         </div>
 
-        <div className="w-[5%] lg:my-10 hidden md:block ">
+        <div className="w-[3%] lg:my-10 hidden md:block ">
           <div className="w-full h-full bg-[#233876]  flex-1 "></div>
         </div>
       </div>

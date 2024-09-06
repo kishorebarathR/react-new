@@ -226,7 +226,7 @@ const Journey = () => {
               <Image
                 width={300}
                 height={200}
-                className="lg:absolute right-0 bottom-0  w-80 h-96"
+                className="lg:absolute right-0 bottom-0  w-80 "
                 src="/sincere_images/vds_casual.png"
                 alt="VDS Casual"
               />
@@ -234,10 +234,10 @@ const Journey = () => {
           </div>
 
           <div className="lg:flex p-3 border-b-2 ms-4 border-black text-xl">
-            <h6>
-              <ul className="list-disc p-4">
+            <div className="flex flex-col lg:w-1/2">
+              <ul className="list-disc p-4 ">
                 <li>Cochin Refineries Employees Association</li>
-                <li>Premier Tyres Workers Union </li>
+                <li>Premier Tyres Workers Union</li>
                 <li>TCC Employees Union</li>
                 <li>IRE Workers Union</li>
                 <li>Hindalco Workers Union</li>
@@ -247,30 +247,27 @@ const Journey = () => {
                   Kerala State Co-Operative Rubber Marketing Federation
                   Employees Congress
                 </li>
-                <li>Masoneilan Employees Union, INTUC </li>
-                <li> TELK Employees Union</li>
+                <li>Masoneilan Employees Union, INTUC</li>
+                <li>TELK Employees Union</li>
               </ul>
-            </h6>
-            <div className="lg:ms-20 p-4">
-              <h6>
-                <ul className="list-disc">
-                  <li>HMT Employees Union, Kalamassery </li>
-                  <li> KMML Employees Union, Kollam</li>
-                  <li> CIAL Officers Association, Nedumbassery</li>
-                  <li>Employees Union Binani Zinc Limited</li>
-                  <li>Hindustan Latex, Employees Union, Trivandrum</li>
-                  <li>Backward Development Corporation Employees Union</li>
-                  <li>CWRDM, Employees Union, Kozhikode </li>
-                  <li>Sree Padhmanabha Temple Employees Union</li>
-                  <li>INTUC, Trivandrum</li>
-                  <li>
-                    NITA Gelatin India Limited, Employees Union, Chalakudy{" "}
-                  </li>
-                  <li>Kerala State Housing Board Employees Union</li>
-                </ul>
-              </h6>
+            </div>
+            <div className="flex flex-col lg:w-1/2 lg:ms-20 p-4">
+              <ul className="list-disc ">
+                <li>HMT Employees Union, Kalamassery</li>
+                <li>KMML Employees Union, Kollam</li>
+                <li>CIAL Officers Association, Nedumbassery</li>
+                <li>Employees Union Binani Zinc Limited</li>
+                <li>Hindustan Latex, Employees Union, Trivandrum</li>
+                <li>Backward Development Corporation Employees Union</li>
+                <li>CWRDM, Employees Union, Kozhikode</li>
+                <li>Sree Padhmanabha Temple Employees Union</li>
+                <li>INTUC, Trivandrum</li>
+                <li>NITA Gelatin India Limited, Employees Union, Chalakudy</li>
+                <li>Kerala State Housing Board Employees Union</li>
+              </ul>
             </div>
           </div>
+
           {/* My Interests End */}
 
           {/* Awards and  Recognitions Start*/}
@@ -299,9 +296,9 @@ const Journey = () => {
                 />
               </div>
               <div className="lg:flex lg:p-3 lg:ms-10 text-xl">
-                <h6>
-                  <ul className="list-disc lg:p-4 ms-8">
-                    <li> AA Rahim Memorial Award for Best Parliamentarian</li>
+                <div className="flex flex-col lg:w-1/2 lg:pr-4">
+                  <ul className="list-disc lg:p-4 ms-8 space-y-1">
+                    <li>AA Rahim Memorial Award for Best Parliamentarian</li>
                     <li>
                       Global Malayali Council, Singapore Chapter – Best MLA
                     </li>
@@ -310,7 +307,7 @@ const Journey = () => {
                       from the Rajiv Gandhi
                     </li>
                     <li>National Centre for Humanitarian Studies, Palai</li>
-                    <li> Vasthavam Daily – Best Parliamentarian Award </li>
+                    <li>Vasthavam Daily – Best Parliamentarian Award</li>
                     <li>
                       FOKANA – Outstanding Performance in the Legislative
                       Assembly
@@ -319,7 +316,7 @@ const Journey = () => {
                       Rajeev Gandhi foundation, Kollam – Best Political Leader
                       of the State
                     </li>
-                    <li>A Pachan Foundation, Kollam – Yuva Parliamentarian </li>
+                    <li>A Pachan Foundation, Kollam – Yuva Parliamentarian</li>
                     <li>
                       KS Narayanan Namboothiri Foundation – Best MLA of the
                       State
@@ -328,7 +325,11 @@ const Journey = () => {
                       Shri N Sundaran Nadar National Foundation – Best Political
                       Leader award
                     </li>
-                    <li>TM Jacob Foundation – Best Parliamentarian Award </li>
+                    <li>TM Jacob Foundation – Best Parliamentarian Award</li>
+                  </ul>
+                </div>
+                <div className="flex flex-col lg:w-1/2 lg:pl-4">
+                  <ul className="list-disc lg:p-4 ms-8 space-y-1">
                     <li>
                       Rajeev Gandhi Study Centre, Malappuram – Rajiv Gandhi
                       Memorial Award 2013
@@ -337,7 +338,7 @@ const Journey = () => {
                       VC Padmanabhan Memorial Award for achieving excellence in
                       public governance
                     </li>
-                    <li> Reporter TV Jananayakan Award – Best MLA of State</li>
+                    <li>Reporter TV Jananayakan Award – Best MLA of State</li>
                     <li>
                       MP Gangadaran Foundation Award – Best MLA 2013 of State
                     </li>
@@ -349,7 +350,7 @@ const Journey = () => {
                       Sreenarayana Sahithya Parishath Award – Best Political
                       Reformer
                     </li>
-                    <li>S Sujanapal Memorial Award </li>
+                    <li>S Sujanapal Memorial Award</li>
                     <li>CC Ismail Sahib Memorial Award – Best MLA</li>
                     <li>
                       PT Madhusoodanakurup Memorial Award – Best Politician
@@ -359,7 +360,7 @@ const Journey = () => {
                       Public service
                     </li>
                   </ul>
-                </h6>
+                </div>
               </div>
             </div>
           </div>
