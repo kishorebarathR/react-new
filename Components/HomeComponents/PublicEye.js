@@ -1,13 +1,13 @@
 "use client"
 import React, { useEffect } from "react"
 import Image from "next/image"
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const PublicEye = () => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1000 });
-  // }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+  }, [])
 
   return (
     <div>
@@ -225,9 +225,8 @@ const PublicEye = () => {
                 alt="public_eye_images"
               />
             </div>
-          
           </div>
-          {/* end */}
+          {/* end...*/}
         </div>
       </div>
     </div>
