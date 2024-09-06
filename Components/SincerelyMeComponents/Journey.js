@@ -125,10 +125,7 @@ const Journey = () => {
               Master’s in Social Work (MSW) from Rajagiri College of Social
               Sciences.
             </p>
-            <div
-              className="border-b-8 border-[#525252] lg:flex "
-              data-aos="fade-in"
-            >
+            <div className="border-b-8 border-[#525252] lg:flex ">
               <div className="bg-[#818181] text-white p-5 W-11 flex justify-center items-center">
                 <p className="lg:w-52">
                   With my wife, Lakshmipriya and my daughter, Unnimaya, my
@@ -211,7 +208,6 @@ const Journey = () => {
           </p>
           <div>
             <Image
-              data-aos="zoom-in-right"
               width={700}
               height={400}
               className="w-full"
