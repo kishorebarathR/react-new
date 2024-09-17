@@ -1,13 +1,62 @@
-"use client"
-import React, { useState } from "react"
-import Image from "next/image"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import { FaArrowCircleLeft, FaArrowRight } from "react-icons/fa"
+"use client";
+import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaArrowCircleLeft, FaArrowRight } from "react-icons/fa";
+
+const LazyIframe = ({ src, title, ...props }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing after iframe loads
+        }
+      },
+      {
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    if (iframeRef.current) {
+      observer.observe(iframeRef.current);
+    }
+
+    return () => {
+      if (iframeRef.current) {
+        observer.unobserve(iframeRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div ref={iframeRef} {...props}>
+      {isVisible ? (
+        <iframe
+          src={src}
+          title={title}
+          width="100%"
+          height="100%"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      ) : (
+        <div style={{ width: "100%", height: "100%" }}>Loading...</div>
+      )}
+    </div>
+  );
+};
 
 const NextArrow = (props) => {
-  const { className, style, onClick } = props
+  const { className, style, onClick } = props;
   return (
     <div
       className={className}
@@ -22,11 +71,11 @@ const NextArrow = (props) => {
     >
       <FaArrowRight />
     </div>
-  )
-}
+  );
+};
 
 const PrevArrow = (props) => {
-  const { className, style, onClick } = props
+  const { className, style, onClick } = props;
   return (
     <div
       className={className}
@@ -41,11 +90,11 @@ const PrevArrow = (props) => {
     >
       <FaArrowCircleLeft />
     </div>
-  )
-}
+  );
+};
 
 export default function SimpleSlider() {
-  const [popupVideo, setPopupVideo] = useState(null)
+  const [popupVideo, setPopupVideo] = useState(null);
 
   const settings = {
     dots: false,
@@ -72,15 +121,15 @@ export default function SimpleSlider() {
         },
       },
     ],
-  }
+  };
 
   const openPopup = (videoSrc) => {
-    setPopupVideo(videoSrc)
-  }
+    setPopupVideo(videoSrc);
+  };
 
   const closePopup = () => {
-    setPopupVideo(null)
-  }
+    setPopupVideo(null);
+  };
 
   return (
     <>
@@ -104,7 +153,7 @@ export default function SimpleSlider() {
           <button className="absolute inset-0 m-auto w-12 h-12 flex items-center justify-center"></button>
         </div>
         <div className="lg:w-[57%] flex justify-center items-center">
-          <Slider {...settings} className="mx-auto container flex-1  px-2">
+          <Slider {...settings} className="mx-auto container flex-1 px-2">
             <div className="p-2">
               <div
                 className="relative group cursor-pointer"
@@ -112,17 +161,11 @@ export default function SimpleSlider() {
                   openPopup("https://www.youtube.com/embed/lBqFlHEhDP0?rel=0")
                 }
               >
-                <iframe
-                  width="166"
-                  height="160"
-                  className="w-full h-full"
+                <LazyIframe
                   src="https://www.youtube.com/embed/lBqFlHEhDP0?rel=0"
                   title="vaikkom sathyagraham @100 | വൈക്കം സത്യഗ്രഹത്തിന് 100 വയസ്"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+                  className="w-full h-full"
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
                     vaikkom sathyagraham @100 | വൈക്കം സത്യഗ്രഹത്തിന് 100 വയസ്
@@ -137,17 +180,11 @@ export default function SimpleSlider() {
                   openPopup("https://www.youtube.com/embed/a9K_i_H5UVw")
                 }
               >
-                <iframe
-                  width="166"
-                  height="160"
-                  className="w-full h-full"
+                <LazyIframe
                   src="https://www.youtube.com/embed/a9K_i_H5UVw"
                   title="സംഘപരിവാർ ഫാസിസത്തിനെതിരെ നിരന്തരം ചോദ്യങ്ങൾ ഉയരും"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+                  className="w-full h-full"
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
                     സംഘപരിവാർ ഫാസിസത്തിനെതിരെ നിരന്തരം ചോദ്യങ്ങൾ ഉയരും
@@ -162,17 +199,11 @@ export default function SimpleSlider() {
                   openPopup("https://www.youtube.com/embed/WzchbN_bZZI")
                 }
               >
-                <iframe
-                  width="166"
-                  height="160"
-                  className="w-full h-full"
+                <LazyIframe
                   src="https://www.youtube.com/embed/WzchbN_bZZI"
                   title="ഇരിക്കുന്ന സ്ഥാനത്തോടെങ്കിലും മാന്യത കാണിക്കണം മുഖ്യമന്ത്രി"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+                  className="w-full h-full"
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
                     ഇരിക്കുന്ന സ്ഥാനത്തോടെങ്കിലും മാന്യത കാണിക്കണം മുഖ്യമന്ത്രി
@@ -187,17 +218,11 @@ export default function SimpleSlider() {
                   openPopup("https://www.youtube.com/embed/nj-OLjaZ8Ws")
                 }
               >
-                <iframe
-                  width="166"
-                  height="160"
-                  className="w-full h-full"
+                <LazyIframe
                   src="https://www.youtube.com/embed/nj-OLjaZ8Ws"
                   title="ദൗര്‍ഭാഗ്യകരമായ സംഭവങ്ങളാണ് നിയമസഭയ്ക്കുള്ളിലും സ്പീക്കറുടെ ഓഫീസിന് മുന്നിലും നടന്നത്."
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+                  className="w-full h-full"
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
                     ദൗര്‍ഭാഗ്യകരമായ സംഭവങ്ങളാണ് നിയമസഭയ്ക്കുള്ളിലും സ്പീക്കറുടെ
@@ -213,17 +238,11 @@ export default function SimpleSlider() {
                   openPopup("https://www.youtube.com/embed/4k9bDn88XUs")
                 }
               >
-                <iframe
-                  width="166"
-                  height="160"
-                  className="w-full h-full"
+                <LazyIframe
                   src="https://www.youtube.com/embed/4k9bDn88XUs"
                   title="Walkout Speech Brahmapuram | ബ്രഹ്‌മപുരം നിയമസഭയിൽ"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+                  className="w-full h-full"
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
                     | ബ്രഹ്‌മപുരം നിയമസഭയിൽ
@@ -235,49 +254,36 @@ export default function SimpleSlider() {
               <div
                 className="relative group cursor-pointer"
                 onClick={() =>
-                  openPopup("https://www.youtube.com/embed/ULmwv-_Ly2M")
+                  openPopup("https://www.youtube.com/embed/ULmwv-_Ly8I")
                 }
               >
-                <iframe
-                  width="166"
-                  height="160"
+                <LazyIframe
+                  src="https://www.youtube.com/embed/ULmwv-_Ly8I"
+                  title="Most Open Debate: ആസ്വാദ്യസംസ്‌കാരവുമായി ഏകോപനം"
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/ULmwv-_Ly2M"
-                  title="Brahmapuram Public Debate | ബ്രഹ്മപുരം ജനപക്ഷ സംവാദം"
-                  frameBorder="0"
-                  allow="accelerometer; modestbranding=1; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
-                    | ബ്രഹ്മപുരം ജനപക്ഷ സംവാദം
+                    Most Open Debate: ആസ്വാദ്യസംസ്‌കാരവുമായി ഏകോപനം
                   </p>
                 </div>
               </div>
             </div>
-
             <div className="p-2">
               <div
                 className="relative group cursor-pointer"
                 onClick={() =>
-                  openPopup("https://www.youtube.com/embed/luIuD3xbtSQ")
+                  openPopup("https://www.youtube.com/embed/WiKBR5jOe04")
                 }
               >
-                <iframe
-                  width="166"
-                  height="160"
+                <LazyIframe
+                  src="https://www.youtube.com/embed/WiKBR5jOe04"
+                  title="Kuttanadu Vision: യോഗസ്ഥിതി"
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/luIuD3xbtSQ"
-                  title="  കുട്ടനാടൻ നെൽകർഷക സമര സംഗമം ഉദ്ഘാടന പ്രസംഗം"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
-                    കുട്ടനാടൻ നെൽകർഷക സമര സംഗമം ഉദ്ഘാടന പ്രസംഗം
+                    Kuttanadu Vision: യോഗസ്ഥിതി
                   </p>
                 </div>
               </div>
@@ -299,17 +305,14 @@ export default function SimpleSlider() {
             >
               &times;
             </button>
-            <iframe
-              className="w-full h-full"
+            <LazyIframe
               src={popupVideo}
               title="Popup Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+              className="w-full h-full"
+            />
           </div>
         </div>
       )}
     </>
-  )
+  );
 }
