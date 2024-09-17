@@ -1,26 +1,75 @@
-"use client"
-import React, { useEffect, memo } from "react"
-import Image from "next/image"
+"use client";
+import React, { useEffect, memo, useState, useRef } from "react";
+import Image from "next/image";
+
+const LazyIframe = ({ src, title, ...props }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing after iframe loads
+        }
+      },
+      {
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    if (iframeRef.current) {
+      observer.observe(iframeRef.current);
+    }
+
+    return () => {
+      if (iframeRef.current) {
+        observer.unobserve(iframeRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div ref={iframeRef} {...props}>
+      {isVisible ? (
+        <iframe
+          src={src}
+          title={title}
+          width="100%"
+          height="100%"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      ) : (
+        <div style={{ width: "100%", height: "100%" }}>Loading...</div>
+      )}
+    </div>
+  );
+};
 
 const MeUnfiltered = () => {
   useEffect(() => {
-    const script = document.createElement("script")
-    script.src = "https://platform.twitter.com/widgets.js"
-    script.async = true
-    document.body.appendChild(script)
+    const script = document.createElement("script");
+    script.src = "https://platform.twitter.com/widgets.js";
+    script.async = true;
+    document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script)
-      
-    }
-  }, [])
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <div className="relative w-100 ">
+    <div className="relative w-100">
       <div className="bg-[url('/home_images/gallery-img-07.png')] bg-cover bg-center w-full h-full">
         <span className="absolute inset-0 bg-black opacity-70"></span>
         {/* Overlay */}
         <div className="relative z-10 container mx-auto">
-          <h1 className="text-4xl font-bold mb-14 text-center text-white pt-10 ">
+          <h1 className="text-4xl font-bold mb-14 text-center text-white pt-10">
             Me, Unfiltered
           </h1>
 
@@ -49,25 +98,18 @@ const MeUnfiltered = () => {
             </div>
 
             {/* Third column */}
-            <div className="">
-              <div className="flex justify-center items-center">
-                <iframe
-                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVDSatheeshanParavur&tabs=timeline&width=350&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
-                  width="350"
-                  height="490"
-                  style={{ borderRadius: "17px", overflow: "hidden" }}
-                  scrolling="no"
-                  frameBorder="0"
-                  allowFullScreen={true}
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                ></iframe>
-              </div>
+            <div className="flex justify-center items-center">
+              <LazyIframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVDSatheeshanParavur&tabs=timeline&width=350&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
+                title="Facebook Page"
+                style={{ width: "350px", height: "490px", borderRadius: "17px" }}
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MeUnfiltered
+export default MeUnfiltered;

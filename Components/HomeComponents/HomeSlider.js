@@ -1,39 +1,39 @@
-"use client";
-import React, { useState, useRef, useEffect } from "react";
-import Image from "next/image";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { FaArrowCircleLeft, FaArrowRight } from "react-icons/fa";
+"use client"
+import React, { useState, useRef, useEffect } from "react"
+import Image from "next/image"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import { FaArrowCircleLeft, FaArrowRight } from "react-icons/fa"
 
 const LazyIframe = ({ src, title, ...props }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const iframeRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false)
+  const iframeRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // Stop observing after iframe loads
+          setIsVisible(true)
+          observer.disconnect() // Stop observing after iframe loads
         }
       },
       {
         rootMargin: "0px",
         threshold: 0.1,
       }
-    );
+    )
 
     if (iframeRef.current) {
-      observer.observe(iframeRef.current);
+      observer.observe(iframeRef.current)
     }
 
     return () => {
       if (iframeRef.current) {
-        observer.unobserve(iframeRef.current);
+        observer.unobserve(iframeRef.current)
       }
-    };
-  }, []);
+    }
+  }, [])
 
   return (
     <div ref={iframeRef} {...props}>
@@ -52,11 +52,11 @@ const LazyIframe = ({ src, title, ...props }) => {
         <div style={{ width: "100%", height: "100%" }}>Loading...</div>
       )}
     </div>
-  );
-};
+  )
+}
 
 const NextArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { className, style, onClick } = props
   return (
     <div
       className={className}
@@ -71,11 +71,11 @@ const NextArrow = (props) => {
     >
       <FaArrowRight />
     </div>
-  );
-};
+  )
+}
 
 const PrevArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { className, style, onClick } = props
   return (
     <div
       className={className}
@@ -90,11 +90,11 @@ const PrevArrow = (props) => {
     >
       <FaArrowCircleLeft />
     </div>
-  );
-};
+  )
+}
 
 export default function SimpleSlider() {
-  const [popupVideo, setPopupVideo] = useState(null);
+  const [popupVideo, setPopupVideo] = useState(null)
 
   const settings = {
     dots: false,
@@ -121,15 +121,15 @@ export default function SimpleSlider() {
         },
       },
     ],
-  };
+  }
 
   const openPopup = (videoSrc) => {
-    setPopupVideo(videoSrc);
-  };
+    setPopupVideo(videoSrc)
+  }
 
   const closePopup = () => {
-    setPopupVideo(null);
-  };
+    setPopupVideo(null)
+  }
 
   return (
     <>
@@ -314,5 +314,5 @@ export default function SimpleSlider() {
         </div>
       )}
     </>
-  );
+  )
 }
