@@ -21,10 +21,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" />
-        <Script
-          src="https://example.com/some-external-script.js"
-          strategy="lazyOnload"
-        />
+       
         <Script async src="third-party.js" />
       </body>
     </html>
