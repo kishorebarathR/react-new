@@ -347,6 +347,7 @@ const VideoPlayer = () => {
                     className="flex-1 cursor-pointer "
                     onClick={() => handleVideoClick(video)}
                   >
+                    
                     <div className="flex items-center space-x-4">
                       <div className="lg:w-200 lg:h-110">
                         <img

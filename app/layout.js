@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google"
 import "./globals.css"
 
-
 import Script from "next/script"
 import Header from "../Components/SharedComponents/Header"
 import Footer from "../Components/SharedComponents/Footer"
@@ -15,12 +14,18 @@ export default function RootLayout({ children }) {
         href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
         rel="stylesheet"
       />
+      <link rel="preload" href="critical.js" as="script" />
 
       <body>
         <Header />
         {children}
         <Footer />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" />
+        <Script
+          src="https://example.com/some-external-script.js"
+          strategy="lazyOnload"
+        />
+        <Script async src="third-party.js" />
       </body>
     </html>
   )
