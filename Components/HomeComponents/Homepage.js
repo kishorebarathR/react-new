@@ -45,6 +45,7 @@ const Homepage = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
           className="h-[100vh]"
+            loading="lazy"
         ></iframe>
       )}
       {/* </div> */}
@@ -62,7 +63,7 @@ const Homepage = () => {
             />
           </div>
 
-          <div className=" mt-11 border-2  border-[#033B5F]  text-center flex justify-center items-center lg:me-10 ">
+          <div className=" mt-10 border-2  border-[#033B5F]  text-center flex justify-center items-center lg:me-10 ">
             <div>
               <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
                 Hello, I am

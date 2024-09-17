@@ -117,14 +117,14 @@ const VideoPlayer = () => {
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         " In conversation with Baiju N Nair, Automobile-travel Journalist",
-    },  
+    },
     {
       url: "https://www.youtube.com/embed/je-PiLqc9pQ",
       title: "Episode 20:",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation Smt.Sheeba Ameer, Philanthropist, Social Worker and Founder of Solace.",
-    }, 
+    },
     {
       url: "https://www.youtube.com/embed/Ay6yO33IyO8",
       title: "Episode 19:",
@@ -160,7 +160,7 @@ const VideoPlayer = () => {
       description:
         "  In conversation with Padma Shri Dr.Jose Chacko Periappuram, renowned Cardiac Surgeon",
     },
-   
+
     {
       url: "https://www.youtube.com/embed/ifSkvPRbjns",
       title: "Episode 14:",
@@ -175,7 +175,7 @@ const VideoPlayer = () => {
       description:
         "In conversation with Dr.Jancy James, former M G University Vice Chancellor",
     },
-   
+
     {
       url: "https://www.youtube.com/embed/Xlo4YE8MB5o",
       title: "Episode 12:",
@@ -251,7 +251,7 @@ const VideoPlayer = () => {
         "COVID-19 & HEALTHCARE. Dr.M.V Pillai, World Famous Oncologist discusses with VD Satheesan MLA",
       description: "In conversation with Dr MV Pillai, World Famous Oncologist",
     },
-   
+
     {
       url: "https://www.youtube.com/embed/SLoAonybiFc",
       title: "Episode 1:",
@@ -259,7 +259,7 @@ const VideoPlayer = () => {
         "Dialogue with Sri. TM Thomas Issac, Finance Minister, Kerala & VD Satheesan, MLA- Full Video",
       description:
         "In conversation with TM Thomas Isaac, Former Finance Minister, Kerala",
-    }, 
+    },
   ]
   const handleVideoClick = (video) => {
     // Update the URL with autoplay parameter
@@ -294,6 +294,7 @@ const VideoPlayer = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
               </div>
 
@@ -306,6 +307,7 @@ const VideoPlayer = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
               </div>
 
@@ -318,6 +320,7 @@ const VideoPlayer = () => {
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
               </div>
               <div className="mt-4">
@@ -347,7 +350,6 @@ const VideoPlayer = () => {
                     className="flex-1 cursor-pointer "
                     onClick={() => handleVideoClick(video)}
                   >
-                    
                     <div className="flex items-center space-x-4">
                       <div className="lg:w-200 lg:h-110">
                         <img
