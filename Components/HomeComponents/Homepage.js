@@ -16,6 +16,7 @@ const Homepage = () => {
              <Image
             src="/home_images/home_banner.png"
             alt="Banner"
+            loading="lazy"
             className="w-full h-[100vh] cursor-pointer bg-no-repeat object-cover"
             width={1000}
             height={1000}
@@ -25,6 +26,7 @@ const Homepage = () => {
            <Image
               src="/play-button1.svg"
               alt="Play Button"
+              loading="lazy"
               className="w-24 h-24 cursor-pointer rounded-full"
               width={1000}
               height={1000}
@@ -54,6 +56,7 @@ const Homepage = () => {
             <Image
               width={400}
               height={350}
+              loading="lazy"
               src="/home_images/vds_video_img.png"
               className="h-full  w-[89vh]"
               alt="Description"
