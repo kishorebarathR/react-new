@@ -22,6 +22,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_1.png"
@@ -30,6 +31,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_7.png"
@@ -38,6 +40,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/meeting.jpg"
@@ -46,6 +49,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_11.jpeg"
@@ -54,6 +58,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 h-52"
                 src="/home_images/public_eye_images/public_img_18.jpeg"
@@ -65,6 +70,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_2.png"
@@ -73,6 +79,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_8.png"
@@ -81,6 +88,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_12.jpeg"
@@ -89,6 +97,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_13.jpeg"
@@ -97,6 +106,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 h-44"
                 src="/home_images/public_eye_images/VDS-Public-Walk-in-Kerala.jpeg"
@@ -108,6 +118,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 w-full"
                 src="/home_images/public_eye_images/public_img_3.png"
@@ -116,6 +127,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_9.png"
@@ -124,6 +136,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_14.jpeg"
@@ -132,6 +145,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 h-36"
                 src="/home_images/public_eye_images/VDS-Strike.jpeg"
@@ -143,6 +157,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 w-full"
                 src="/home_images/public_eye_images/public_img_4.png"
@@ -151,6 +166,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_15.jpeg"
@@ -162,6 +178,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_5.png"
@@ -170,6 +187,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 w-full"
                 src="/home_images/public_eye_images/public_img_10.png"
@@ -178,6 +196,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_16.jpeg"
@@ -186,6 +205,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 h-44"
                 src="/home_images/public_eye_images/VDS-Speech.jpeg"
@@ -197,6 +217,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_6.png"
@@ -205,12 +226,14 @@ const PublicEye = () => {
               <div
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 w-52 h-32"
               ></div>
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1 h-32"
                 src="/home_images/public_eye_images/public_img_17.jpeg"
@@ -219,6 +242,7 @@ const PublicEye = () => {
               <Image
                 width={500}
                 height={300}
+                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/Vds-Satheesan-Metting-Speech.jpeg"

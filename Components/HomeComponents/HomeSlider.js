@@ -148,6 +148,7 @@ export default function SimpleSlider() {
             height={550}
             src="/home_images/vds_video_img_high.png"
             alt="Video thumbnail"
+             loading="lazy"
             className="w-full p-2 bg-[#033B5F]"
           />
           <button className="absolute inset-0 m-auto w-12 h-12 flex items-center justify-center"></button>

@@ -1,35 +1,35 @@
-"use client";
-import React, { useEffect, memo, useState, useRef } from "react";
-import Image from "next/image";
+"use client"
+import React, { useEffect, useState, useRef } from "react"
+import Image from "next/image"
 
 const LazyIframe = ({ src, title, ...props }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const iframeRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false)
+  const iframeRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect(); // Stop observing after iframe loads
+          setIsVisible(true)
+          observer.disconnect() // Stop observing after iframe loads
         }
       },
       {
         rootMargin: "0px",
         threshold: 0.1,
       }
-    );
+    )
 
     if (iframeRef.current) {
-      observer.observe(iframeRef.current);
+      observer.observe(iframeRef.current)
     }
 
     return () => {
       if (iframeRef.current) {
-        observer.unobserve(iframeRef.current);
+        observer.unobserve(iframeRef.current)
       }
-    };
-  }, []);
+    }
+  }, [])
 
   return (
     <div ref={iframeRef} {...props}>
@@ -48,20 +48,20 @@ const LazyIframe = ({ src, title, ...props }) => {
         <div style={{ width: "100%", height: "100%" }}>Loading...</div>
       )}
     </div>
-  );
-};
+  )
+}
 
 const MeUnfiltered = () => {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://platform.twitter.com/widgets.js";
-    script.async = true;
-    document.body.appendChild(script);
+    const script = document.createElement("script")
+    script.src = "https://platform.twitter.com/widgets.js"
+    script.async = true
+    document.body.appendChild(script)
 
     return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+      document.body.removeChild(script)
+    }
+  }, [])
 
   return (
     <div className="relative w-100">
@@ -92,6 +92,7 @@ const MeUnfiltered = () => {
                 src="/home_images/Instagram-Logo.wine.svg"
                 alt="Instagram logo"
                 className="w-40 h-40"
+                 loading="lazy"
                 width={100}
                 height={100}
               />
@@ -102,14 +103,18 @@ const MeUnfiltered = () => {
               <LazyIframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVDSatheeshanParavur&tabs=timeline&width=350&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
                 title="Facebook Page"
-                style={{ width: "350px", height: "490px", borderRadius: "17px" }}
+                style={{
+                  width: "350px",
+                  height: "490px",
+                  borderRadius: "17px",
+                }}
               />
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MeUnfiltered;
+export default MeUnfiltered
