@@ -75,10 +75,10 @@ export default function SimpleSlider() {
   return (
     <>
       <div className="text-2xl font-semibold text-center lg:p-10 p-2 pt-10">
-        <p className="text-2xl">
+        <h2 className="text-2xl">
           Stay updated with the latest announcements and updates on my efforts
           to create positive change in the country.
-        </p>
+        </h2>
       </div>
       <Slider {...settings} className="mx-auto container lg:mb-10">
         <div className="lg:p-4 p-10">
@@ -110,9 +110,9 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-10">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>14/04/2023</h5>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               തിരുവനന്തപുരം
-            </h5>
+            </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               മാധ്യമങ്ങളെ ഭീഷണിപ്പെടുത്തി വരുത്തിയിലാക്കാൻ ശ്രമിക്കുന്നു;
               പിണറായി സർക്കാർ നരേന്ദ്ര മോദിയുടെ കാർബൺ...
@@ -123,9 +123,9 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-10">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>13/04/2023</h5>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               തിരുവനന്തപുരം
-            </h5>
+            </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               ഹൈക്കോടതി പരാമർശം പ്രതിപക്ഷ आरोपണം അടിവരയിടുന്നു
             </p>
@@ -135,9 +135,9 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-10">
           <div className="block max-w-sm lg:p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>12/04/2023</h5>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               തിരുവനന്തപുരം
-            </h5>
+            </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               ആർ.എസ് ശശികുമാറിനെതിരായ പരാമർശം പിന്‍വലിച്ച് ലോകായുക്ത മാപ്പ്
               പറയണം; ഹിന്ദുവിന്റെ മൊത്തം അട്ടിപ്പേറവകാശം...
@@ -148,9 +148,9 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-10">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>09/04/2023</h5>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               ഫേസ്ബുക്ക് പോസ്റ്റ്
-            </h5>
+            </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               ബിഷപ്പ് ഹൗസുകൾ കയറിയിറങ്ങി ബി.ജെ.പി നേതാക്കൾ ഈസ്റ്റർ ആശംസകൾ
               നേരുന്നതിൽ പ്രതിപക്ഷ നേതാവിന്റെ...
@@ -161,9 +161,9 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-10">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>09/04/2023</h5>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               കോഴിക്കോട്
-            </h5>
+            </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               ക്രൈസ്തവരെ ഓടിച്ചിട്ട് തല്ലണമെന്ന് പറഞ്ഞ ബി.ജെ.പിയുടെ ക്രൈസ്തവ
               സ്‌നേഹം ഇരട്ടത്താപ്പ്; കേരളത്തിലെ 90 ശതമാനം...

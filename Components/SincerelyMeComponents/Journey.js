@@ -105,9 +105,9 @@ const Journey = () => {
         {/* Left Side Content End */}
 
         <div className="lg:flex-1  ">
-          <h3 className="text-6xl p-4 font-bold">
+          <h1 className="text-6xl p-4 font-bold">
             The journey that made me who I am today
-          </h3>
+          </h1>
           <h6 className="text-3xl p-4 font-medium">
             A brief history of my life
           </h6>
@@ -159,13 +159,13 @@ const Journey = () => {
                 post-graduation, I briefly practised law in the Kerala High
                 Court before beginning my political career.
               </p>
-            </div>
+            </div>  
           </div>
 
           {/* Work So Far Start */}
-          <h3 className="text-5xl ms-4 mt-8 font-semibold px-1">
+          <h2 className="text-5xl ms-4 mt-8 font-semibold px-1">
             My Work So Far
-          </h3>
+          </h2>
           <div className="lg:flex p-4 gap-2 text-xl">
             <p className=" lg:border-r-2 border-black mb-9 lg:w-6/12 px-1">
               As a politician, I have always been passionate about serving the
@@ -192,8 +192,8 @@ const Journey = () => {
           {/* Work So Far End */}
 
           {/* My Interests Start */}
-          <h3 className="text-5xl ms-4  font-semibold ">My Interests</h3>
-          <p className="p-4 lg:w-9/12 text-xl ">
+          <h2 className="text-5xl ms-4  font-semibold ">My Interests</h2>
+          <h3 className="p-4 lg:w-9/12 text-xl ">
             Ever since I was a child, I have been captivated by a wide range of
             interests that have shaped my life. My love for reading was the
             first to blossom, and as I grew older, my curiosity was piqued by
@@ -205,7 +205,7 @@ const Journey = () => {
             nature has also ignited a deep passion for environmental
             conservation, driving me to actively contribute towards protecting
             our natural world through my services.
-          </p>
+          </h3>
           <div>
             <Image
               width={700}
@@ -276,13 +276,13 @@ const Journey = () => {
           <div className="lg:ms-4">
             <div className="lg:border-4 border-[#173A5B] mx-auto m-0 ">
               <div className="relative bg-[#173A5B] text-xl">
-                <p className=" text-white lg:p-24 p-9 lg:w-9/12 ">
+                <h3 className=" text-white lg:p-24 p-9 lg:w-9/12 ">
                   My passion for serving the people as a politician has been
                   unwavering for the last 20 years. Throughout this time, I have
                   been dedicated to making sure that the voices of the people
                   are heard, and I feel grateful to have received recognition
                   for my work from various sources.
-                </p>
+                </h3>
                 <Image
                   width={350}
                   height={100}

@@ -50,9 +50,9 @@ export default function SimpleSlider() {
   return (
     <div className="bg-[#F2EBCD] carosel-body  ">
       <div className="container mx-auto p-5">
-        <p className=" text-3xl font-semibold p-3 bg-[#398AF5] w-44 text-center  text-white   ">
+        <h2 className=" text-3xl font-semibold p-3 bg-[#398AF5] w-44 text-center  text-white   ">
           1985-90
-        </p>
+        </h2>
         <div className="bg-white  rounded-3xl p-3 mt-5 ">
           <Slider {...settings}>
             <div className="w-full rounded-2xl h-80 ">

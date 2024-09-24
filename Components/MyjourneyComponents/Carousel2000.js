@@ -113,7 +113,7 @@ export default function SimpleSlider() {
           </Slider>
           <div className="lg:flex pb-5">
             <div className="lg:w-[80%]">
-              <p className="text-black text-xl merriweather-regular text-left p-5 mt-5">
+              <h3 className="text-black text-xl merriweather-regular text-left p-5 mt-5">
                 VD Satheeshan achieved a significant milestone in his political
                 career by being elected to the Kerala Legislative Assembly from
                 the Paravur seat. His leadership qualities were recognized, and
@@ -121,7 +121,7 @@ export default function SimpleSlider() {
                 During this tenure, he successfully completed a large-scale
                 drinking water project in his constituency, benefiting over 2.5
                 lakh people.
-              </p>
+              </h3>
               <div className="flex flex-row px-4 pb-5">
                 <div className="flex-col">
                   <a

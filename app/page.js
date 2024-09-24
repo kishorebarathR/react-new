@@ -1,15 +1,27 @@
+"use client"
 import React from "react"
 import HomeComponents from "../Components/HomeComponents"
-import Header from "../Components/SharedComponents/Header"
-import Footer from "../Components/SharedComponents/Footer"
-const page = () => {
+import Seo from "@/Components/SeoComponents/Seo"
+import { usePathname } from "next/navigation"
+const Page = () => {
+  const pathname = usePathname()
+  const title = "vdsnew"
+  const description =
+    "‘Dialogue with VDS’ is a series of weekly in-depth interviews with experts from various fields"
+  const path = `${pathname}`
+  const metaImage = ""
   return (
     <div>
-      {/* <Header /> */}
+      <Seo
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+
       <HomeComponents />
-      {/* <Footer /> */}
     </div>
   )
 }
 
-export default page
+export default Page

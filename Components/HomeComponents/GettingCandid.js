@@ -261,6 +261,7 @@ const VideoPlayer = () => {
         "In conversation with TM Thomas Isaac, Former Finance Minister, Kerala",
     },
   ]
+  
   const handleVideoClick = (video) => {
     // Update the URL with autoplay parameter
     const updatedVideo = {
@@ -273,13 +274,13 @@ const VideoPlayer = () => {
   return (
     <>
       <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10">
-        <p className="text-4xl text-[#035C96] text-center font-semibold pt-10 ">
+        <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10 ">
           Getting Candid
-        </p>
-        <p className="text-xl text-center font-semibold pt-4">
+        </h1>
+        <h3 className="text-xl text-center font-semibold pt-4">
           ‘Dialogue with VDS’ is a series of weekly in-depth interviews with
           experts from various fields
-        </p>
+        </h3>
 
         <div className="container mx-auto p-4 ">
           <div className="flex flex-col md:flex-row gap-4">

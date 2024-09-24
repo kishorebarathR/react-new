@@ -148,7 +148,7 @@ export default function SimpleSlider() {
             height={550}
             src="/home_images/vds_video_img_high.png"
             alt="Video thumbnail"
-             loading="lazy"
+            loading="lazy"
             className="w-full p-2 bg-[#033B5F]"
           />
           <button className="absolute inset-0 m-auto w-12 h-12 flex items-center justify-center"></button>
@@ -187,9 +187,9 @@ export default function SimpleSlider() {
                   className="w-full h-full"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-xs p-3">
+                  <h3 className="text-white text-xs p-3">
                     സംഘപരിവാർ ഫാസിസത്തിനെതിരെ നിരന്തരം ചോദ്യങ്ങൾ ഉയരും
-                  </p>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -206,9 +206,9 @@ export default function SimpleSlider() {
                   className="w-full h-full"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-xs p-3">
+                  <h2 className="text-white text-xs p-3">
                     ഇരിക്കുന്ന സ്ഥാനത്തോടെങ്കിലും മാന്യത കാണിക്കണം മുഖ്യമന്ത്രി
-                  </p>
+                  </h2>
                 </div>
               </div>
             </div>
