@@ -3,6 +3,7 @@ import React from "react"
 import Myjourney from "@/Components/MyjourneyComponents"
 import Seo from "@/Components/SeoComponents/Seo"
 import { usePathname } from "next/navigation"
+
 const Page = () => {
   const pathname = usePathname()
   const title = "My Journey-vdsnew"
