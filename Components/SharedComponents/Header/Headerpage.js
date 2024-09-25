@@ -5,8 +5,10 @@ import Image from "next/image"
 
 const Headerpage = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
+  const [activeLink, setActiveLink] = useState("")
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (link) => {
+    setActiveLink(link)
     setDrawerOpen(false)
   }
 
@@ -30,7 +32,7 @@ const Headerpage = () => {
                     alt="vds"
                   />
                   <div className="self-center ml-4">
-                    <h6 className="text-white text-4xl  font-semibold  mb-1 lg:text-center merriweather-regular">
+                    <h6 className="text-white text-4xl font-semibold mb-1 lg:text-center merriweather-regular">
                       V D Satheesan
                     </h6>
                     <p className="text-white text-[23px] merriweather-regular ms-2 font-semibold">
@@ -42,7 +44,7 @@ const Headerpage = () => {
             </div>
 
             <div className="flex lg:grid lg:grid-col lg:py-0 lg:grid-flow-row justify-center items-center lg:w-[50%] ">
-              <p className="text-white lg:m-5  merriweather-regular italic  text-[23px]">
+              <p className="text-white lg:m-5 merriweather-regular italic text-[23px]">
                 “People respect us not for our ability to make laws, but because
                 of our ability to undo the injustice done to our people.”
               </p>
@@ -59,7 +61,7 @@ const Headerpage = () => {
           aria-label="Toggle Menu"
         >
           <Image
-            className="h-auto w-full relative "
+            className="h-auto w-full relative"
             src="/home_images/menu.svg"
             alt="Menu"
             width={100}
@@ -70,14 +72,14 @@ const Headerpage = () => {
 
       <div
         id="drawer-right-example"
-        className={`bg-[#033B5F] fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform ${
+        className={`bg-[#033B5F] fixed top-0 right-0 z-40 h-screen  overflow-y-auto transition-transform ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         } w-80 dark:bg-gray-800`}
         tabIndex="-1"
       >
         <button
           type="button"
-          className="text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg p-2 absolute top-2 right-2 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white "
+          className="text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg p-2 absolute top-2 right-2 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
           onClick={handleCloseButtonClick}
         >
           <svg
@@ -96,60 +98,100 @@ const Headerpage = () => {
         </button>
 
         <div className="merriweather-regular text-xl">
-          <ul className="space-y-3 font-medium text-white">
-            <li onClick={handleLinkClick} className="border-b">
+          <ul className=" font-medium text-white">
+            <li
+              onClick={() => handleLinkClick("home")}
+              className={`border-b ${
+                activeLink === "home" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/" passHref>
-                <div className="flex items-center py-3 mt-10 rounded-lg cursor-pointer">
-                  <span className="ms-3">Home</span>
+                <div className="flex items-center py-5 px-4 mt-12 rounded-lg cursor-pointer">
+                  <span className="">Home</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className="border-b">
+            <li
+              onClick={() => handleLinkClick("my-journey")}
+              className={`border-b ${
+                activeLink === "my-journey" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/my-journey" passHref>
-                <div className="flex items-center py-3 rounded-lg cursor-pointer">
-                  <span className="ms-3">My Journey</span>
+                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                  <span className="">My Journey</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className="border-b">
+            <li
+              onClick={() => handleLinkClick("sincerely-me")}
+              className={`border-b ${
+                activeLink === "sincerely-me" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/sincerely-me" passHref>
-                <div className="flex items-center py-3 rounded-lg cursor-pointer">
-                  <span className="ms-3">Sincerely, Me</span>
+                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                  <span className="">Sincerely, Me</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className="border-b">
+            <li
+              onClick={() => handleLinkClick("my-constituency")}
+              className={`border-b ${
+                activeLink === "my-constituency" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/my-constituency" passHref>
-                <div className="flex items-center py-3 rounded-lg cursor-pointer">
-                  <span className="ms-3">My Constituency</span>
+                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                  <span className="">My Constituency</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className="border-b">
+            <li
+              onClick={() => handleLinkClick("in-my-book-shelf")}
+              className={`border-b ${
+                activeLink === "in-my-book-shelf" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/in-my-book-shelf" passHref>
-                <div className="flex items-center py-3 rounded-lg cursor-pointer">
-                  <span className="ms-3">In My Book Shelf</span>
+                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                  <span className="">In My Book Shelf</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className="border-b">
+            <li
+              onClick={() => handleLinkClick("press-releases")}
+              className={`border-b ${
+                activeLink === "press-releases" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/press-releases" passHref>
-                <div className="flex items-center py-3 rounded-lg cursor-pointer">
-                  <span className="ms-3">Press Releases</span>
+                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                  <span className="">Press Releases</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className="border-b">
+            <li
+              onClick={() => handleLinkClick("newsletters")}
+              className={`border-b ${
+                activeLink === "newsletters" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/newsletters" passHref>
-                <div className="flex items-center py-3 rounded-lg cursor-pointer">
-                  <span className="ms-3">Newsletters</span>
+                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                  <span className="">Newsletters</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className="">
+            <li
+              onClick={() => handleLinkClick("get-in-touch")}
+              className={`${
+                activeLink === "get-in-touch" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/get-in-touch" passHref>
-                <div className="flex items-center py-3 rounded-lg cursor-pointer">
-                  <span className="ms-3">Get in Touch</span>
+                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                  <span className="">Get in Touch</span>
                 </div>
               </Link>
             </li>
