@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const Headerpage = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const [activeLink, setActiveLink] = useState("")
+  const [activeLink, setActiveLink] = useState("home") // Default to "home"
 
   const handleLinkClick = (link) => {
     setActiveLink(link)
