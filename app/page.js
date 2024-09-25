@@ -7,7 +7,7 @@ const Page = () => {
   const pathname = usePathname()
   const title = "vdsnew"
   const description =
-    "‘Dialogue with VDS’ is a series of weekly in-depth interviews with experts from various fields"
+    "‘Dialogue with VDS’ is a series of weekly in-depth interviews with experts from various fields.In conversation with TM Thomas Isaac, Former Finance Minister, Kerala"
   const path = `${pathname}`
   const metaImage = ""
   return (

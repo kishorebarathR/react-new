@@ -99,56 +99,56 @@ const Headerpage = () => {
           <ul className="space-y-3 font-medium text-white">
             <li onClick={handleLinkClick} className="border-b">
               <Link href="/" passHref>
-                <div className="flex items-center py-5 mt-10 rounded-lg cursor-pointer">
+                <div className="flex items-center py-3 mt-10 rounded-lg cursor-pointer">
                   <span className="ms-3">Home</span>
                 </div>
               </Link>
             </li>
             <li onClick={handleLinkClick} className="border-b">
               <Link href="/my-journey" passHref>
-                <div className="flex items-center py-5 rounded-lg cursor-pointer">
+                <div className="flex items-center py-3 rounded-lg cursor-pointer">
                   <span className="ms-3">My Journey</span>
                 </div>
               </Link>
             </li>
             <li onClick={handleLinkClick} className="border-b">
               <Link href="/sincerely-me" passHref>
-                <div className="flex items-center py-5 rounded-lg cursor-pointer">
+                <div className="flex items-center py-3 rounded-lg cursor-pointer">
                   <span className="ms-3">Sincerely, Me</span>
                 </div>
               </Link>
             </li>
             <li onClick={handleLinkClick} className="border-b">
               <Link href="/my-constituency" passHref>
-                <div className="flex items-center py-5 rounded-lg cursor-pointer">
+                <div className="flex items-center py-3 rounded-lg cursor-pointer">
                   <span className="ms-3">My Constituency</span>
                 </div>
               </Link>
             </li>
             <li onClick={handleLinkClick} className="border-b">
               <Link href="/in-my-book-shelf" passHref>
-                <div className="flex items-center py-5 rounded-lg cursor-pointer">
+                <div className="flex items-center py-3 rounded-lg cursor-pointer">
                   <span className="ms-3">In My Book Shelf</span>
                 </div>
               </Link>
             </li>
             <li onClick={handleLinkClick} className="border-b">
               <Link href="/press-releases" passHref>
-                <div className="flex items-center py-5 rounded-lg cursor-pointer">
+                <div className="flex items-center py-3 rounded-lg cursor-pointer">
                   <span className="ms-3">Press Releases</span>
                 </div>
               </Link>
             </li>
             <li onClick={handleLinkClick} className="border-b">
               <Link href="/newsletters" passHref>
-                <div className="flex items-center py-5 rounded-lg cursor-pointer">
+                <div className="flex items-center py-3 rounded-lg cursor-pointer">
                   <span className="ms-3">Newsletters</span>
                 </div>
               </Link>
             </li>
             <li onClick={handleLinkClick} className="">
               <Link href="/get-in-touch" passHref>
-                <div className="flex items-center py-5 rounded-lg cursor-pointer">
+                <div className="flex items-center py-3 rounded-lg cursor-pointer">
                   <span className="ms-3">Get in Touch</span>
                 </div>
               </Link>
