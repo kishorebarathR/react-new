@@ -186,12 +186,12 @@ export default function SimpleSlider() {
                 <Image
                   width={500}
                   height={550}
-                  src="/sincere_images/what_drives_me_images/speech_img.png"
+                  src="/sincere_images/what_drives_me_images/speech-01.jpg"
                   alt="Slide 2"
-                  className="w-full "
+                  className="w-full  "
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-xl">Personal Freedom</p>
+                  <p className="text-white text-xl">Progressive Ideals</p>
                 </div>
               </div>
             </div>
