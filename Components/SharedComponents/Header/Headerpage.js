@@ -1,27 +1,27 @@
-"use client"
-import { useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation"; 
 
 const Headerpage = () => {
-  const [drawerOpen, setDrawerOpen] = useState(false)
-  const [activeLink, setActiveLink] = useState("home") // Default to "home"
+  const pathname = usePathname(); 
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const handleLinkClick = (link) => {
-    setActiveLink(link)
-    setDrawerOpen(false)
-  }
+  const handleLinkClick = () => {
+    setDrawerOpen(false);
+  };
 
   const handleCloseButtonClick = () => {
-    setDrawerOpen(false)
-  }
+    setDrawerOpen(false);
+  };
 
   return (
     <div>
       <nav className="bg-[#033B5F] drop-shadow-lg">
         <div className="max-w-screen-xl flex lg:flex-wrap items-center justify-between p-0">
           <div className="lg:flex justify-between">
-            <div className="">
+            <div>
               <Link href="/" passHref>
                 <div className="lg:flex items-center">
                   <Image
@@ -43,7 +43,7 @@ const Headerpage = () => {
               </Link>
             </div>
 
-            <div className="flex lg:grid lg:grid-col lg:py-0 lg:grid-flow-row justify-center items-center lg:w-[50%] ">
+            <div className="flex lg:grid lg:grid-col lg:py-0 lg:grid-flow-row justify-center items-center lg:w-[50%]">
               <p className="text-white lg:m-5 merriweather-regular italic text-[23px]">
                 “People respect us not for our ability to make laws, but because
                 of our ability to undo the injustice done to our people.”
@@ -69,10 +69,9 @@ const Headerpage = () => {
           />
         </button>
       </div>
-
       <div
         id="drawer-right-example"
-        className={`bg-[#033B5F] fixed top-0 right-0 z-40 h-screen  overflow-y-auto transition-transform ${
+        className={`bg-[#033B5F] fixed top-0 right-0 z-40 h-screen overflow-y-auto transition-transform ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         } w-80 dark:bg-gray-800`}
         tabIndex="-1"
@@ -98,100 +97,60 @@ const Headerpage = () => {
         </button>
 
         <div className="merriweather-regular text-xl">
-          <ul className=" font-medium text-white">
-            <li
-              onClick={() => handleLinkClick("home")}
-              className={`border-b ${
-                activeLink === "home" ? "bg-gray-500" : ""
-              }`}
-            >
+          <ul className="font-medium text-white">
+            <li onClick={handleLinkClick} className={`border-b ${pathname === "/" ? "bg-gray-500" : ""}`}>
               <Link href="/" passHref>
-                <div className="flex items-center py-5 px-4 mt-12 rounded-lg cursor-pointer">
-                  <span className="">Home</span>
+                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
+                  <span>Home</span>
                 </div>
               </Link>
             </li>
-            <li
-              onClick={() => handleLinkClick("my-journey")}
-              className={`border-b ${
-                activeLink === "my-journey" ? "bg-gray-500" : ""
-              }`}
-            >
+            <li onClick={handleLinkClick} className={`border-b ${pathname === "/my-journey" ? "bg-gray-500" : ""}`}>
               <Link href="/my-journey" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span className="">My Journey</span>
+                  <span>My Journey</span>
                 </div>
               </Link>
             </li>
-            <li
-              onClick={() => handleLinkClick("sincerely-me")}
-              className={`border-b ${
-                activeLink === "sincerely-me" ? "bg-gray-500" : ""
-              }`}
-            >
+            <li onClick={handleLinkClick} className={`border-b ${pathname === "/sincerely-me" ? "bg-gray-500" : ""}`}>
               <Link href="/sincerely-me" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span className="">Sincerely, Me</span>
+                  <span>Sincerely, Me</span>
                 </div>
               </Link>
             </li>
-            <li
-              onClick={() => handleLinkClick("my-constituency")}
-              className={`border-b ${
-                activeLink === "my-constituency" ? "bg-gray-500" : ""
-              }`}
-            >
+            <li onClick={handleLinkClick} className={`border-b ${pathname === "/my-constituency" ? "bg-gray-500" : ""}`}>
               <Link href="/my-constituency" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span className="">My Constituency</span>
+                  <span>My Constituency</span>
                 </div>
               </Link>
             </li>
-            <li
-              onClick={() => handleLinkClick("in-my-book-shelf")}
-              className={`border-b ${
-                activeLink === "in-my-book-shelf" ? "bg-gray-500" : ""
-              }`}
-            >
+            <li onClick={handleLinkClick} className={`border-b ${pathname === "/in-my-book-shelf" ? "bg-gray-500" : ""}`}>
               <Link href="/in-my-book-shelf" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span className="">In My Book Shelf</span>
+                  <span>In My Book Shelf</span>
                 </div>
               </Link>
             </li>
-            <li
-              onClick={() => handleLinkClick("press-releases")}
-              className={`border-b ${
-                activeLink === "press-releases" ? "bg-gray-500" : ""
-              }`}
-            >
+            <li onClick={handleLinkClick} className={`border-b ${pathname === "/press-releases" ? "bg-gray-500" : ""}`}>
               <Link href="/press-releases" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span className="">Press Releases</span>
+                  <span>Press Releases</span>
                 </div>
               </Link>
             </li>
-            <li
-              onClick={() => handleLinkClick("newsletters")}
-              className={`border-b ${
-                activeLink === "newsletters" ? "bg-gray-500" : ""
-              }`}
-            >
+            <li onClick={handleLinkClick} className={`border-b ${pathname === "/newsletters" ? "bg-gray-500" : ""}`}>
               <Link href="/newsletters" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span className="">Newsletters</span>
+                  <span>Newsletters</span>
                 </div>
               </Link>
             </li>
-            <li
-              onClick={() => handleLinkClick("get-in-touch")}
-              className={`${
-                activeLink === "get-in-touch" ? "bg-gray-500" : ""
-              }`}
-            >
+            <li onClick={handleLinkClick} className={`border-b ${pathname === "/get-in-touch" ? "bg-gray-500" : ""}`}>
               <Link href="/get-in-touch" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span className="">Get in Touch</span>
+                  <span>Get in Touch</span>
                 </div>
               </Link>
             </li>
@@ -205,7 +164,7 @@ const Headerpage = () => {
         ></div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Headerpage
+export default Headerpage;
