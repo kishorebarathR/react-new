@@ -182,7 +182,7 @@ const Headerpage = () => {
             </li>
             <li
               onClick={handleLinkClick}
-              className={`border-b ${
+              className={` ${
                 pathname === "/get-in-touch" ? "bg-gray-500" : ""
               }`}
             >
