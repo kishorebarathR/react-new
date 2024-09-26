@@ -219,7 +219,7 @@ const PublicEye = () => {
                 height={300}
                  loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hover:filter hover:brightness-50 duration-700 mb-3"
                 src="/home_images/public_eye_images/public_img_6.png"
                 alt="public_eye_images"
               />
@@ -235,7 +235,7 @@ const PublicEye = () => {
                 height={300}
                  loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-32"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 h-36 "
                 src="/home_images/public_eye_images/public_img_17.jpeg"
                 alt="public_eye_images"
               />
