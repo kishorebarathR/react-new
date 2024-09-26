@@ -1,20 +1,20 @@
-"use client";
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { usePathname } from "next/navigation"; 
+"use client"
+import { useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { usePathname } from "next/navigation"
 
 const Headerpage = () => {
-  const pathname = usePathname(); 
-  const [drawerOpen, setDrawerOpen] = useState(false);
+  const pathname = usePathname()
+  const [drawerOpen, setDrawerOpen] = useState(false)
 
   const handleLinkClick = () => {
-    setDrawerOpen(false);
-  };
+    setDrawerOpen(false)
+  }
 
   const handleCloseButtonClick = () => {
-    setDrawerOpen(false);
-  };
+    setDrawerOpen(false)
+  }
 
   return (
     <div>
@@ -78,11 +78,11 @@ const Headerpage = () => {
       >
         <button
           type="button"
-          className="text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg p-2 absolute top-2 right-2 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
+          className="text-red-600 bg-transparent hover:bg-gray-200 rounded-lg  p-2 absolute top-2 right-2 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
           onClick={handleCloseButtonClick}
         >
           <svg
-            className="w-5 h-5"
+            className="w-5 h-5 "
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -96,58 +96,96 @@ const Headerpage = () => {
           <span className="sr-only">Close menu</span>
         </button>
 
-        <div className="merriweather-regular text-xl">
-          <ul className="font-medium text-white">
-            <li onClick={handleLinkClick} className={`border-b ${pathname === "/" ? "bg-gray-500" : ""}`}>
+        <div className="merriweather-regular text-xl ">
+          <ul className="font-medium text-white ">
+            <li
+              onClick={handleLinkClick}
+              className={`border-b ${pathname === "/" ? "bg-gray-500" : ""}`}
+            >
               <Link href="/" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
                   <span>Home</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className={`border-b ${pathname === "/my-journey" ? "bg-gray-500" : ""}`}>
+            <li
+              onClick={handleLinkClick}
+              className={`border-b ${
+                pathname === "/my-journey" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/my-journey" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
                   <span>My Journey</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className={`border-b ${pathname === "/sincerely-me" ? "bg-gray-500" : ""}`}>
+            <li
+              onClick={handleLinkClick}
+              className={`border-b ${
+                pathname === "/sincerely-me" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/sincerely-me" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
                   <span>Sincerely, Me</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className={`border-b ${pathname === "/my-constituency" ? "bg-gray-500" : ""}`}>
+            <li
+              onClick={handleLinkClick}
+              className={`border-b ${
+                pathname === "/my-constituency" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/my-constituency" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
                   <span>My Constituency</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className={`border-b ${pathname === "/in-my-book-shelf" ? "bg-gray-500" : ""}`}>
+            <li
+              onClick={handleLinkClick}
+              className={`border-b ${
+                pathname === "/in-my-book-shelf" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/in-my-book-shelf" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
                   <span>In My Book Shelf</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className={`border-b ${pathname === "/press-releases" ? "bg-gray-500" : ""}`}>
+            <li
+              onClick={handleLinkClick}
+              className={`border-b ${
+                pathname === "/press-releases" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/press-releases" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
                   <span>Press Releases</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className={`border-b ${pathname === "/newsletters" ? "bg-gray-500" : ""}`}>
+            <li
+              onClick={handleLinkClick}
+              className={`border-b ${
+                pathname === "/newsletters" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/newsletters" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
                   <span>Newsletters</span>
                 </div>
               </Link>
             </li>
-            <li onClick={handleLinkClick} className={`border-b ${pathname === "/get-in-touch" ? "bg-gray-500" : ""}`}>
+            <li
+              onClick={handleLinkClick}
+              className={`border-b ${
+                pathname === "/get-in-touch" ? "bg-gray-500" : ""
+              }`}
+            >
               <Link href="/get-in-touch" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
                   <span>Get in Touch</span>
@@ -164,7 +202,7 @@ const Headerpage = () => {
         ></div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Headerpage;
+export default Headerpage
