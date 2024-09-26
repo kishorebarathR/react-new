@@ -255,11 +255,12 @@ export default function SimpleSlider() {
               <div
                 className="relative group cursor-pointer"
                 onClick={() =>
-                  openPopup("https://www.youtube.com/embed/ULmwv-_Ly8I")
+                  openPopup("https://www.youtube.com/embed/ULmwv-_Ly2M")
                 }
               >
+             
                 <LazyIframe
-                  src="https://www.youtube.com/embed/ULmwv-_Ly8I"
+                  src=" https://www.youtube.com/embed/ULmwv-_Ly2M"
                   title="Most Open Debate: ആസ്വാദ്യസംസ്‌കാരവുമായി ഏകോപനം"
                   className="w-full h-full"
                 />
@@ -274,11 +275,11 @@ export default function SimpleSlider() {
               <div
                 className="relative group cursor-pointer"
                 onClick={() =>
-                  openPopup("https://www.youtube.com/embed/WiKBR5jOe04")
+                  openPopup("https://www.youtube.com/embed/luIuD3xbtSQ")
                 }
               >
                 <LazyIframe
-                  src="https://www.youtube.com/embed/WiKBR5jOe04"
+                  src="https://www.youtube.com/embed/luIuD3xbtSQ"
                   title="Kuttanadu Vision: യോഗസ്ഥിതി"
                   className="w-full h-full"
                 />
