@@ -9,9 +9,9 @@ const InMyBookShelfBanner = () => {
           src="https://www.youtube.com/embed/Gi0JwySUjGY"
           title="എന്റെ വായന എന്റെ ജീവിതം | H &amp; C Readers Forum"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          allowfullscreen 
         ></iframe>
       </div> 
         </>

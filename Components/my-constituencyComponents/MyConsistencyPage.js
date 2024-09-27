@@ -5,11 +5,11 @@ const MyConsistencyPage = () => {
   return (
     <div>
       <div className="  bg-[url('/home_images/about_satheesan_background.png')] mx-auto  w-full h-full">
-        <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
-          In the Public Eye
+        <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10 merriweather-regular">
+        My Constituency
         </h1>
 
-        <div className="flex flex-col md:flex-row lg:px-10 pt-10 pb-10 merriweather-regular">
+        <div className="flex flex-col md:flex-row lg:px-10 pt-8 pb-10 merriweather-regular">
           <div className="lg:w-[68%] h-full p-4">
             <h2 className="text-xl">
               North Paravur is an area with a rich and vibrant history. Paravur

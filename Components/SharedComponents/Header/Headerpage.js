@@ -188,7 +188,7 @@ const Headerpage = () => {
             >
               <Link href="/get-in-touch" passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>Get in Touch</span>
+                  <span>Get in Touch </span>
                 </div>
               </Link>
             </li>

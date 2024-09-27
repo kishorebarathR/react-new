@@ -261,7 +261,7 @@ const VideoPlayer = () => {
         "In conversation with TM Thomas Isaac, Former Finance Minister, Kerala",
     },
   ]
-  
+
   const handleVideoClick = (video) => {
     // Update the URL with autoplay parameter
     const updatedVideo = {
@@ -273,11 +273,11 @@ const VideoPlayer = () => {
 
   return (
     <>
-      <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10">
+      <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-regular">
         <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10 ">
           Getting Candid
         </h1>
-        <h3 className="text-xl text-center font-semibold pt-4">
+        <h3 className="text-2xl font-semibold text-center pt-4">
           ‘Dialogue with VDS’ is a series of weekly in-depth interviews with
           experts from various fields
         </h3>
@@ -286,7 +286,7 @@ const VideoPlayer = () => {
           <div className="flex flex-col md:flex-row gap-4">
             {/* Main video player */}
             <div className="w-full lg:w-2/3 mt-7 ">
-              <div className="aspect-w-16  aspect-h-9 hidden sm:block  ">
+              <div className="aspect-w-16  aspect-h-9 hidden sm:block">
                 <iframe
                   width="900"
                   height="500"
@@ -323,7 +323,7 @@ const VideoPlayer = () => {
               </div>
               <div className="mt-4">
                 <p className="text-2xl font-semibold">{currentVideo.title}</p>
-                <p className="text-lg mt-2">{currentVideo.description}</p>
+                <p className="text-xl mt-2">{currentVideo.description}</p>
               </div>
               <div className="mt-5">
                 <a

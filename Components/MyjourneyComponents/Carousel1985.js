@@ -48,7 +48,7 @@ export default function SimpleSlider() {
   }
 
   return (
-    <div className="bg-[#F2EBCD] carosel-body  ">
+    <div className="bg-[#F2EBCD] carosel-body merriweather-regular">
       <div className="container mx-auto p-5">
         <h2 className=" text-3xl font-semibold p-3 bg-[#398AF5] w-44 text-center  text-white   ">
           1985-90

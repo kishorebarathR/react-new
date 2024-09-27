@@ -80,7 +80,7 @@ const GetInTouchPage = () => {
                   />
                 </div>
               </div>
-              <div className="mb-5 py-3">
+              <div className="mb-5 py-3" >
                 <input
                   type="text"
                   id="name"

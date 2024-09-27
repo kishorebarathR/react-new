@@ -6,7 +6,7 @@ import config from "@/config"
 function NextSeo({ title, description, path, metaImage }) {
   return (
     <head>
-      <meta charSet="utf-8" />
+      <meta charSet="utf-8"/>
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

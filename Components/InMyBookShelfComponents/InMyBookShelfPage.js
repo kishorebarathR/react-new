@@ -12,7 +12,7 @@ const InMyBookShelfPage = () => {
   return (
     <>
       <div>
-        <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
+        <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10 merriweather-regular">
           In My Book Shelf
         </h1>
         <div className="container mx-auto lg:px-5">
@@ -47,7 +47,7 @@ const InMyBookShelfPage = () => {
         </div>
       </div>
       <div>
-        <h3 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
+        <h3 className="text-4xl text-[#035C96] text-center font-semibold pt-10 merriweather-regular">
           My Book Recommendations
         </h3>
       </div>

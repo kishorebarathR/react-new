@@ -19,8 +19,8 @@ const Footerpage = () => {
       >
         {/* Related Websites Section */}
         <div className="text-white merriweather-regular">
-          <h3 className="text-3xl font-bold p-5">Related Websites</h3>
-          <div className="text-xl">
+          <h3 className="text-4xl font-semibold p-5">Related Websites</h3>
+          <div className="text-2xl">
             <Link href="https://www.inc.in/">
               <p className="p-5">Indian National Congress</p>
             </Link>
@@ -38,9 +38,9 @@ const Footerpage = () => {
 
         {/* Be My Friend Form Section */}
         <div>
-          <form className="p-8 bg-[#072D46] w-full merriweather-regular">
+          <form className="px-7 bg-[#072D46] w-full merriweather-regular">
             <div className="mb-5">
-              <h3 className="text-center text-3xl font-medium p-5 text-white">
+              <h3 className="text-center text-4xl  p-5 text-white merriweather-regular font-semibold ">
                 Be My Friend
               </h3>
               <div className="flex mb-5 justify-center">

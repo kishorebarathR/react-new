@@ -56,7 +56,7 @@ export default function SimpleSlider() {
     autoplaySpeed: 3000,
     // nextArrow: <NextArrow />,
     // prevArrow: <PrevArrow />,
-    
+
     responsive: [
       {
         breakpoint: 1024,
@@ -77,7 +77,7 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <div className="text-2xl font-semibold text-center lg:p-10 p-2 pt-10">
+      <div className="text-2xl font-semibold text-center lg:p-10 p-2 pt-10 merriweather-regular">
         {/* <p className="text-2xl">
           Stay updated with the latest announcements and updates on my efforts
           to create positive change in the country.
@@ -85,11 +85,11 @@ export default function SimpleSlider() {
       </div>
       <div className="lg:flex container mx-auto ">
         <div className="lg:w-[15%] lg:my-10 bg-[#233876] flex items-center justify-center px-2">
-          <p className="text-white text-2xl font-semibold p-4 text-center ">
+          <p className="text-white text-3xl font-semibold p-4 text-center merriweather-regular ">
             What Drives Me
           </p>
         </div>
-        <div className="lg:w-[82%] ">
+        <div className="lg:w-[82%] merriweather-regular">
           <Slider {...settings} className="mx-auto container flex-1 px-2 ">
             <div className="p-2">
               <div className="relative group">

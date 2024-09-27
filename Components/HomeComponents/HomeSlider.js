@@ -133,14 +133,14 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <div className="lg:flex container mx-auto pb-8 mt-5">
+      <div className="lg:flex container mx-auto pb-8 mt-5 merriweather-regular">
         <div className="lg:w-[15%] h-72 bg-[#233876] flex items-center justify-center px-2">
-          <p className="text-white text-2xl font-semibold p-4 text-center">
+          <p className="text-white text-3xl font-bold p-4 text-center merriweather-regular">
             Catch Up with Me
           </p>
         </div>
         <div className="relative lg:w-[23%] px-5">
-          <p className="text-center font-semibold p-2 bg-[#7C1910] text-white">
+          <p className="text-center font-semibold p-2 bg-[#7C1910] text-white merriweather-regular">
             Highlights of the Week
           </p>
           <Image
@@ -258,7 +258,6 @@ export default function SimpleSlider() {
                   openPopup("https://www.youtube.com/embed/ULmwv-_Ly2M")
                 }
               >
-             
                 <LazyIframe
                   src=" https://www.youtube.com/embed/ULmwv-_Ly2M"
                   title="Most Open Debate: ആസ്വാദ്യസംസ്‌കാരവുമായി ഏകോപനം"

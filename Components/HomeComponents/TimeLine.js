@@ -21,7 +21,7 @@ const Timeline = () => {
   const [hoveredYear, setHoveredYear] = useState(null)
 
   return (
-    <div className="w-full bg-[#035C96] p-3 hidden md:block">
+    <div className="w-full bg-[#035C96] p-3 hidden md:block merriweather-bold">
       <div className="relative flex justify-between items-center">
         {years.map((year, index) => (
           <div

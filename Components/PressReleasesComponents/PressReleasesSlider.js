@@ -74,13 +74,13 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <div className="text-2xl font-semibold text-center lg:p-10 p-2 pt-10">
-        <h2 className="text-2xl">
+      <div className="text-2xl font-semibold text-left lg:p-10 p-2 pt-10 container mx-auto ">
+        <h2 className="text-3xl merriweather-regular ">
           Stay updated with the latest announcements and updates on my efforts
           to create positive change in the country.
         </h2>
       </div>
-      <Slider {...settings} className="mx-auto container lg:mb-10">
+      <Slider {...settings} className="mx-auto container lg:mb-10 merriweather-regular">
         <div className="lg:p-4 p-10">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>17/04/2023</h5>
