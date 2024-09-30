@@ -1,36 +1,37 @@
 "use client"
-import React, { useState } from "react"
+import React, { useState, lazy, Suspense } from "react"
 import Image from "next/image"
-import HomeSlider from "@/Components/HomeComponents/HomeSlider"
+const HomeSlider = lazy(() => import('@/Components/HomeComponents/HomeSlider'));
 import TimeLine from "./TimeLine"
+
 const Homepage = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false)
 
   const handleImageClick = () => {
     setIsVideoVisible(true)
   }
+
   return (
     <div>
       {!isVideoVisible ? (
         <div className="relative h-[100vh] w-full">
-             <Image
+          <Image
             src="/home_images/home_banner.png"
             alt="Banner"
-             loading="lazy"
+            loading="lazy"
             className="w-full h-[100vh] cursor-pointer bg-no-repeat object-cover"
             width={1000}
             height={1000}
             onClick={handleImageClick}
           />
           <div className="absolute inset-0 flex items-center justify-center h-full w-full">
-           <Image
+            <Image
               src="/play-button1.svg"
               alt="Play Button"
-               loading="lazy"
+              loading="lazy"
               className="w-24 h-24 cursor-pointer rounded-full"
               width={1000}
               height={1000}
-            
               onClick={handleImageClick}
             />
           </div>
@@ -48,22 +49,26 @@ const Homepage = () => {
           className="h-[100vh]"
         ></iframe>
       )}
-      {/* </div> */}
-      <TimeLine/>
-      <div className="  bg-[url('/home_images/about_satheesan_background.png')] mx-auto  w-full h-full">
+      
+      {/* Use Suspense to handle loading of HomeSlider */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <TimeLine />
+      </Suspense>
+      
+      <div className="bg-[url('/home_images/about_satheesan_background.png')] mx-auto w-full h-full">
         <div className="grid lg:grid-cols-2 grid-flow-row gap-4 p-5 lg:mx-5">
-          <div className="flex justify-center mt-10 ">
+          <div className="flex justify-center mt-10">
             <Image
               width={400}
               height={350}
               src="/home_images/vds_video_img.png"
-              className="h-full  w-[89vh]"
+              className="h-full w-[89vh]"
               alt="Description"
-               loading="lazy"
+              loading="lazy"
             />
           </div>
 
-          <div className=" mt-10 border-2  border-[#033B5F]  text-center flex justify-center items-center lg:me-10 ">
+          <div className="mt-10 border-2 border-[#033B5F] text-center flex justify-center items-center lg:me-10">
             <div>
               <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
                 Hello, I am
@@ -71,15 +76,17 @@ const Homepage = () => {
               <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
                 VD Satheesan…
               </h6>
-              <button className="border lg:border-4 border-sky-800 p-2 items-center justify-center bg-white rounded-sm text-[#035C96] text-xl  mt-5 w-40 mb-5 merriweather-regular">
+              <button className="border lg:border-4 border-sky-800 p-2 items-center justify-center bg-white rounded-sm text-[#035C96] text-xl mt-5 w-40 mb-5 merriweather-regular">
                 Know Me
               </button>
             </div>
           </div>
         </div>
 
-        <div className=" p-4 lg:mx-8">
-          <HomeSlider />
+        <div className="p-4 lg:mx-8">
+          <Suspense fallback={<div>Loading Slider...</div>}>
+            <HomeSlider />
+          </Suspense>
         </div>
       </div>
     </div>

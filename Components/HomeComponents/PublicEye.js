@@ -12,7 +12,10 @@ const PublicEye = () => {
   return (
     <div>
       <div className="merriweather-regular">
-        <div className="bg-[url('/home_images/about_satheesan_background.png')] ">
+        <div
+          className="bg-[url('/home_images/about_satheesan_background.png')]  "
+          loading="lazy"
+        >
           <p className="text-4xl text-[#035C96] text-center font-semibold ">
             In the Public Eye
           </p>
