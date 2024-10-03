@@ -12,12 +12,12 @@ const Homepage = () => {
   return (
     <div>
       {!isVideoVisible ? (
-        <div className="relative h-[100vh] w-full">
+        <div className="relative lg:h-lvh h-[60vh] w-full">
           <Image
             src="/home_images/home_banner.png"
             alt="Banner"
             loading="lazy"
-            className="w-full h-[100vh] cursor-pointer bg-no-repeat object-cover"
+            className="w-full lg:h-lvh h-[60vh] cursor-pointer bg-no-repeat object-cover"
             width={1000}
             height={1000}
             onClick={handleImageClick}
@@ -44,7 +44,7 @@ const Homepage = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
-          className="h-[100vh]"
+          className="lg:h-lvh h-[60vh]"
         ></iframe>
       )}
       {/* </div> */}

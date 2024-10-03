@@ -19,7 +19,7 @@ const Headerpage = () => {
   return (
     <div>
       <nav className="bg-[#033B5F] drop-shadow-lg">
-        <div className="max-w-screen-xl flex lg:flex-wrap items-center justify-between p-0">
+        <div className="lg:max-w-screen-xl flex lg:flex-wrap items-center justify-between p-0">
           <div className="lg:flex justify-between">
             <div>
               <Link href="/" passHref>
@@ -44,7 +44,7 @@ const Headerpage = () => {
             </div>
 
             <div className="flex lg:grid lg:grid-col lg:py-0 lg:grid-flow-row justify-center items-center lg:w-[50%]">
-              <p className="text-white lg:m-5 merriweather-regular italic text-[23px]">
+              <p className="text-white m-5 merriweather-regular italic text-[23px]">
                 “People respect us not for our ability to make laws, but because
                 of our ability to undo the injustice done to our people.”
               </p>
