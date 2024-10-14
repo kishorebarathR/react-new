@@ -1,18 +1,21 @@
 "use client"
 import React, { useEffect } from "react"
 import Image from "next/image"
-// import AOS from "aos"
-// import "aos/dist/aos.css"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const PublicEye = () => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1000 })
-  // }, [])
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+  }, [])
 
   return (
     <div>
       <div className="merriweather-regular">
-        <div className="bg-[url('/home_images/about_satheesan_background.png')]  "loading='la'>
+        <div
+          className="bg-[url('/home_images/about_satheesan_background.png')]  "
+          loading="la"
+        >
           <p className="text-4xl text-[#035C96] text-center font-semibold ">
             In the Public Eye
           </p>
@@ -90,7 +93,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_12.jpeg"
                 alt="public_eye_images"
               />
@@ -99,7 +102,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_13.jpeg"
                 alt="public_eye_images"
               />
@@ -108,7 +111,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-44"
+                className=" hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44"
                 src="/home_images/public_eye_images/VDS-Public-Walk-in-Kerala.jpeg"
                 alt="public_eye_images"
               />
@@ -120,7 +123,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 w-full"
+                className=" hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 w-full"
                 src="/home_images/public_eye_images/public_img_3.png"
                 alt="public_eye_images"
               />
@@ -129,7 +132,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_9.png"
                 alt="public_eye_images"
               />
@@ -138,7 +141,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_14.jpeg"
                 alt="public_eye_images"
               />
@@ -147,7 +150,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-36"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-36"
                 src="/home_images/public_eye_images/VDS-Strike.jpeg"
                 alt="public_eye_images"
               />
@@ -159,7 +162,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 w-full"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 w-full"
                 src="/home_images/public_eye_images/public_img_4.png"
                 alt="public_eye_images"
               />
@@ -180,7 +183,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_5.png"
                 alt="public_eye_images"
               />
@@ -189,7 +192,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 w-full"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 w-full"
                 src="/home_images/public_eye_images/public_img_10.png"
                 alt="public_eye_images"
               />
@@ -198,7 +201,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_16.jpeg"
                 alt="public_eye_images"
               />
@@ -207,7 +210,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-44"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44"
                 src="/home_images/public_eye_images/VDS-Speech.jpeg"
                 alt="public_eye_images"
               />
@@ -219,7 +222,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-3"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-3"
                 src="/home_images/public_eye_images/public_img_6.png"
                 alt="public_eye_images"
               />
@@ -228,14 +231,14 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 w-52 h-32"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 w-52 h-32"
               ></div>
               <Image
                 width={500}
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-36 "
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-36 "
                 src="/home_images/public_eye_images/public_img_17.jpeg"
                 alt="public_eye_images"
               />
@@ -244,7 +247,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/Vds-Satheesan-Metting-Speech.jpeg"
                 alt="public_eye_images"
               />
