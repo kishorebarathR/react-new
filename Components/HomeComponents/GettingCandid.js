@@ -263,7 +263,6 @@ const VideoPlayer = () => {
   ]
 
   const handleVideoClick = (video) => {
-    // Update the URL with autoplay parameter
     const updatedVideo = {
       ...video,
       url: `${video.url}?autoplay=1`,
