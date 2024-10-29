@@ -2,16 +2,25 @@
 import React, { useState, useRef } from "react"
 
 const VideoPlayer = () => {
-  const iframeRef = useRef(null);
+  const iframeRef = useRef(null)
   const [currentVideo, setCurrentVideo] = useState({
-    url: "https://www.youtube.com/embed/UCpYogDflbQ",
-    title: "Episode 35:",
-    description: "Dr.K.G.Thara, Disaster Management expert & academic talks with V.D.Satheesan",
-  });
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentVideoId, setCurrentVideoId] = useState("UCpYogDflbQ");
+    url: "https://www.youtube.com/embed/1cmf-VHJys0",
+    title: "Episode 36:",
+    description:
+      "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
+  })
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [currentVideoId, setCurrentVideoId] = useState("UCpYogDflbQ")
 
   const videos = [
+    {
+      url: "https://www.youtube.com/embed/1cmf-VHJys0",
+      title: "Episode 36:",
+      title2:
+        "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
+      description:
+        "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
+    },
     {
       url: "https://www.youtube.com/embed/UCpYogDflbQ",
       title: "Episode 35:",
@@ -260,27 +269,33 @@ const VideoPlayer = () => {
       description:
         "In conversation with TM Thomas Isaac, Former Finance Minister, Kerala",
     },
-  ];
+  ]
 
   const selectVideo = (video) => {
-    const videoId = video.url.split("/")[4];
+    const videoId = video.url.split("/")[4]
 
     if (videoId === currentVideoId) {
       // Toggle play/pause
       if (isPlaying) {
-        iframeRef.current.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
-        setIsPlaying(false);
+        iframeRef.current.contentWindow.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          "*"
+        )
+        setIsPlaying(false)
       } else {
-        iframeRef.current.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', "*");
-        setIsPlaying(true);
+        iframeRef.current.contentWindow.postMessage(
+          '{"event":"command","func":"playVideo","args":""}',
+          "*"
+        )
+        setIsPlaying(true)
       }
     } else {
       // Switch to a new video
-      setCurrentVideo(video);
-      setCurrentVideoId(videoId);
-      setIsPlaying(true);
+      setCurrentVideo(video)
+      setCurrentVideoId(videoId)
+      setIsPlaying(true)
     }
-  };
+  }
 
   return (
     <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-regular">
@@ -288,7 +303,8 @@ const VideoPlayer = () => {
         Getting Candid
       </h1>
       <h3 className="text-2xl font-semibold text-center pt-4">
-        ‘Dialogue with VDS’ is a series of weekly in-depth interviews with experts from various fields
+        ‘Dialogue with VDS’ is a series of weekly in-depth interviews with
+        experts from various fields
       </h3>
 
       <div className="container mx-auto p-4">
@@ -300,7 +316,9 @@ const VideoPlayer = () => {
                 ref={iframeRef}
                 width="900"
                 height="500"
-                src={`${currentVideo.url}?enablejsapi=1&autoplay=${isPlaying ? 1 : 0}`}
+                src={`${currentVideo.url}?enablejsapi=1&autoplay=${
+                  isPlaying ? 1 : 0
+                }`}
                 title="Main Video Player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -309,16 +327,16 @@ const VideoPlayer = () => {
             </div>
 
             <div className="aspect-w-16  aspect-h-9 lg:hidden  ">
-                <iframe
-                  width="360"
-                  height="230"
-                  src={currentVideo.url}
-                  title="Main Video Player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <iframe
+                width="360"
+                height="230"
+                src={currentVideo.url}
+                title="Main Video Player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
 
             <div className="mt-4">
               <p className="text-2xl font-semibold">{currentVideo.title}</p>
@@ -346,11 +364,17 @@ const VideoPlayer = () => {
                 {videos.map((video, index) => (
                   <div
                     key={index}
-                    className={`cursor-pointer ${currentVideoId === video.url.split("/")[4] ? "bg-gray-700" : ""}`}
+                    className={`cursor-pointer ${
+                      currentVideoId === video.url.split("/")[4]
+                        ? "bg-gray-700"
+                        : ""
+                    }`}
                     onClick={() => selectVideo(video)}
                   >
                     <img
-                      src={`https://img.youtube.com/vi/${video.url.split("/")[4]}/0.jpg`}
+                      src={`https://img.youtube.com/vi/${
+                        video.url.split("/")[4]
+                      }/0.jpg`}
                       alt={`Thumbnail for ${video.title}`}
                       className="w-full h-40 object-cover rounded-lg hover:opacity-80 transition"
                     />
@@ -362,7 +386,17 @@ const VideoPlayer = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default VideoPlayer;
+export default VideoPlayer
+;<iframe
+  width="996"
+  height="560"
+  src=""
+  title="Episode 36: Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
