@@ -134,7 +134,7 @@ export default function SimpleSlider() {
   return (
     <>
       <div className="lg:flex container mx-auto pb-8 mt-5 merriweather-regular">
-        <div className="lg:w-[15%] h-72 bg-[#233876] flex items-center justify-center px-2">
+        <div className="lg:w-[15%] lg:h-72 bg-[#233876] flex items-center justify-center px-2">
           <p className="text-white text-3xl font-bold p-4 text-center merriweather-regular">
             Catch Up with Me
           </p>

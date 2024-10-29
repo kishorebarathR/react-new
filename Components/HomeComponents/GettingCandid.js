@@ -16,8 +16,7 @@ const VideoPlayer = () => {
     {
       url: "https://www.youtube.com/embed/1cmf-VHJys0",
       title: "Episode 36:",
-      title2:
-        "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
+      title2: "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
       description:
         "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
     },
@@ -275,7 +274,6 @@ const VideoPlayer = () => {
     const videoId = video.url.split("/")[4]
 
     if (videoId === currentVideoId) {
-      // Toggle play/pause
       if (isPlaying) {
         iframeRef.current.contentWindow.postMessage(
           '{"event":"command","func":"pauseVideo","args":""}',
@@ -290,7 +288,6 @@ const VideoPlayer = () => {
         setIsPlaying(true)
       }
     } else {
-      // Switch to a new video
       setCurrentVideo(video)
       setCurrentVideoId(videoId)
       setIsPlaying(true)
@@ -299,16 +296,16 @@ const VideoPlayer = () => {
 
   return (
     <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-regular">
-      <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
+      <h1 className="text-3xl md:text-4xl text-[#035C96] text-center font-semibold pt-10">
         Getting Candid
       </h1>
-      <h3 className="text-2xl font-semibold text-center pt-4">
+      <h3 className="text-2xl lg:font-semibold text-center pt-4 px-4">
         ‘Dialogue with VDS’ is a series of weekly in-depth interviews with
         experts from various fields
       </h3>
 
       <div className="container mx-auto p-4">
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           {/* Main video player */}
           <div className="w-full lg:w-2/3 mt-7">
             <div className="aspect-w-16 aspect-h-9 hidden sm:block">
@@ -326,11 +323,13 @@ const VideoPlayer = () => {
               ></iframe>
             </div>
 
-            <div className="aspect-w-16  aspect-h-9 lg:hidden  ">
+            <div className="aspect-w-16 aspect-h-9 sm:hidden">
               <iframe
                 width="360"
                 height="230"
-                src={currentVideo.url}
+                src={`${currentVideo.url}?enablejsapi=1&autoplay=${
+                  isPlaying ? 1 : 0
+                }`}
                 title="Main Video Player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -339,8 +338,12 @@ const VideoPlayer = () => {
             </div>
 
             <div className="mt-4">
-              <p className="text-2xl font-semibold">{currentVideo.title}</p>
-              <p className="text-xl mt-2">{currentVideo.description}</p>
+              <p className="text-xl md:text-2xl font-semibold">
+                {currentVideo.title}
+              </p>
+              <p className="text-md md:text-xl mt-2">
+                {currentVideo.description}
+              </p>
             </div>
             <div className="mt-5">
               <a
@@ -356,8 +359,8 @@ const VideoPlayer = () => {
 
           {/* Playlist */}
           <div className="w-full lg:w-1/3">
-            <div className="flex flex-col h-[85vh] p-3 mt-7 overflow-y-auto  sm:overflow-y-auto  bg-[#880505] rounded-lg">
-              <h2 className="text-xl bg-[#880505] rounded-lg text-white text-center">
+            <div className="flex flex-col h-[50vh] md:h-[85vh] p-3 mt-7 overflow-y-auto bg-[#880505] rounded-lg">
+              <h2 className="text-lg md:text-xl bg-[#880505] rounded-lg text-white text-center">
                 Playlist
               </h2>
               <div className="flex flex-col gap-2 mt-3">
@@ -376,7 +379,7 @@ const VideoPlayer = () => {
                         video.url.split("/")[4]
                       }/0.jpg`}
                       alt={`Thumbnail for ${video.title}`}
-                      className="w-full h-40 object-cover rounded-lg hover:opacity-80 transition"
+                      className="w-full h-32 md:h-40 object-cover rounded-lg hover:opacity-80 transition"
                     />
                   </div>
                 ))}
@@ -390,13 +393,3 @@ const VideoPlayer = () => {
 }
 
 export default VideoPlayer
-;<iframe
-  width="996"
-  height="560"
-  src=""
-  title="Episode 36: Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
-></iframe>

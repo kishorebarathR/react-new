@@ -84,7 +84,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
                 src="/home_images/public_eye_images/public_img_8.png"
                 alt="public_eye_images"
               />
