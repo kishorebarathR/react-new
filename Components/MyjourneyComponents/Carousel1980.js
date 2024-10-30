@@ -61,6 +61,7 @@ export default function SimpleSlider() {
                 height={550}
                 src="/my-journey/carousel-img-2.png"
                 alt="Video thumbnail"
+                loading="lazy"
                 className="w-full h-full rounded-3xl img-s"
               />
             </div>
@@ -70,6 +71,7 @@ export default function SimpleSlider() {
                 height={550}
                 src="/my-journey/carousel-img-3.png"
                 alt="Video thumbnail"
+                loading="lazy"
                 className="w-full h-full rounded-3xl img-s"
               />
             </div>
@@ -79,6 +81,7 @@ export default function SimpleSlider() {
                 height={550}
                 src="/my-journey/carousel-img-1.png"
                 alt="Video thumbnail"
+                loading="lazy"
                 className="w-full h-full rounded-3xl img-s"
               />
             </div>
@@ -88,6 +91,7 @@ export default function SimpleSlider() {
                 height={550}
                 src="/my-journey/carousel-img-2.png"
                 alt="Video thumbnail"
+                loading="lazy"
                 className="w-full h-full rounded-3xl img-s"
               />
             </div>
@@ -97,6 +101,7 @@ export default function SimpleSlider() {
                 height={550}
                 src="/my-journey/carousel-img-3.png"
                 alt="Video thumbnail"
+                loading="lazy"
                 className="w-full h-full rounded-3xl img-s"
               />
             </div>
@@ -106,6 +111,7 @@ export default function SimpleSlider() {
                 height={550}
                 src="/my-journey/carousel-img-1.png"
                 alt="Video thumbnail"
+                loading="lazy"
                 className="w-full h-full rounded-3xl img-s"
               />
             </div>

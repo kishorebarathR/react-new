@@ -29,6 +29,8 @@ const Journey = () => {
                 className="p-3"
                 src="/sincere_images/quote_down.svg"
                 alt="sincere_images"
+                loading="lazy"
+                
               />
             </div>
             <div className="justify-center flex">
@@ -38,6 +40,7 @@ const Journey = () => {
                 width={100}
                 height={50}
                 alt="sincere_images"
+                loading="lazy"
               />
             </div>
             <Image
@@ -46,6 +49,7 @@ const Journey = () => {
               className="mt-4 mb-4"
               src="/sincere_images/quote_up.svg"
               alt="sincere_images"
+              loading="lazy"
             />
           </div>
 
@@ -63,6 +67,7 @@ const Journey = () => {
                 className="p-3"
                 src="/sincere_images/quote_down.svg"
                 alt="sincere_images"
+                loading="lazy"
               />
             </div>
             <div className="justify-center flex">
@@ -72,6 +77,7 @@ const Journey = () => {
                 className=""
                 src="/sincere_images/si_4.png"
                 alt="sincere_images"
+                loading="lazy"
               />
             </div>
 
@@ -83,6 +89,7 @@ const Journey = () => {
                   className="mt-10 "
                   src="/sincere_images/quote_up.svg"
                   alt="sincere_images"
+                  loading="lazy"
                 />
                 {/* <!--  Desktop view --> */}
                 <p className=" text-white lg:w-32 hidden lg:block text-xl ">
@@ -138,6 +145,7 @@ const Journey = () => {
                   height={300}
                   src="/sincere_images/family.png"
                   alt="sincere_images"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -148,6 +156,7 @@ const Journey = () => {
               height={300}
               src="/sincere_images/thiruvanadhapuram-vds-speech.png"
               alt="sincere_images"
+              loading="lazy"
             />
             <div className="lg:p-5 p-2">
               <p>
@@ -213,6 +222,7 @@ const Journey = () => {
               className="w-full"
               alt="sincere_images"
               src="/sincere_images/bg_gray.svg"
+              loading="lazy"
             />
             <div className="relative">
               <p className="bg-[#173A5B] lg:ms-4 text-white p-9 text-xl">
@@ -225,6 +235,7 @@ const Journey = () => {
                 className="lg:absolute right-0 bottom-0  w-80 "
                 src="/sincere_images/vds_casual.png"
                 alt="VDS Casual"
+                loading="lazy"
               />
             </div>
           </div>
@@ -289,6 +300,7 @@ const Journey = () => {
                   className="absolute right-0 bottom-0 h-96 hidden lg:block me-3"
                   src="/sincere_images/award_and_record_.png"
                   alt="sincere_images"
+                  loading="lazy"
                 />
               </div>
               <div className="lg:flex lg:p-3 lg:ms-10 text-xl">

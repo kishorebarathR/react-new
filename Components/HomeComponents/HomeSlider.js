@@ -166,6 +166,7 @@ export default function SimpleSlider() {
                   src="https://www.youtube.com/embed/lBqFlHEhDP0?rel=0"
                   title="vaikkom sathyagraham @100 | വൈക്കം സത്യഗ്രഹത്തിന് 100 വയസ്"
                   className="w-full h-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
@@ -185,6 +186,7 @@ export default function SimpleSlider() {
                   src="https://www.youtube.com/embed/a9K_i_H5UVw"
                   title="സംഘപരിവാർ ഫാസിസത്തിനെതിരെ നിരന്തരം ചോദ്യങ്ങൾ ഉയരും"
                   className="w-full h-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="text-white text-xs p-3">
@@ -204,10 +206,11 @@ export default function SimpleSlider() {
                   src="https://www.youtube.com/embed/WzchbN_bZZI"
                   title="ഇരിക്കുന്ന സ്ഥാനത്തോടെങ്കിലും മാന്യത കാണിക്കണം മുഖ്യമന്ത്രി"
                   className="w-full h-full"
-                />
+                  loading="lazy"
+               />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h2 className="text-white text-xs p-3">
-                    ഇരിക്കുന്ന സ്ഥാനത്തോടെങ്കിലും മാന്യത കാണിക്കണം മുഖ്യമന്ത്രി
+                     ഇരിക്കുന്ന സ്ഥാനത്തോടെങ്കിലും മാന്യത കാണിക്കണം മുഖ്യമന്ത്രി
                   </h2>
                 </div>
               </div>
@@ -243,6 +246,7 @@ export default function SimpleSlider() {
                   src="https://www.youtube.com/embed/4k9bDn88XUs"
                   title="Walkout Speech Brahmapuram | ബ്രഹ്‌മപുരം നിയമസഭയിൽ"
                   className="w-full h-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
@@ -262,6 +266,7 @@ export default function SimpleSlider() {
                   src=" https://www.youtube.com/embed/ULmwv-_Ly2M"
                   title="Most Open Debate: ആസ്വാദ്യസംസ്‌കാരവുമായി ഏകോപനം"
                   className="w-full h-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">
@@ -281,6 +286,7 @@ export default function SimpleSlider() {
                   src="https://www.youtube.com/embed/luIuD3xbtSQ"
                   title="Kuttanadu Vision: യോഗസ്ഥിതി"
                   className="w-full h-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xs p-3">

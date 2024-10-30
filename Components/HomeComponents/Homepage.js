@@ -41,6 +41,7 @@ const Homepage = () => {
           src="https://www.youtube.com/embed/1DSQ3D0jpaE?autoplay=1"
           title="VDS Hero Banner V2"
           frameBorder="0"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen

@@ -99,6 +99,7 @@ export default function SimpleSlider() {
                   src="/sincere_images/what_drives_me_images/education_img.png"
                   alt="Slide 2"
                   className="w-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl">Education</p>
@@ -114,6 +115,7 @@ export default function SimpleSlider() {
                   src="/sincere_images/what_drives_me_images/secularism_img.png"
                   alt="Slide 2"
                   className="w-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl">Secularism</p>
@@ -129,6 +131,7 @@ export default function SimpleSlider() {
                   src="/sincere_images/what_drives_me_images/women_img.jpg"
                   alt="Slide 2"
                   className="w-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl">Women&apos;s Rights</p>
@@ -144,6 +147,7 @@ export default function SimpleSlider() {
                   src="/sincere_images/what_drives_me_images/pr_img.png"
                   alt="Slide 2"
                   className="w-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl">Democracy</p>
@@ -159,6 +163,7 @@ export default function SimpleSlider() {
                   src="/sincere_images/what_drives_me_images/env_img.png"
                   alt="Slide 2"
                   className="w-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl">Environment</p>
@@ -174,6 +179,7 @@ export default function SimpleSlider() {
                   src="/sincere_images/what_drives_me_images/jail_img.png"
                   alt="Slide 2"
                   className="w-full"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl">Personal Freedom</p>
@@ -189,6 +195,7 @@ export default function SimpleSlider() {
                   src="/sincere_images/what_drives_me_images/speech-01.jpg"
                   alt="Slide 2"
                   className="w-full  "
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl">Progressive Ideals</p>

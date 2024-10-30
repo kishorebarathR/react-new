@@ -46,7 +46,6 @@ const Timeline = () => {
             </Link>
 
             <div className="w-32  mt-1"></div>
-
             {/* Line extending to the next year */}
             {index < years.length - 1 && (
               <div
@@ -65,7 +64,7 @@ const Timeline = () => {
       <div className="flex justify-between mt-4">
         {Array.from({ length: years.length * 5 }).map((_, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="w-px h-4 bg-white"></div>
+            <div className="w-px h-4 bg-white"> </div>
           </div>
         ))}
       </div>

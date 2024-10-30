@@ -62,6 +62,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-5.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80">
@@ -71,6 +72,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-6.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80">
@@ -80,6 +82,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-4.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80 ">
@@ -89,6 +92,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-5.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80">
@@ -98,6 +102,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-6.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80">
@@ -107,9 +112,9 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-4.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
-           
           </Slider>
           <p className="text-black text-xl merriweather-regular text-left p-5 mt-5">
             Continuing his commitment to education and leadership, VD Satheeshan

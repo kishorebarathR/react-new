@@ -62,6 +62,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-14.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80">
@@ -71,6 +72,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-15.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80">
@@ -80,6 +82,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-13.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
 
@@ -90,6 +93,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-14.png"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80">
@@ -99,6 +103,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-15.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
             <div className="w-full rounded-2xl h-80">
@@ -108,6 +113,7 @@ export default function SimpleSlider() {
                 src="/my-journey/carousel-img-13.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
+                loading="lazy"
               />
             </div>
           </Slider>
