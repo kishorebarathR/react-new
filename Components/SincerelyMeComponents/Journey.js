@@ -70,7 +70,7 @@ const Journey = () => {
                 loading="lazy"
               />
             </div>
-            <div className="justify-center flex">
+            <div className="justify-center flex ">
               <Image
                 width={100}
                 height={50}
@@ -81,7 +81,7 @@ const Journey = () => {
               />
             </div>
 
-            <div className="lg:bg-[url('/sincere_images/left_side_img.svg')] w-full lg:h-[130vh] bg-cover mt-5 me-2 -mx-2">
+            <div className="lg:bg-[url('/sincere_images/left_side_img.svg')] w-full lg:h-[120vh] bg-cover mt-5 me-2 -mx-2">
               <div className="text-left  lg:pt-24 ms-5 ">
                 <Image
                   width={80}
@@ -92,7 +92,7 @@ const Journey = () => {
                   loading="lazy"
                 />
                 {/* <!--  Desktop view --> */}
-                <p className=" text-white lg:w-32 hidden lg:block text-xl ">
+                <p className=" text-white lg:w-32 hidden lg:block text-xl mt-10">
                   “I believe that serving the people is not just a
                   responsibility, but a privilege, and I will continue to work
                   hard to fulfill this purpose.”
@@ -112,10 +112,10 @@ const Journey = () => {
         {/* Left Side Content End */}
 
         <div className="lg:flex-1  ">
-          <h1 className="text-6xl p-4 font-bold">
+          <h1 className="text-2xl lg:text-6xl p-4 font-bold">
             The journey that made me who I am today
           </h1>
-          <h6 className="text-3xl p-4 font-medium">
+          <h6 className="text-2xl lg:text-3xl p-4 font-medium">
             A brief history of my life
           </h6>
 
@@ -172,7 +172,7 @@ const Journey = () => {
           </div>
 
           {/* Work So Far Start */}
-          <h2 className="text-5xl ms-4 mt-8 font-semibold px-1">
+          <h2 className=" text-2xl lg:text-6xl  p-4 font-bold">
             My Work So Far
           </h2>
           <div className="lg:flex p-4 gap-2 text-xl">
@@ -201,7 +201,7 @@ const Journey = () => {
           {/* Work So Far End */}
 
           {/* My Interests Start */}
-          <h2 className="text-5xl ms-4  font-semibold ">My Interests</h2>
+          <div className="text-2xl lg:text-6xl ms-4  font-semibold ">My Interests</div>
           <h3 className="p-4 lg:w-9/12 text-xl ">
             Ever since I was a child, I have been captivated by a wide range of
             interests that have shaped my life. My love for reading was the
@@ -279,7 +279,7 @@ const Journey = () => {
 
           {/* Awards and  Recognitions Start*/}
           <div>
-            <h3 className="text-5xl mt-5 p-4 font-semibold">
+            <h3 className="text-2xl lg:text-6xl mt-5 p-4 font-semibold">
               Awards and Recognitions
             </h3>
           </div>
