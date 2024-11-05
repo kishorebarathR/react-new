@@ -303,7 +303,7 @@ const Journey = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="lg:flex lg:p-3 lg:ms-10 text-xl">
+              <div className="lg:flex p-3 lg:ms-10 text-xl">
                 <div className="flex flex-col lg:w-1/2 lg:pr-4">
                   <ul className="list-disc lg:p-4 ms-8 space-y-1">
                     <li>AA Rahim Memorial Award for Best Parliamentarian</li>

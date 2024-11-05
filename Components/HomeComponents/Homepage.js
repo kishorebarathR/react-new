@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import Image from "next/image"
 import HomeSlider from "@/Components/HomeComponents/HomeSlider"
 import TimeLine from "./TimeLine"
+import Link from "next/link"
 const Homepage = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false)
 
@@ -68,12 +69,17 @@ const Homepage = () => {
               <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
                 Hello, I am
               </h6>
-              <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
+              <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold mb-3">
                 VD Satheesan…
               </h6>
-              <button className="border lg:border-4 border-sky-800 p-2 items-center justify-center bg-white rounded-sm text-[#035C96] text-xl  mt-5 w-40 mb-5 merriweather-regular">
+              <Link
+                href="/sincerely-me"
+                className="border lg:border-4 border-sky-800 px-6   p-2 items-center justify-center bg-white rounded-sm text-[#035C96] text-xl  w-40 mb-5 merriweather-regular"
+                target=""
+                rel="noopener noreferrer"
+              >
                 Know Me
-              </button>
+              </Link>
             </div>
           </div>
         </div>

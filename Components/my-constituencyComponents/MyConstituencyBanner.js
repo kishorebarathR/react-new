@@ -37,14 +37,13 @@ const MyConstituencyBanner = () => {
             width="100%"
             height="700"
             src="https://www.youtube.com/embed/tZudcGhRg00"
-            title="VDS Hero Banner V2"
-            frameBorder="0"
+            title="&#39;പൊന്നു ഷംസീറേ, എല്ലാത്തിലും കയറി അഭിപ്രായം പറയല്ലേ..&#39;&#39;: | VD Satheesan | Niyamasabha"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="lg:h-lvh h-[60vh]"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            
           ></iframe>
-          
         )}
       </div>
     </>
