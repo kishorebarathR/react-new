@@ -16,7 +16,6 @@ const VideoPlayer = () => {
     { url: "https://www.youtube.com/embed/nj-OLjaZ8Ws" },
     { url: "https://www.youtube.com/embed/4k9bDn88XUs" },
     { url: "https://www.youtube.com/embed/ULmwv-_Ly2M" },
-    { url: "https://www.youtube.com/embed/mZ5Jac2pDXU" },
     { url: "https://www.youtube.com/embed/lBqFlHEhDP0" },
   ]
 
@@ -77,19 +76,17 @@ const VideoPlayer = () => {
               <p className="text-2xl font-semibold">{currentVideo.title}</p>
               <p className="text-xl mt-2">{currentVideo.description}</p>
             </div>
-           
           </div>
 
           {/* Playlist */}
           <div className="w-full lg:w-1/3 mt-7">
-          <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
+            <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
               <h2 className="text-xl text-white text-left">Playlist</h2>
               <h2 className="text-xl text-white text-right">
-                 {videos.length} Videos
+                {videos.length} Videos
               </h2>
             </div>
             <div className="flex flex-col h-[85vh] p-3  overflow-y-auto bg-[#880505] rounded-b-lg">
-             
               <div className="flex flex-col gap-2 mt-3">
                 {videos.map((video, index) => (
                   <div
