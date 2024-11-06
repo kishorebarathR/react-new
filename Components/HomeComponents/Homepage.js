@@ -13,12 +13,12 @@ const Homepage = () => {
   return (
     <div>
       {!isVideoVisible ? (
-        <div className="relative lg:h-lvh h-[60vh] w-full">
+        <div className="relative lg:h-[84vh] h-[60vh] w-full">
           <Image
             src="/home_images/home_banner.png"
             alt="Banner"
             loading="lazy"
-            className="w-full lg:h-lvh h-[60vh] cursor-pointer bg-no-repeat object-cover"
+            className="w-full lg:h-[84vh] h-[60vh] cursor-pointer bg-no-repeat object-cover"
             width={1000}
             height={1000}
             onClick={handleImageClick}

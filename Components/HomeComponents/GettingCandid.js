@@ -28,7 +28,7 @@ const VideoPlayer = () => {
       title2:
         "Dr.K.G.Thara, Disaster Management expert & academic talks with V.D.Satheesan",
       description:
-        "Dr.K.G.Thara, Disaster Management expert & academic talks with V.D.Satheesan",
+        "Dr.K.G.Thara, Disaster Management expert & academic talks with V.D.Satheesan ",
     },
     {
       url: "https://www.youtube.com/embed/WFQCcOBkFMo",
@@ -46,7 +46,6 @@ const VideoPlayer = () => {
       description:
         "In conversation with TM Thomas Isaac, Former Finance Minister, Kerala",
     },
-  
   ]
 
   // Listen to messages from the iframe to track playback time
@@ -120,18 +119,20 @@ const VideoPlayer = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="mt-4">
-              <p className="text-2xl font-semibold">{currentVideo.title}</p>
-              <p className="text-xl mt-2">{currentVideo.description}</p>
-            </div>
-            <div className="mt-5">
-              <a
-                href="https://www.youtube.com/c/dialoguewithvds/videos"
-                target="_blank"
-                className="focus:outline-none text-white bg-[#880505] hover:bg-red-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-              >
-                Subscribe
-              </a>
+            <div className="flex justify-between items-center mt-4">
+              <div className="w-3/4">
+                <p className="text-2xl font-semibold">{currentVideo.title}</p>
+                <p className="text-xl mt-2">{currentVideo.description}</p>
+              </div>
+              <div className="w-1/4 flex justify-end mt-5">
+                <a
+                  href="https://www.youtube.com/c/dialoguewithvds/videos"
+                  target="_blank"
+                  className="focus:outline-none text-white bg-[#880505] hover:bg-red-800 font-medium rounded-md text-xl px-7 py-2.5 me-2 mb-2"
+                >
+                  Subscribe
+                </a>
+              </div>
             </div>
           </div>
 
@@ -140,7 +141,7 @@ const VideoPlayer = () => {
             <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
               <h2 className="text-xl text-white text-left">Playlist</h2>
               <h2 className="text-xl text-white text-right">
-                 {videos.length} Videos
+                {videos.length} Videos
               </h2>
             </div>
 
