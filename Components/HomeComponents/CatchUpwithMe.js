@@ -8,57 +8,22 @@ const VideoPlayer = () => {
   })
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentVideoId, setCurrentVideoId] = useState("UCpYogDflbQ")
-  const [lastPlayedTime, setLastPlayedTime] = useState(0)
 
   const videos = [
-    {
-      url: "https://www.youtube.com/embed/luIuD3xbtSQ",
-    },
-    {
-      url: "https://www.youtube.com/embed/a9K_i_H5UVw",
-    },
-    {
-      url: "https://www.youtube.com/embed/WzchbN_bZZI",
-    },
-    {
-      url: "https://www.youtube.com/embed/nj-OLjaZ8Ws",
-    },
-    {
-      url: "https://www.youtube.com/embed/4k9bDn88XUs",
-    },
-    {
-      url: "https://www.youtube.com/embed/ULmwv-_Ly2M",
-    },
-    {
-      url: "https://www.youtube.com/embed/mZ5Jac2pDXU",
-    },
-    {
-      url: "https://www.youtube.com/embed/lBqFlHEhDP0",
-    },
+    { url: "https://www.youtube.com/embed/luIuD3xbtSQ" },
+    { url: "https://www.youtube.com/embed/a9K_i_H5UVw" },
+    { url: "https://www.youtube.com/embed/WzchbN_bZZI" },
+    { url: "https://www.youtube.com/embed/nj-OLjaZ8Ws" },
+    { url: "https://www.youtube.com/embed/4k9bDn88XUs" },
+    { url: "https://www.youtube.com/embed/ULmwv-_Ly2M" },
+    { url: "https://www.youtube.com/embed/mZ5Jac2pDXU" },
+    { url: "https://www.youtube.com/embed/lBqFlHEhDP0" },
   ]
-
-  // Listen to messages from the iframe to track playback time
-  useEffect(() => {
-    const handleMessage = (event) => {
-      if (
-        event.data &&
-        typeof event.data === "string" &&
-        event.data.includes("infoDelivery")
-      ) {
-        const data = JSON.parse(event.data.slice(event.data.indexOf("{")))
-        if (data && data.info && data.info.currentTime) {
-          setLastPlayedTime(data.info.currentTime)
-        }
-      }
-    }
-
-    window.addEventListener("message", handleMessage)
-    return () => window.removeEventListener("message", handleMessage)
-  }, [])
 
   const selectVideo = (video) => {
     const videoId = video.url.split("/")[4]
 
+    // If the same video is clicked, toggle between play and pause
     if (videoId === currentVideoId && isPlaying) {
       iframeRef.current.contentWindow.postMessage(
         '{"event":"command","func":"pauseVideo","args":""}',
@@ -66,14 +31,14 @@ const VideoPlayer = () => {
       )
       setIsPlaying(false)
     } else {
+      // If a different video is selected, play it from the beginning
       setCurrentVideo(video)
       setCurrentVideoId(videoId)
       setIsPlaying(true)
 
-      // Resume from last played time
       setTimeout(() => {
         iframeRef.current.contentWindow.postMessage(
-          `{"event":"command","func":"seekTo","args":[${lastPlayedTime}, true]}`,
+          '{"event":"command","func":"playVideo","args":""}',
           "*"
         )
       }, 500)
@@ -112,23 +77,19 @@ const VideoPlayer = () => {
               <p className="text-2xl font-semibold">{currentVideo.title}</p>
               <p className="text-xl mt-2">{currentVideo.description}</p>
             </div>
-            <div className="mt-5">
-              <a
-                href="https://www.youtube.com/c/dialoguewithvds/videos"
-                target="_blank"
-                className="focus:outline-none text-white bg-[#880505] hover:bg-red-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-              >
-                Subscribe
-              </a>
-            </div>
+           
           </div>
 
           {/* Playlist */}
-          <div className="w-full lg:w-1/3">
-            <div className="flex flex-col h-[85vh] p-3 mt-7 overflow-y-auto bg-[#880505] rounded-lg">
-              <h2 className="text-xl bg-[#880505] rounded-lg text-white text-center">
-                Playlist
+          <div className="w-full lg:w-1/3 mt-7">
+          <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
+              <h2 className="text-xl text-white text-left">Playlist</h2>
+              <h2 className="text-xl text-white text-right">
+                 {videos.length} Videos
               </h2>
+            </div>
+            <div className="flex flex-col h-[85vh] p-3  overflow-y-auto bg-[#880505] rounded-b-lg">
+             
               <div className="flex flex-col gap-2 mt-3">
                 {videos.map((video, index) => (
                   <div
