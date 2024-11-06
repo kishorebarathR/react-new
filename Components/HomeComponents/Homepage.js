@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import Image from "next/image"
-import HomeSlider from "@/Components/HomeComponents/HomeSlider"
+// import HomeSlider from "@/Components/HomeComponents/HomeSlider"
 import TimeLine from "./TimeLine"
 import Link from "next/link"
 const Homepage = () => {
@@ -84,9 +84,9 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className=" p-4 lg:mx-8">
+        {/* <div className=" p-4 lg:mx-8">
           <HomeSlider />
-        </div>
+        </div> */}
       </div>
     </div>
   )
