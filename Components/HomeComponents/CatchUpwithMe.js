@@ -47,7 +47,7 @@ const VideoPlayer = () => {
   return (
     <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-regular">
       <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
-        Getting Candid
+        Catch Up with Me
       </h1>
       <h3 className="text-2xl font-semibold text-center pt-4">
         ‘Dialogue with VDS’ is a series of weekly in-depth interviews with

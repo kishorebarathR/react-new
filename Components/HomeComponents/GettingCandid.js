@@ -92,7 +92,7 @@ const VideoPlayer = () => {
   }
 
   return (
-    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-regular">
+    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-bold ">
       <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
         Getting Candid
       </h1>
