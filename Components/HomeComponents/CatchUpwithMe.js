@@ -58,20 +58,40 @@ const VideoPlayer = () => {
         <div className="flex flex-col md:flex-row gap-4">
           {/* Main video player */}
           <div className="w-full lg:w-2/3 mt-7">
-            <div className="aspect-w-16 aspect-h-9">
-              <iframe
-                ref={iframeRef}
-                width="900"
-                height="500"
-                src={`${currentVideo.url}?enablejsapi=1&autoplay=${
-                  isPlaying ? 1 : 0
-                }`}
-                title="Main Video Player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+          <div>
+              {/* Desktop version */}
+              <div className="hidden lg:block aspect-w-16 aspect-h-9">
+                <iframe
+                  ref={iframeRef}
+                  width="900"
+                  height="500"
+                  src={`${currentVideo.url}?enablejsapi=1&autoplay=${
+                    isPlaying ? 1 : 0
+                  }`}
+                  title="Main Video Player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              {/* Mobile version */}
+              <div className="lg:hidden aspect-w-16 aspect-h-9">
+                <iframe
+                  ref={iframeRef}
+                  width="360"
+                  height="300"
+                  src={`${currentVideo.url}?enablejsapi=1&autoplay=${
+                    isPlaying ? 1 : 0
+                  }`}
+                  title="Main Video Player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
+              
             <div className="mt-4">
               <p className="text-2xl font-semibold">{currentVideo.title}</p>
               <p className="text-xl mt-2">{currentVideo.description}</p>

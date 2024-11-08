@@ -112,7 +112,7 @@ const MeUnfiltered = () => {
             </div>
 
             {/* Fourth column (Upcoming schedules) */}
-            <div className="bg-white rounded-xl shadow-lg p-4 w-full">
+            <div className="bg-white rounded-xl shadow-lg p-4  w-full ">
               <div className="bg-blue-900 text-white font-semibold text-lg px-4 py-2 rounded-t-xl">
                 Upcoming Schedules
               </div>
