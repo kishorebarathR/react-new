@@ -45,13 +45,13 @@ const VideoPlayer = () => {
   }
 
   return (
-    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-regular">
+    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 ">
       <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
         Catch Up with Me
       </h1>
       <h3 className="text-2xl font-semibold text-center pt-4">
         ‘Dialogue with VDS’ is a series of weekly in-depth interviews with
-        experts from various fields
+        experts from various fields 
       </h3>
 
       <div className="container mx-auto p-4">

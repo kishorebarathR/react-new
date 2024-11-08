@@ -66,9 +66,9 @@ const Homepage = () => {
 
           <div className=" mt-10 border-2  border-[#033B5F]  text-center flex justify-center items-center lg:me-10 ">
             <div>
-              <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
+              <p className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
                 Hello, I am
-              </h6>
+              </p>
               <h6 className="text-[#035C96] text-[34px] font-semibold merriweather-bold mb-3">
                 VD Satheesan…
               </h6>

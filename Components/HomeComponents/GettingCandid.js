@@ -5,7 +5,7 @@ const VideoPlayer = () => {
   const iframeRef = useRef(null)
   const [currentVideo, setCurrentVideo] = useState({
     url: "https://www.youtube.com/embed/1cmf-VHJys0",
-    title: "Episode 36:",
+    title: "Episode 36 |",
     title2: "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
     description:
       "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
@@ -17,14 +17,14 @@ const VideoPlayer = () => {
   const videos = [
     {
       url: "https://www.youtube.com/embed/1cmf-VHJys0",
-      title: "Episode 36:",
+      title: "Episode 36 |",
       title2: "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
       description:
         "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
     },
     {
       url: "https://www.youtube.com/embed/UCpYogDflbQ",
-      title: "Episode 35:",
+      title: "Episode 35 |",
       title2:
         "Dr.K.G.Thara, Disaster Management expert & academic talks with V.D.Satheesan",
       description:
@@ -32,7 +32,7 @@ const VideoPlayer = () => {
     },
     {
       url: "https://www.youtube.com/embed/WFQCcOBkFMo",
-      title: "Episode 34:",
+      title: "Episode 34 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Kunhikrishnan K, retired Dy. Director General Doordarshan",
@@ -40,7 +40,7 @@ const VideoPlayer = () => {
 
     {
       url: "https://www.youtube.com/embed/SLoAonybiFc",
-      title: "Episode 1:",
+      title: "Episode 1 |",
       title2:
         "Dialogue with Sri. TM Thomas Issac, Finance Minister, Kerala & VD Satheesan, MLA- Full Video",
       description:
@@ -92,7 +92,7 @@ const VideoPlayer = () => {
   }
 
   return (
-    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-bold ">
+    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10  ">
       <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
         Getting Candid
       </h1>
@@ -121,7 +121,9 @@ const VideoPlayer = () => {
             </div>
             <div className="flex justify-between items-center mt-4">
               <div className="w-3/4">
-                <p className="text-2xl font-semibold">{currentVideo.title}</p>
+                <p className="text-2xl font-semibold text-[#880505]">
+                  {currentVideo.title}
+                </p>
                 <p className="text-xl mt-2">{currentVideo.description}</p>
               </div>
               <div className="w-1/4 flex justify-end mt-5">
