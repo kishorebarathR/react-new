@@ -11,7 +11,7 @@ const LazyIframe = ({ src, title, ...props }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
-          observer.disconnect() // Stop observing after iframe loads
+          observer.disconnect()
         }
       },
       {
@@ -64,7 +64,7 @@ const MeUnfiltered = () => {
   }, [])
 
   return (
-    <div className="relative w-100 merriweather-regular">
+    <div className="relative w-full merriweather-regular">
       <div className="bg-[url('/home_images/gallery-img-07.png')] bg-cover bg-center w-full h-full">
         <span className="absolute inset-0 bg-black opacity-70"></span>
         {/* Overlay */}
@@ -73,9 +73,9 @@ const MeUnfiltered = () => {
             Me, Unfiltered
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 container mx-auto pb-10 text-white">
-            {/* First column (scrollable) */}
-            <div className="flex justify-center items-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 container mx-auto pb-10 text-white">
+            {/* First column (Twitter feed) */}
+            <div className="flex justify-center items-center w-full">
               <a
                 className="twitter-timeline"
                 data-width="350"
@@ -87,28 +87,62 @@ const MeUnfiltered = () => {
             </div>
 
             {/* Second column (Instagram logo) */}
-            <div className="bg-[#C0C0C0] rounded-lg shadow-md flex items-center justify-center lg:mx-8">
+            <div className="bg-[#C0C0C0] rounded-lg shadow-md flex items-center justify-center w-full">
               <Image
                 src="/home_images/Instagram-Logo.wine.svg"
                 alt="Instagram logo"
                 className="w-40 h-40"
-                 loading="lazy"
+                loading="lazy"
                 width={100}
                 height={100}
               />
             </div>
 
-            {/* Third column */}
-            <div className="flex justify-center items-center">
+            {/* Third column (Facebook page iframe) */}
+            <div className="flex justify-center items-center w-full">
               <LazyIframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVDSatheeshanParavur&tabs=timeline&width=350&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
                 title="Facebook Page"
                 style={{
-                  width: "350px",
+                  width: "100%",
                   height: "490px",
                   borderRadius: "17px",
                 }}
               />
+            </div>
+
+            {/* Fourth column (Upcoming schedules) */}
+            <div className="bg-white rounded-xl shadow-lg p-4 w-full">
+              <div className="bg-blue-900 text-white font-semibold text-lg px-4 py-2 rounded-t-xl">
+                Upcoming Schedules
+              </div>
+              <div className="divide-y divide-gray-300">
+                <div className="py-3 px-4">
+                  <p className="text-gray-700">
+                    18/4/2023 | Upcoming event and details will appear here
+                  </p>
+                </div>
+                <div className="py-3 px-4">
+                  <p className="text-gray-700">
+                    18/4/2023 | Upcoming event and details will appear here
+                  </p>
+                </div>
+                <div className="py-3 px-4">
+                  <p className="text-gray-700">
+                    18/4/2023 | Upcoming event and details will appear here
+                  </p>
+                </div>
+                <div className="py-3 px-4">
+                  <p className="text-gray-700">
+                    18/4/2023 | Upcoming event and details will appear here
+                  </p>
+                </div>
+                <div className="py-3 px-4">
+                  <p className="text-gray-700">
+                    18/4/2023 | Upcoming event and details will appear here
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
