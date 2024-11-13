@@ -69,7 +69,7 @@ const VideoPlayer = () => {
       Catch Up with Me​
       </h1>
       <h3 className="text-2xl font-semibold text-center pt-4">
-      Watch latest videos on VDS' take on the current issues.
+      Watch latest videos on VDS&apos;`` take on the current issues.
       </h3>
 
       <div className="container mx-auto p-4">

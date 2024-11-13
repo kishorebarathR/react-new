@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from "react"
 import Image from "next/image"
-// import HomeSlider from "@/Components/HomeComponents/HomeSlider"
 import TimeLine from "./TimeLine"
 import Link from "next/link"
 const Homepage = () => {
@@ -51,8 +50,8 @@ const Homepage = () => {
       )}
       {/* </div> */}
       <TimeLine />
-      <div className="  bg-[url('/home_images/about_satheesan_background.png')] mx-auto  w-full h-full">
-        <div className="grid lg:grid-cols-2 grid-flow-row gap-4 p-5 lg:mx-5">
+      <div className="  bg-[url('/home_images/about_satheesan_background.png')] mx-auto  w-full h-full ">
+        <div className="grid lg:grid-cols-2 grid-flow-row gap-4 p-5  container mx-auto">
           <div className="flex justify-center mt-10 ">
             <Image
               width={400}
@@ -64,7 +63,7 @@ const Homepage = () => {
             />
           </div>
 
-          <div className=" mt-10 border-2  border-[#033B5F]  text-center flex justify-center items-center lg:me-10 ">
+          <div className=" mt-10 border-2  border-[#033B5F]  text-center flex justify-center items-center  ">
             <div>
               <p className="text-[#035C96] text-[34px] font-semibold merriweather-bold">
                 Hello, I am
@@ -83,10 +82,6 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className=" p-4 lg:mx-8">
-          <HomeSlider />
-        </div> */}
       </div>
     </div>
   )
