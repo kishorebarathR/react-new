@@ -8,6 +8,7 @@ const VideoPlayer = () => {
   })
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentVideoId, setCurrentVideoId] = useState("UCpYogDflbQ")
+  const [lastPlayedTime, setLastPlayedTime] = useState(0)
 
   const videos = [
     { url: "https://www.youtube.com/embed/luIuD3xbtSQ" },
@@ -19,10 +20,28 @@ const VideoPlayer = () => {
     { url: "https://www.youtube.com/embed/lBqFlHEhDP0" },
   ]
 
+  // Listen to messages from the iframe to track playback time
+  useEffect(() => {
+    const handleMessage = (event) => {
+      if (
+        event.data &&
+        typeof event.data === "string" &&
+        event.data.includes("infoDelivery")
+      ) {
+        const data = JSON.parse(event.data.slice(event.data.indexOf("{")))
+        if (data && data.info && data.info.currentTime) {
+          setLastPlayedTime(data.info.currentTime)
+        }
+      }
+    }
+
+    window.addEventListener("message", handleMessage)
+    return () => window.removeEventListener("message", handleMessage)
+  }, [])
+
   const selectVideo = (video) => {
     const videoId = video.url.split("/")[4]
 
-    // If the same video is clicked, toggle between play and pause
     if (videoId === currentVideoId && isPlaying) {
       iframeRef.current.contentWindow.postMessage(
         '{"event":"command","func":"pauseVideo","args":""}',
@@ -30,14 +49,14 @@ const VideoPlayer = () => {
       )
       setIsPlaying(false)
     } else {
-      // If a different video is selected, play it from the beginning
       setCurrentVideo(video)
       setCurrentVideoId(videoId)
       setIsPlaying(true)
 
+      // Resume from last played time
       setTimeout(() => {
         iframeRef.current.contentWindow.postMessage(
-          '{"event":"command","func":"playVideo","args":""}',
+          `{"event":"command","func":"seekTo","args":[${lastPlayedTime}, true]}`,
           "*"
         )
       }, 500)
@@ -45,68 +64,52 @@ const VideoPlayer = () => {
   }
 
   return (
-    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 ">
+    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-regular">
       <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
-        Catch Up with Me
+      Catch Up with Me​
       </h1>
       <h3 className="text-2xl font-semibold text-center pt-4">
-        ‘Dialogue with VDS’ is a series of weekly in-depth interviews with
-        experts from various fields 
+      Watch latest videos on VDS' take on the current issues.
       </h3>
 
       <div className="container mx-auto p-4">
         <div className="flex flex-col md:flex-row gap-4">
           {/* Main video player */}
-          <div className="w-full lg:w-2/3 mt-7">
-          <div>
-              {/* Desktop version */}
-              <div className="hidden lg:block aspect-w-16 aspect-h-9">
-                <iframe
-                  ref={iframeRef}
-                  width="900"
-                  height="500"
-                  src={`${currentVideo.url}?enablejsapi=1&autoplay=${
-                    isPlaying ? 1 : 0
-                  }`}
-                  title="Main Video Player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-
-              {/* Mobile version */}
-              <div className="lg:hidden aspect-w-16 aspect-h-9">
-                <iframe
-                  ref={iframeRef}
-                  width="360"
-                  height="300"
-                  src={`${currentVideo.url}?enablejsapi=1&autoplay=${
-                    isPlaying ? 1 : 0
-                  }`}
-                  title="Main Video Player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+          <div className="lg:w-3/4 mt-7">
+            <div className="w-full aspect-video">
+              <iframe
+                ref={iframeRef}
+                className="w-full h-full"
+                src={`${currentVideo.url}?enablejsapi=1&autoplay=${
+                  isPlaying ? 1 : 0
+                }`}
+                title="Main Video Player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
-              
-            <div className="mt-4">
-              <p className="text-2xl font-semibold">{currentVideo.title}</p>
-              <p className="text-xl mt-2">{currentVideo.description}</p>
+
+            <div className="flex justify-between items-center mt-4">
+              <div className="">
+                <p className="text-2xl font-semibold text-[#880505]">
+                  {currentVideo.title}
+                </p>
+                <p className="text-xl mt-2">{currentVideo.description}</p>
+              </div>
+             
             </div>
           </div>
 
           {/* Playlist */}
-          <div className="w-full lg:w-1/3 mt-7">
+          <div className="lg:w-1/4 mt-7">
             <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
               <h2 className="text-xl text-white text-left">Playlist</h2>
               <h2 className="text-xl text-white text-right">
                 {videos.length} Videos
               </h2>
             </div>
-            <div className="flex flex-col h-[85vh] p-3  overflow-y-auto bg-[#880505] rounded-b-lg">
+            <div className="flex flex-col lg:h-[77vh] h-[50vh] p-3 overflow-y-auto bg-[#880505] rounded-b-lg">
               <div className="flex flex-col gap-2 mt-3">
                 {videos.map((video, index) => (
                   <div

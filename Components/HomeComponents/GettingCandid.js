@@ -17,14 +17,14 @@ const VideoPlayer = () => {
   const videos = [
     {
       url: "https://www.youtube.com/embed/1cmf-VHJys0",
-      title: "Episode 36:",
+      title: "Episode 36 |",
       title2: "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
       description:
         "Hari Marar, MD And CEO Of Bangalore Airport with V.D.Satheesan",
     },
     {
       url: "https://www.youtube.com/embed/UCpYogDflbQ",
-      title: "Episode 35:",
+      title: "Episode 35 |",
       title2:
         "Dr.K.G.Thara, Disaster Management expert & academic talks with V.D.Satheesan",
       description:
@@ -32,21 +32,21 @@ const VideoPlayer = () => {
     },
     {
       url: "https://www.youtube.com/embed/WFQCcOBkFMo",
-      title: "Episode 34:",
+      title: "Episode 34 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Kunhikrishnan K, retired Dy. Director General Doordarshan",
     },
     {
       url: "https://www.youtube.com/embed/K6yN-XpDo14",
-      title: "Episode 33:",
+      title: "Episode 33 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         " In conversation with P. K. Rajasekharan, Kerala Sahitya Akademi Award winner",
     },
     {
       url: "https://www.youtube.com/embed/00jrWTc6qj8",
-      title: "Episode 32:",
+      title: "Episode 32 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         " Reproduction of the Special Budget Programme by Mathrubhumi news telecasted on 14.01.2021",
@@ -54,118 +54,118 @@ const VideoPlayer = () => {
 
     {
       url: "https://www.youtube.com/embed/SFyP9iQj_Ks",
-      title: "Episode 31:",
+      title: "Episode 31 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         " In conversation with Venu Rajamoni, former Ambassador of India, Netherlands",
     },
     {
       url: "https://www.youtube.com/embed/g3sW8h6vrLI",
-      title: "Episode 30:",
+      title: "Episode 30 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         " In conversation with Mr.Tony Thomas – Senior advisor,Boston Consulting & former CIO,Nissan",
     },
     {
       url: "https://www.youtube.com/embed/3dUly_DWQ24",
-      title: "Episode 29:",
+      title: "Episode 29 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         " In-depth discussion on the real apprehensions about the labour code",
     },
     {
       url: "https://www.youtube.com/embed/JhVHB2COluU",
-      title: "Episode 28:",
+      title: "Episode 28 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description: "The facts behind the PUNERJENI project in Paravur",
     },
     {
       url: "https://www.youtube.com/embed/OQLPE7x7NbI",
-      title: "Episode 27:",
+      title: "Episode 27 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "The facts and figures behind agricultural strike all over India",
     },
     {
       url: "https://www.youtube.com/embed/YXNN4-gQf3g",
-      title: "Episode 26:",
+      title: "Episode 26 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with S.Adikesavan, Chief General Manager of SBI and popular Columnist",
     },
     {
       url: "https://www.youtube.com/embed/tuSUVoTHKyw",
-      title: "Episode 25:",
+      title: "Episode 25 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Jacob Punnoose, Executive Director of Pushpagiri Medical College, Secretary of the Pastoral Council in the Major Archieparchy of Trivandrum and former Director General of Police of Kerala",
     },
     {
       url: "https://www.youtube.com/embed/zBwFRgL8Jpc",
-      title: "Episode 24:",
+      title: "Episode 24 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with M. K. Sanu – Writer, Critic, retired Professor, Biographer, Journalist, Orator, Social and Human Rights Activist",
     },
     {
       url: "https://www.youtube.com/embed/FDOi5y6DQKc",
-      title: "Episode 23:",
+      title: "Episode 23 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Padma Shri Peruvanam Kuttan Marar, famous Chenda Artist",
     },
     {
       url: "https://www.youtube.com/embed/y9_iR17BPz0",
-      title: "Episode 22:",
+      title: "Episode 22 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Fr.Davis Chiramel, Founder of Kidney Federation of India",
     },
     {
       url: "https://www.youtube.com/embed/_zqv7E6oPgE",
-      title: "Episode 21:",
+      title: "Episode 21 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         " In conversation with Baiju N Nair, Automobile-travel Journalist",
     },
     {
       url: "https://www.youtube.com/embed/je-PiLqc9pQ",
-      title: "Episode 20:",
+      title: "Episode 20 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation Smt.Sheeba Ameer, Philanthropist, Social Worker and Founder of Solace.",
     },
     {
       url: "https://www.youtube.com/embed/Ay6yO33IyO8",
-      title: "Episode 19:",
+      title: "Episode 19 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Mr.Navas Meeran, young entrepreneur and Managing Director of Eastern Condiments Private Limited",
     },
     {
       url: "https://www.youtube.com/embed/uQ-Uqmk5zHc",
-      title: "Episode 18:",
+      title: "Episode 18 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Shri.Sethu, Ex CEO & Chairman of South Indian Bank and famous writer",
     },
     {
       url: "https://www.youtube.com/embed/fOiGsSua4WE",
-      title: "Episode 17:",
+      title: "Episode 17 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with MD Santhosh George, Traveller and Safari TV Founder",
     },
     {
       url: "https://www.youtube.com/embed/bJNygFEIGtc",
-      title: "Episode 16:",
+      title: "Episode 16 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         " In conversation with Mrinal Das Vengalat, famous Food Vlogger and Restaurant Consultant",
     },
     {
       url: "https://www.youtube.com/embed/oT0GJU86oTU",
-      title: "Episode 15:",
+      title: "Episode 15 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "  In conversation with Padma Shri Dr.Jose Chacko Periappuram, renowned Cardiac Surgeon",
@@ -173,14 +173,14 @@ const VideoPlayer = () => {
 
     {
       url: "https://www.youtube.com/embed/ifSkvPRbjns",
-      title: "Episode 14:",
+      title: "Episode 14 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Venkitesh Ramakrishnan, Frontline Associate Editor",
     },
     {
       url: "https://www.youtube.com/embed/GGkyo4X2KQ4",
-      title: "Episode 13:",
+      title: "Episode 13 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Dr.Jancy James, former M G University Vice Chancellor",
@@ -188,59 +188,59 @@ const VideoPlayer = () => {
 
     {
       url: "https://www.youtube.com/embed/Xlo4YE8MB5o",
-      title: "Episode 12:",
+      title: "Episode 12 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description: "  In conversation with UK Kumaran, renowned Writer",
     },
     {
       url: "https://www.youtube.com/embed/1gEmcgz7PXM",
-      title: "Episode 11:",
+      title: "Episode 11 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description: "  In conversation with Ranjith, Film Director",
     },
     {
       url: "https://www.youtube.com/embed/qayu86AHqu0",
-      title: "Episode 10:",
+      title: "Episode 10 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description: "In conversation with Viju B, Journalist and Author",
     },
     {
       url: "https://www.youtube.com/embed/ijJAABxfYKc",
-      title: "Episode 9:",
+      title: "Episode 9 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Mr.Jose Mathew Kochukudy, planter from Thodupuzha",
     },
     {
       url: "https://www.youtube.com/embed/clw7VQN0Hco",
-      title: "Episode 8:",
+      title: "Episode 8 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Dr.Madhusoodanan, River Management expert",
     },
     {
       url: "https://www.youtube.com/embed/EQPylyZtQ2U",
-      title: "Episode 7:",
+      title: "Episode 7 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Dr.K.N Raghavan, Executive Director Rubber Board and Former Customs Commissioner",
     },
     {
       url: "https://www.youtube.com/embed/bG8gQdgGF5w",
-      title: "Episode 6:",
+      title: "Episode 6 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description:
         "In conversation with Sri.Kochousepp Chittilappillly, Chairman Emeritus, V Guard",
     },
     {
       url: "https://www.youtube.com/embed/mZ5Jac2pDXU",
-      title: "Episode 5:",
+      title: "Episode 5 |",
       title2: "Dialogue with Dr. CJ John, Psychiatrist and VD Satheesan, MLA",
       description: "In conversation with Dr.CJ John, renowned Psychiatrist",
     },
     {
       url: "https://www.youtube.com/embed/oYmXSL8ZGhk",
-      title: "Episode 4:",
+      title: "Episode 4 |",
       title2:
         "Sri.Jose Dominic, CEO, CGH Earth Group with VD Satheesan MLA about Hospitality Industry",
       description:
@@ -248,7 +248,7 @@ const VideoPlayer = () => {
     },
     {
       url: "https://www.youtube.com/embed/IlHwsHBdnS0",
-      title: "Episode 3:",
+      title: "Episode 3 |",
       title2:
         "COVID - 19, EMPLOYMENT & DIFFERENTLY ABLED. Dr.G.Vijayaraghavan with VD Satheesan MLA- Episode 3",
       description:
@@ -256,7 +256,7 @@ const VideoPlayer = () => {
     },
     {
       url: "https://www.youtube.com/embed/IvWmxZGs30o",
-      title: "Episode 2:",
+      title: "Episode 2 |",
       title2:
         "COVID-19 & HEALTHCARE. Dr.M.V Pillai, World Famous Oncologist discusses with VD Satheesan MLA",
       description: "In conversation with Dr MV Pillai, World Famous Oncologist",
@@ -264,7 +264,7 @@ const VideoPlayer = () => {
 
     {
       url: "https://www.youtube.com/embed/SLoAonybiFc",
-      title: "Episode 1:",
+      title: "Episode 1 |",
       title2:
         "Dialogue with Sri. TM Thomas Issac, Finance Minister, Kerala & VD Satheesan, MLA- Full Video",
       description:
@@ -316,7 +316,7 @@ const VideoPlayer = () => {
   }
 
   return (
-    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10  ">
+    <div className="bg-[url('/home_images/about_satheesan_background.png')] w-full h-full pb-10 merriweather-regular">
       <h1 className="text-4xl text-[#035C96] text-center font-semibold pt-10">
         Getting Candid
       </h1>
@@ -328,53 +328,33 @@ const VideoPlayer = () => {
       <div className="container mx-auto p-4">
         <div className="flex flex-col md:flex-row gap-4">
           {/* Main video player */}
-          <div className="w-full lg:w-2/3 mt-7">
-            <div>
-              {/* Desktop version */}
-              <div className="hidden lg:block aspect-w-16 aspect-h-9">
-                <iframe
-                  ref={iframeRef}
-                  width="900"
-                  height="500"
-                  src={`${currentVideo.url}?enablejsapi=1&autoplay=${
-                    isPlaying ? 1 : 0
-                  }`}
-                  title="Main Video Player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-
-              {/* Mobile version */}
-              <div className="lg:hidden aspect-w-16 aspect-h-9">
-                <iframe
-                  ref={iframeRef}
-                  width="360"
-                  height="300"
-                  src={`${currentVideo.url}?enablejsapi=1&autoplay=${
-                    isPlaying ? 1 : 0
-                  }`}
-                  title="Main Video Player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+          <div className="lg:w-3/4 mt-7">
+            <div className="w-full aspect-video">
+              <iframe
+                ref={iframeRef}
+                className="w-full h-full"
+                src={`${currentVideo.url}?enablejsapi=1&autoplay=${
+                  isPlaying ? 1 : 0
+                }`}
+                title="Main Video Player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
 
             <div className="flex justify-between items-center mt-4">
-              <div className="lg:w-3/4">
+              <div className="w-3/5">
                 <p className="text-2xl font-semibold text-[#880505]">
                   {currentVideo.title}
                 </p>
                 <p className="text-xl mt-2">{currentVideo.description}</p>
               </div>
-              <div className="lg:w-1/4 flex justify-end mt-5">
+              <div className="w-2/5 flex justify-end mt-5">
                 <a
                   href="https://www.youtube.com/c/dialoguewithvds/videos"
                   target="_blank"
-                  className="focus:outline-none text-white bg-[#880505] hover:bg-red-800 font-medium rounded-md text-xl px-7 py-2.5 me-2 mb-2"
+                  className="focus:outline-none text-white bg-[#880505] hover:bg-red-800 font-medium rounded-md text-xl px-7 py-3 me-2 mb-2"
                 >
                   Subscribe
                 </a>
@@ -383,15 +363,14 @@ const VideoPlayer = () => {
           </div>
 
           {/* Playlist */}
-          <div className="w-full lg:w-1/3 mt-7">
+          <div className="lg:w-1/4 mt-7">
             <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
               <h2 className="text-xl text-white text-left">Playlist</h2>
               <h2 className="text-xl text-white text-right">
                 {videos.length} Videos
               </h2>
             </div>
-
-            <div className="flex flex-col h-[85vh] p-4  overflow-y-auto bg-[#880505] rounded-b-lg">
+            <div className="flex flex-col lg:h-[85vh] h-[50vh] p-3 overflow-y-auto bg-[#880505] rounded-b-lg">
               <div className="flex flex-col gap-2 mt-3">
                 {videos.map((video, index) => (
                   <div
