@@ -209,7 +209,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-40"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 h-48"
                 src="/home_images/PublicEye_Img/vds-9.jpeg"
                 alt="public_eye_images"
               />
@@ -218,7 +218,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-48"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 h-40"
                 src="/home_images/PublicEye_Img/vds-16.png"
                 alt="public_eye_images"
               />
@@ -227,7 +227,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-48`"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 h-48"
                 src="/home_images/PublicEye_Img/vds-22.png"
                 alt="public_eye_images"
               />
@@ -248,7 +248,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-40"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-48"
                 src="/home_images/PublicEye_Img/vds-5.jpeg"
                 alt="public_eye_images"
               />
@@ -257,7 +257,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44 "
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-42 "
                 src="/home_images/PublicEye_Img/vds-10.jpeg"
                 alt="public_eye_images"
               />
@@ -266,7 +266,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-48"
                 src="/home_images/PublicEye_Img/vds-17.png"
                 alt="public_eye_images"
               />
@@ -296,7 +296,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-3 h-40"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-3 h-36 "
                 src="/home_images/PublicEye_Img/vds-6.jpeg"
                 alt="public_eye_images"
               />
@@ -306,7 +306,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1  "
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-28 "
                 src="/home_images/PublicEye_Img/vds-11.png"
                 alt="public_eye_images"
               />
@@ -325,7 +325,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-40"
                 src="/home_images/PublicEye_Img/vds-28.jpeg"
                 alt="public_eye_images"
               />
