@@ -28,17 +28,19 @@ const MyConsistencyPage = () => {
               <span className="text-red-600 mr-2 ">•</span>Paliam Palace
             </span>
             <span className="flex items-center">
-              <span className="text-red-600 mr-2 ">•</span>Jewish Synagogue Museum
-            </span>
-            <span className="flex items-center">
-              <span className="text-red-600 mr-2 ">•</span>Kottakkavu Mar Thoma Syro-Malabar Church
-            </span>
-            <span className="flex items-center">
               <span className="text-red-600 mr-2 ">•</span>Don Bosco Church
+            </span>
+            <span className="flex items-center">
+              <span className="text-red-600 mr-2 ">•</span>Jewish Synagogue Museum
             </span>
             <span className="flex items-center">
               <span className="text-red-600 mr-2 ">•</span>Dakshina Mookambika Temple
             </span>
+            <span className="flex items-center">
+            <span className="text-red-600 mr-2 mb-7 md:mb-0">•</span>Kottakkavu Mar Thoma Syro-Malabar Church
+            </span>
+           
+           
           </div>
 
             <h3 className="text-xl pt-5 pb-5 merriweather-regular p-4 lg:p-0 lg:mt-5">

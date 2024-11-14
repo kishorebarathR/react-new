@@ -30,12 +30,11 @@ const Journey = () => {
                 src="/sincere_images/quote_down.svg"
                 alt="sincere_images"
                 loading="lazy"
-                
               />
             </div>
             <div className="justify-center flex">
               <Image
-                className=""
+                className="w-32 md:w-16 lg:w-24" // Larger on mobile
                 src="/sincere_images/si_3.png"
                 width={100}
                 height={50}
@@ -74,7 +73,7 @@ const Journey = () => {
               <Image
                 width={100}
                 height={50}
-                className=""
+                className="w-32 md:w-24 lg:w-32" // Tailwind classes to adjust size
                 src="/sincere_images/si_4.png"
                 alt="sincere_images"
                 loading="lazy"
@@ -168,7 +167,7 @@ const Journey = () => {
                 post-graduation, I briefly practised law in the Kerala High
                 Court before beginning my political career.
               </p>
-            </div>  
+            </div>
           </div>
 
           {/* Work So Far Start */}
@@ -201,7 +200,9 @@ const Journey = () => {
           {/* Work So Far End */}
 
           {/* My Interests Start */}
-          <div className="text-2xl lg:text-6xl ms-4  font-semibold ">My Interests</div>
+          <div className="text-2xl lg:text-6xl ms-4  font-semibold ">
+            My Interests
+          </div>
           <h3 className="p-4 lg:w-9/12 text-xl ">
             Ever since I was a child, I have been captivated by a wide range of
             interests that have shaped my life. My love for reading was the
@@ -232,7 +233,7 @@ const Journey = () => {
               <Image
                 width={300}
                 height={200}
-                className="lg:absolute right-0 bottom-0  w-80 "
+                className="lg:absolute right-0 bottom-0  w-80 hidden sm:block"
                 src="/sincere_images/vds_casual.png"
                 alt="VDS Casual"
                 loading="lazy"

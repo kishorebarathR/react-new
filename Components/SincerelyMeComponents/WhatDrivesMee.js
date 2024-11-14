@@ -1,4 +1,3 @@
-"use client"
 import React from "react"
 import Image from "next/image"
 import Slider from "react-slick"
@@ -49,14 +48,12 @@ export default function SimpleSlider() {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    autoplaySpeed: 3000,  
+    speed: 300, 
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PrevArrow />,
-
+   
     responsive: [
       {
         breakpoint: 1024,
@@ -78,27 +75,24 @@ export default function SimpleSlider() {
   return (
     <>
       <div className="text-2xl font-semibold text-center lg:p-10 p-2 pt-10 merriweather-regular">
-        {/* <p className="text-2xl">
-          Stay updated with the latest announcements and updates on my efforts
-          to create positive change in the country.
-        </p> */}
+        {/* Optional introduction or description */}
       </div>
-      <div className="lg:flex container mx-auto ">
+      <div className="lg:flex container mx-auto">
         <div className="lg:w-[15%] lg:my-10 bg-[#233876] flex items-center justify-center px-2">
-          <p className="text-white text-3xl font-semibold p-4 text-center merriweather-regular ">
+          <p className="text-white text-3xl font-semibold p-4 text-center merriweather-regular">
             What Drives Me
           </p>
         </div>
         <div className="lg:w-[82%] merriweather-regular">
-          <Slider {...settings} className="mx-auto container flex-1 px-2 ">
+          <Slider {...settings} className="mx-auto container flex-1 px-2">
             <div className="p-2">
               <div className="relative group">
                 <Image
                   width={500}
                   height={550}
                   src="/sincere_images/what_drives_me_images/education_img.png"
-                  alt="Slide 2"
-                  className="w-full"
+                  alt="Education"
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-300"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -106,15 +100,14 @@ export default function SimpleSlider() {
                 </div>
               </div>
             </div>
-
             <div className="p-2">
-              <div className="relative group ">
+              <div className="relative group">
                 <Image
                   width={500}
                   height={550}
                   src="/sincere_images/what_drives_me_images/secularism_img.png"
-                  alt="Slide 2"
-                  className="w-full"
+                  alt="Secularism"
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-300"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -122,31 +115,29 @@ export default function SimpleSlider() {
                 </div>
               </div>
             </div>
-
             <div className="p-2">
-              <div className="relative group ">
+              <div className="relative group">
                 <Image
                   width={500}
                   height={550}
                   src="/sincere_images/what_drives_me_images/women_img.jpg"
-                  alt="Slide 2"
-                  className="w-full"
+                  alt="Women's Rights"
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-300"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-xl">Women&apos;s Rights</p>
+                  <p className="text-white text-xl">Women's Rights</p>
                 </div>
               </div>
             </div>
-
             <div className="p-2">
-              <div className="relative group ">
+              <div className="relative group">
                 <Image
                   width={500}
                   height={550}
                   src="/sincere_images/what_drives_me_images/pr_img.png"
-                  alt="Slide 2"
-                  className="w-full"
+                  alt="Democracy"
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-300"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -154,15 +145,14 @@ export default function SimpleSlider() {
                 </div>
               </div>
             </div>
-
             <div className="p-2">
-              <div className="relative group ">
+              <div className="relative group">
                 <Image
                   width={500}
                   height={550}
                   src="/sincere_images/what_drives_me_images/env_img.png"
-                  alt="Slide 2"
-                  className="w-full"
+                  alt="Environment"
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-300"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -170,15 +160,14 @@ export default function SimpleSlider() {
                 </div>
               </div>
             </div>
-
             <div className="p-2">
-              <div className="relative group ">
+              <div className="relative group">
                 <Image
                   width={500}
                   height={550}
                   src="/sincere_images/what_drives_me_images/jail_img.png"
-                  alt="Slide 2"
-                  className="w-full"
+                  alt="Personal Freedom"
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-300"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -186,15 +175,14 @@ export default function SimpleSlider() {
                 </div>
               </div>
             </div>
-
             <div className="p-2">
-              <div className="relative group ">
+              <div className="relative group">
                 <Image
                   width={500}
                   height={550}
                   src="/sincere_images/what_drives_me_images/speech-01.jpg"
-                  alt="Slide 2"
-                  className="w-full  "
+                  alt="Progressive Ideals"
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-300"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -205,8 +193,8 @@ export default function SimpleSlider() {
           </Slider>
         </div>
 
-        <div className="w-[3%] lg:my-10 hidden md:block ">
-          <div className="w-full h-full bg-[#233876]  flex-1 "></div>
+        <div className="w-[3%] lg:my-10 hidden md:block">
+          <div className="w-full h-full bg-[#233876] flex-1"></div>
         </div>
       </div>
     </>

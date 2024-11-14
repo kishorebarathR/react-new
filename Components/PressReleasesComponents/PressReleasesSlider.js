@@ -3,8 +3,13 @@ import React from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { FaArrowCircleLeft, FaArrowRight } from "react-icons/fa"
+import {
+  FaArrowCircleLeft,
+  FaArrowRight,
+  FaArrowCircleRight,
+} from "react-icons/fa"
 
+// Desktop Arrow Components
 const NextArrow = (props) => {
   const { className, style, onClick } = props
   return (
@@ -43,10 +48,48 @@ const PrevArrow = (props) => {
   )
 }
 
+// Mobile Arrow Components
+const MobileNextArrow = (props) => {
+  const { onClick } = props
+  return (
+    <div
+      style={{
+        display: "block",
+        position: "absolute",
+        right: "12px",
+        bottom: "50%",
+        transform: "translateY(50%)",
+        zIndex: 1,
+      }}
+      onClick={onClick}
+    >
+      <FaArrowCircleRight size={18} color="black" />
+    </div>
+  )
+}
+
+const MobilePrevArrow = (props) => {
+  const { onClick } = props
+  return (
+    <div
+      style={{
+        display: "block",
+        position: "absolute",
+        left: "12px",
+        bottom: "50%",
+        transform: "translateY(50%)",
+        zIndex: 1,
+      }}
+      onClick={onClick}
+    >
+      <FaArrowCircleLeft size={18} color="black" />
+    </div>
+  )
+}
+
 export default function SimpleSlider() {
   var settings = {
     dots: false,
-    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -66,7 +109,9 @@ export default function SimpleSlider() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
+          arrows: true,
+          nextArrow: <MobileNextArrow />,
+          prevArrow: <MobilePrevArrow />,
         },
       },
     ],
@@ -74,14 +119,17 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <div className="text-2xl font-semibold text-left p-4 lg:p-4 pt-10 container mx-auto ">
+      <div className="text-2xl font-medium text-left p-4 lg:p-4 pt-10 container mx-auto ">
         <h2 className="text-3xl merriweather-regular ">
           Stay updated with the latest announcements and updates on my efforts
           to create positive change in the country.
         </h2>
       </div>
-      <Slider {...settings} className="mx-auto container lg:mb-10 merriweather-regular">
-        <div className="lg:p-4 p-4">
+      <Slider
+        {...settings}
+        className="mx-auto container lg:mb-10 merriweather-regular"
+      >
+        <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>17/04/2023</h5>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -94,7 +142,7 @@ export default function SimpleSlider() {
           </div>
         </div>
 
-        <div className="lg:p-4 p-4">
+        <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>16/04/2023</h5>
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -107,7 +155,7 @@ export default function SimpleSlider() {
           </div>
         </div>
 
-        <div className="lg:p-4 p-4">
+        <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>14/04/2023</h5>
             <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -120,7 +168,7 @@ export default function SimpleSlider() {
           </div>
         </div>
 
-        <div className="lg:p-4 p-4">
+        <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>13/04/2023</h5>
             <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -132,7 +180,7 @@ export default function SimpleSlider() {
           </div>
         </div>
 
-        <div className="lg:p-4 p-4">
+        <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>12/04/2023</h5>
             <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -145,7 +193,7 @@ export default function SimpleSlider() {
           </div>
         </div>
 
-        <div className="lg:p-4 p-4">
+        <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>09/04/2023</h5>
             <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -158,7 +206,7 @@ export default function SimpleSlider() {
           </div>
         </div>
 
-        <div className="lg:p-4 p-4">
+        <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>09/04/2023</h5>
             <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

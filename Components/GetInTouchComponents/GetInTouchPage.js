@@ -41,46 +41,8 @@ const GetInTouchPage = () => {
                 <h3 className="text-center text-3xl font-medium p-5 text-white">
                   Be My Friend
                 </h3>
-                <div className="flex mb-5 justify-center">
-                  <Image
-                    width={20}
-                    height={50}
-                    src="/footer_images/0.gif"
-                    alt="image-0"
-                  />
-                  <Image
-                    width={20}
-                    height={50}
-                    src="/footer_images/0.gif"
-                    alt="image-0"
-                  />
-                  <Image
-                    width={20}
-                    height={50}
-                    src="/footer_images/0.gif"
-                    alt="image-0"
-                  />
-                  <Image
-                    width={20}
-                    height={50}
-                    src="/footer_images/0.gif"
-                    alt="image-0"
-                  />
-                  <Image
-                    width={20}
-                    height={50}
-                    src="/footer_images/2.gif"
-                    alt="image-2"
-                  />
-                  <Image
-                    width={20}
-                    height={50}
-                    src="/footer_images/5.gif"
-                    alt="image-5"
-                  />
-                </div>
               </div>
-              <div className="mb-5 py-3" >
+              <div className="mb-5 py-3">
                 <input
                   type="text"
                   id="name"
@@ -132,62 +94,32 @@ const GetInTouchPage = () => {
                 alt="Ask Me Footer"
               />
             </Link>
-
-            <p className="text-3xl text-center mt-3 text-white py-3 merriweather-bold">
-              Profile Visitors
-            </p>
-            <div className="flex mb-5 justify-center py-5">
-              <Image
-                width={20}
-                height={50}
-                src="/footer_images/0.gif"
-                alt="footer_images"
-              />
-              <Image
-                width={20}
-                height={50}
-                src="/footer_images/0.gif"
-                alt="footer_images"
-              />
-              <Image
-                width={20}
-                height={50}
-                src="/footer_images/0.gif"
-                alt="footer_images"
-              />
-              <Image
-                width={20}
-                height={50}
-                src="/footer_images/5.gif"
-                alt="footer_images"
-              />
-              <Image
-                width={20}
-                height={50}
-                src="/footer_images/9.gif"
-                alt="footer_images"
-              />
-              <Image
-                width={20}
-                height={50}
-                src="/footer_images/1.gif"
-                alt="footer_images"
-              />
-            </div>
           </div>
         </div>
       </div>
-      <div className="h-96 w-full">
-        <iframe
-          className="w-full h-full"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=V%20D%20Satheesan%20MLA%20Office,%2046RM+4FR,%20North%20Paravur,%20Kerala%20683513+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        >
-          <a href="https://www.gps.ie/">gps tracker sport</a>
-        </iframe>
+      <div className="h-full w-full mb-0">
+        <div className="flex flex-col md:flex-row gap-4">
+          <iframe
+            className="w-full md:w-1/2 h-80 filter grayscale"
+            frameBorder="0"
+            scrolling="no"
+            marginHeight="0"
+            marginWidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=V%20D%20Satheesan%20MLA%20Office,%2046RM+4FR,%20North%20Paravur,%20Kerala%20683513+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          >
+            <a href="https://www.gps.ie/">gps tracker sport</a>
+          </iframe>
+          <iframe
+            className="w-full md:w-1/2 h-80 filter grayscale"
+            frameBorder="0"
+            scrolling="no"
+            marginHeight="0"
+            marginWidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=V%20D%20Satheesan%20MLA%20Office,%2046RM+4FR,%20North%20Paravur,%20Kerala%20683513+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          >
+            <a href="https://www.gps.ie/">gps tracker sport</a>
+          </iframe>
+        </div>
       </div>
 
       <div className="bg-gradient-to-b from-[#035C96] to-[#022E4B] py-5 text-center text-white text-xl shadow-t merriweather-regular">

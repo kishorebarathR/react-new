@@ -1,16 +1,25 @@
-import React from "react";
-import Image from "next/image";
+import React from "react"
+import Image from "next/image"
 const NewsLettersBanner = () => {
   return (
     <>
-      <div className="relative merriweather-regular">
-        <Image width={800} height={700} className="w-full" src="/news_letters/News-letter.png"alt="news" loading="lazy" />
-        <h6 className="absolute top-1/2 left-1/2 lg:ms-20 transform -translate-x-1/2 -translate-y-1/2 text-center text-[50px] text-white">
-         Newsletters
-        </h6>
+      <div className="relative merriweather-regular flex flex-col items-center justify-center w-full lg:h-[84vh] h-[60vh]">
+        <Image
+          width={800}
+          height={700}
+          className="w-full h-full object-cover"
+          src="/news_letters/News-letter.png"
+          alt="news"
+          loading="lazy"
+        />
+        <div className="flex items-center justify-center w-full h-full -mt-[60vh] lg:-mt-[84vh]">
+          <h6 className="text-center text-[50px] text-white lg:ms-20">
+            Newsletters
+          </h6>
+        </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default NewsLettersBanner;
+export default NewsLettersBanner
