@@ -21,6 +21,7 @@ const PublicEye = () => {
           </p>
           {/* start */}
           <div className="lg:flex gap-1 lg:p-5 container mx-auto">
+            {/* First Row Start */}
             <div>
               <Image
                 width={500}
@@ -28,7 +29,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_1.png"
+                src="/home_images/PublicEye_Img/vds-1.jpeg"
                 alt="public_eye_images"
               />
               <Image
@@ -37,7 +38,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_7.png"
+                src="/home_images/PublicEye_Img/vds-12.png"
                 alt="public_eye_images"
               />
               <Image
@@ -46,7 +47,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/meeting.jpg"
+                src="/home_images/PublicEye_Img/vds-13.png"
                 alt="public_eye_images"
               />
               <Image
@@ -55,7 +56,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_11.jpeg"
+                src="/home_images/PublicEye_Img/vds-20.jpg"
                 alt="public_eye_images"
               />
               <Image
@@ -63,12 +64,22 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-52"
-                src="/home_images/public_eye_images/public_img_18.jpeg"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 "
+                src="/home_images/PublicEye_Img/vds-24.jpeg"
+                alt="public_eye_images"
+              />
+              <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 h-32"
+                src="/home_images/PublicEye_Img/vds-30.jpeg"
                 alt="public_eye_images"
               />
             </div>
-
+            
+            {/* Second Row Start */}
             <div>
               <Image
                 width={500}
@@ -76,7 +87,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_2.png"
+                src="/home_images/PublicEye_Img/vds2.jpeg"
                 alt="public_eye_images"
               />
               <Image
@@ -85,7 +96,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_8.png"
+                src="/home_images/PublicEye_Img/vds-8.jpeg"
                 alt="public_eye_images"
               />
               <Image
@@ -94,7 +105,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_12.jpeg"
+                src="/home_images/PublicEye_Img/vds-23.jpeg"
                 alt="public_eye_images"
               />
               <Image
@@ -103,7 +114,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_13.jpeg"
+                src="/home_images/PublicEye_Img/vds-18.png"
                 alt="public_eye_images"
               />
               <Image
@@ -111,12 +122,12 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className=" hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44"
-                src="/home_images/public_eye_images/VDS-Public-Walk-in-Kerala.jpeg"
+                className=" hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 "
+                src="/home_images/PublicEye_Img/vds-31.jpeg"
                 alt="public_eye_images"
               />
             </div>
-
+            {/*Third Row Start */}
             <div>
               <Image
                 width={500}
@@ -124,7 +135,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className=" hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 w-full"
-                src="/home_images/public_eye_images/public_img_3.png"
+                src="/home_images/PublicEye_Img/vds-3.jpeg"
                 alt="public_eye_images"
               />
               <Image
@@ -133,7 +144,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_9.png"
+                src="/home_images/PublicEye_Img/vds-7.jpeg"
                 alt="public_eye_images"
               />
               <Image
@@ -142,7 +153,7 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_14.jpeg"
+                src="/home_images/PublicEye_Img/vds-15.png"
                 alt="public_eye_images"
               />
               <Image
@@ -150,12 +161,39 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-36"
-                src="/home_images/public_eye_images/VDS-Strike.jpeg"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
+                src="/home_images/PublicEye_Img/vds-19.png"
+                alt="public_eye_images"
+              />
+               <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 "
+                src="/home_images/PublicEye_Img/vds-21.png"
+                alt="public_eye_images"
+              />
+               <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 "
+                src="/home_images/PublicEye_Img/vds-26.jpeg"
+                alt="public_eye_images"
+              />
+               <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-28"
+                src="/home_images/PublicEye_Img/VDS-Public-Walk-in-Kerala1.jpeg"
                 alt="public_eye_images"
               />
             </div>
-
+         {/*Fourth Row Start */}
             <div>
               <Image
                 width={500}
@@ -163,83 +201,113 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 w-full"
-                src="/home_images/public_eye_images/public_img_4.png"
+                src="/home_images/PublicEye_Img/vds-4.jpeg"
                 alt="public_eye_images"
               />
               <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 h-40"
+                src="/home_images/PublicEye_Img/vds-9.jpeg"
+                alt="public_eye_images"
+              />
+               <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 h-48"
+                src="/home_images/PublicEye_Img/vds-16.png"
+                alt="public_eye_images"
+              />
+               <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 h-48`"
+                src="/home_images/PublicEye_Img/vds-22.png"
+                alt="public_eye_images"
+              />
+               <Image
                 width={500}
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_15.jpeg"
+                src="/home_images/PublicEye_Img/vds-29.jpeg"
                 alt="public_eye_images"
               />
             </div>
-
+            {/*Fifth Row Start */}
             <div>
               <Image
                 width={500}
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_5.png"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-40"
+                src="/home_images/PublicEye_Img/vds-5.jpeg"
                 alt="public_eye_images"
               />
-              <Image
+               <Image
                 width={500}
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 w-full"
-                src="/home_images/public_eye_images/public_img_10.png"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44 "
+                src="/home_images/PublicEye_Img/vds-10.jpeg"
                 alt="public_eye_images"
               />
-              <Image
-                width={500}
-                height={300}
-                loading="lazy"
-                data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/public_img_16.jpeg"
-                alt="public_eye_images"
-              />
-              <Image
+               <Image
                 width={500}
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44"
-                src="/home_images/public_eye_images/VDS-Speech.jpeg"
+                src="/home_images/PublicEye_Img/vds-17.png"
+                alt="public_eye_images"
+              />
+               <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
+                src="/home_images/PublicEye_Img/vds-23.jpeg"
+                alt="public_eye_images"
+              />
+               <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
+                src="/home_images/PublicEye_Img/vds-27.jpeg"
                 alt="public_eye_images"
               />
             </div>
-
+          {/*Sixth Row Start */}
             <div>
               <Image
                 width={500}
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-3"
-                src="/home_images/public_eye_images/public_img_6.png"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-3 h-40"
+                src="/home_images/PublicEye_Img/vds-6.jpeg"
                 alt="public_eye_images"
               />
-              <div
-                width={500}
-                height={300}
-                loading="lazy"
-                data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 w-52 h-32"
-              ></div>
+            
               <Image
                 width={500}
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-36 "
-                src="/home_images/public_eye_images/public_img_17.jpeg"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1  "
+                src="/home_images/PublicEye_Img/vds-11.png"
                 alt="public_eye_images"
               />
               <Image
@@ -248,7 +316,17 @@ const PublicEye = () => {
                 loading="lazy"
                 data-aos="zoom-in-up"
                 className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1"
-                src="/home_images/public_eye_images/Vds-Satheesan-Metting-Speech.jpeg"
+                src="/home_images/PublicEye_Img/vds-14.png"
+                alt="public_eye_images"
+              />
+              
+                <Image
+                width={500}
+                height={300}
+                loading="lazy"
+                data-aos="zoom-in-up"
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-44"
+                src="/home_images/PublicEye_Img/vds-28.jpeg"
                 alt="public_eye_images"
               />
             </div>
