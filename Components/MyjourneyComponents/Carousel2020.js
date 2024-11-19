@@ -85,13 +85,13 @@ export default function SimpleSlider() {
                 loading="lazy"
               />
             </div>
-            <div className="w-full rounded-2xl h-80 ">
+            <div className="w-full rounded-2xl h-80 hidden">
               <Image
                 width={500}
                 height={550}
                 src="/my-journey/carousel-img-26.png"
                 alt="Video thumbnail"
-                className="w-full h-full rounded-3xl img-s"
+                className="w-full h-full rounded-3xl img-s "
                 loading="lazy"
               />
             </div>
@@ -99,7 +99,7 @@ export default function SimpleSlider() {
               <Image
                 width={500}
                 height={550}
-                src="/my-journey/carousel-img-27.png"
+                src="/my-journey/carousel-img-30.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
                 loading="lazy"
@@ -109,7 +109,7 @@ export default function SimpleSlider() {
               <Image
                 width={500}
                 height={550}
-                src="/my-journey/carousel-img-25.jpeg"
+                src="/my-journey/carousel-img-31.jpeg"
                 alt="Video thumbnail"
                 className="w-full h-full rounded-3xl img-s"
                 loading="lazy"
