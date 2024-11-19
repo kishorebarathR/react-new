@@ -15,7 +15,9 @@ const Footerpage = () => {
     <div>
       <div
         className="grid lg:grid-cols-3 p-5 shadow"
-        style={{ backgroundImage: "url('/footer_images/Get-in-touch-background.png')" }}
+        style={{
+          backgroundImage: "url('/footer_images/Get-in-touch-background.png')",
+        }}
       >
         {/* Related Websites Section */}
         <div className="text-white merriweather-regular">
@@ -43,7 +45,6 @@ const Footerpage = () => {
               <h3 className="text-center text-4xl  p-5 text-white merriweather-regular font-semibold ">
                 Be My Friend
               </h3>
-             
             </div>
             <div className="mb-5 py-3">
               <input
@@ -87,19 +88,16 @@ const Footerpage = () => {
         </div>
 
         {/* Contact Info and Profile Visitors Section */}
-        <div className="justify-center items-center">
+        <div className="fixed bottom-5 right-5 z-50">
           <Link href="mailto:hello@vdsatheesan.com">
             <Image
               width={400}
               height={100}
-              className="bounce-in mt-10"
+              className="bounce-in w-44"
               src="/footer_images/ask-me-footer.png"
               alt="Ask Me Footer"
             />
           </Link>
-
-         
-         
         </div>
       </div>
 

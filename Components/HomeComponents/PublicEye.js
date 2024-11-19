@@ -64,7 +64,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 "
+                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 "
                 src="/home_images/PublicEye_Img/vds-24.jpeg"
                 alt="public_eye_images"
               />
@@ -73,7 +73,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hover:filter hover:brightness-50 duration-700 mb-1 h-32"
+                className="hover:filter hover:brightness-50 duration-700 mb-1 lg:h-32"
                 src="/home_images/PublicEye_Img/vds-30.jpeg"
                 alt="public_eye_images"
               />
@@ -248,7 +248,7 @@ const PublicEye = () => {
                 height={300}
                 loading="lazy"
                 data-aos="zoom-in-up"
-                className="hidden lg:block hover:filter hover:brightness-50 duration-700 mb-1 h-48"
+                className=" hover:filter hover:brightness-50 duration-700 mb-1 h-48"
                 src="/home_images/PublicEye_Img/vds-5.jpeg"
                 alt="public_eye_images"
               />

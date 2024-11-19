@@ -73,7 +73,7 @@ const MeUnfiltered = () => {
             Me, Unfiltered
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 container mx-auto pb-10 text-white">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 container mx-auto pb-10 text-white">
             {/* First column (Twitter feed) */}
             <div className="flex justify-center items-center w-full">
               <a
@@ -87,19 +87,21 @@ const MeUnfiltered = () => {
             </div>
 
             {/* Second column (Instagram logo) */}
-            <div className="bg-[#C0C0C0] rounded-lg shadow-md flex items-center justify-center w-full">
-              <Image
-                src="/home_images/Instagram-Logo.wine.svg"
-                alt="Instagram logo"
-                className="w-40 h-40"
-                loading="lazy"
-                width={100}
-                height={100}
-              />
+            <div className="mx-5 lg:mx-0 ">
+              <div className="bg-[#C0C0C0] rounded-lg shadow-md flex items-center justify-center  w-full h-full">
+                <Image
+                  src="/home_images/Instagram-Logo.wine.svg"
+                  alt="Instagram logo"
+                  className="w-40 h-40"
+                  loading="lazy"
+                  width={100}
+                  height={100}
+                />
+              </div>
             </div>
 
             {/* Third column (Facebook page iframe) */}
-            <div className="flex justify-center items-center w-full">
+            <div className="flex justify-center items-center w-full px-[18px] sm:px-0">
               <LazyIframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVDSatheeshanParavur&tabs=timeline&width=350&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
                 title="Facebook Page"
@@ -112,35 +114,37 @@ const MeUnfiltered = () => {
             </div>
 
             {/* Fourth column (Upcoming schedules) */}
-            <div className="bg-white rounded-xl shadow-lg p-4  w-full ">
-              <div className="bg-blue-900 text-white font-semibold text-lg px-4 py-2 rounded-t-xl">
-                Upcoming Schedules
-              </div>
-              <div className="divide-y divide-gray-300">
-                <div className="py-3 px-4">
-                  <p className="text-gray-700">
-                    18/4/2023 | Upcoming event and details will appear here
-                  </p>
+            <div className="mx-5 lg:mx-0 ">
+              <div className="bg-white rounded-xl shadow-lg p-4  w-full h-full  ">
+                <div className="bg-blue-900 text-white font-semibold text-lg px-4 py-2 rounded-t-xl">
+                  Upcoming Schedules
                 </div>
-                <div className="py-3 px-4">
-                  <p className="text-gray-700">
-                    18/4/2023 | Upcoming event and details will appear here
-                  </p>
-                </div>
-                <div className="py-3 px-4">
-                  <p className="text-gray-700">
-                    18/4/2023 | Upcoming event and details will appear here
-                  </p>
-                </div>
-                <div className="py-3 px-4">
-                  <p className="text-gray-700">
-                    18/4/2023 | Upcoming event and details will appear here
-                  </p>
-                </div>
-                <div className="py-3 px-4">
-                  <p className="text-gray-700">
-                    18/4/2023 | Upcoming event and details will appear here
-                  </p>
+                <div className="divide-y divide-gray-300">
+                  <div className="py-3 px-4">
+                    <p className="text-gray-700">
+                      18/4/2023 | Upcoming event and details will appear here
+                    </p>
+                  </div>
+                  <div className="py-3 px-4">
+                    <p className="text-gray-700">
+                      18/4/2023 | Upcoming event and details will appear here
+                    </p>
+                  </div>
+                  <div className="py-3 px-4">
+                    <p className="text-gray-700">
+                      18/4/2023 | Upcoming event and details will appear here
+                    </p>
+                  </div>
+                  <div className="py-3 px-4">
+                    <p className="text-gray-700">
+                      18/4/2023 | Upcoming event and details will appear here
+                    </p>
+                  </div>
+                  <div className="py-3 px-4">
+                    <p className="text-gray-700">
+                      18/4/2023 | Upcoming event and details will appear here
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

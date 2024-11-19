@@ -343,8 +343,8 @@ const VideoPlayer = () => {
               ></iframe>
             </div>
 
-            <div className="flex justify-between items-center mt-4">
-              <div className="w-3/5">
+            <div className="lg:flex justify-between items-center mt-4">
+              <div className="lg:w-3/5">
                 <p className="text-2xl font-semibold text-[#880505]">
                   {currentVideo.title}
                 </p>
