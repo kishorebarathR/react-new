@@ -89,7 +89,7 @@ const GetInTouchPage = () => {
               <Image
                 width={400}
                 height={100}
-                className="bounce-in mt-10"
+                className="bounce-in mt-10 "
                 src="/footer_images/ask-me-footer.png"
                 alt="Ask Me Footer"
               />
