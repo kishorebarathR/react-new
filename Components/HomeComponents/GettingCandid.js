@@ -378,7 +378,7 @@ const VideoPlayer = () => {
 
           {/* Playlist */}
           <div className="lg:w-1/4 mt-7">
-          <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
+            <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
               <h2 className="text-xl text-white text-left">Playlist</h2>
               <h2 className="text-xl text-white text-right">
                 {videos.length} Videos
