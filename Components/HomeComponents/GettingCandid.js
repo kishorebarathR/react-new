@@ -291,26 +291,42 @@ const VideoPlayer = () => {
     return () => window.removeEventListener("message", handleMessage)
   }, [])
 
+  const postMessageToPlayer = (command, args = []) => {
+    iframeRef.current?.contentWindow.postMessage(
+      JSON.stringify({ event: "command", func: command, args }),
+      "*"
+    )
+  }
+
+  const playVideo = () => {
+    postMessageToPlayer("playVideo")
+    setIsPlaying(true)
+  }
+
+  const pauseVideo = () => {
+    postMessageToPlayer("pauseVideo")
+    setIsPlaying(false)
+  }
+
+  const stopVideo = () => {
+    postMessageToPlayer("stopVideo")
+    setIsPlaying(false)
+    setLastPlayedTime(0)
+  }
+
   const selectVideo = (video) => {
     const videoId = video.url.split("/")[4]
 
-    if (videoId === currentVideoId && isPlaying) {
-      iframeRef.current.contentWindow.postMessage(
-        '{"event":"command","func":"pauseVideo","args":""}',
-        "*"
-      )
-      setIsPlaying(false)
+    if (videoId === currentVideoId) {
+      if (isPlaying) pauseVideo()
+      else playVideo()
     } else {
       setCurrentVideo(video)
       setCurrentVideoId(videoId)
       setIsPlaying(true)
 
-      // Resume from last played time
       setTimeout(() => {
-        iframeRef.current.contentWindow.postMessage(
-          `{"event":"command","func":"seekTo","args":[${lastPlayedTime}, true]}`,
-          "*"
-        )
+        postMessageToPlayer("seekTo", [lastPlayedTime, true])
       }, 500)
     }
   }
@@ -333,9 +349,7 @@ const VideoPlayer = () => {
               <iframe
                 ref={iframeRef}
                 className="w-full h-full"
-                src={`${currentVideo.url}?enablejsapi=1&autoplay=${
-                  isPlaying ? 1 : 0
-                }`}
+                src={`${currentVideo.url}?enablejsapi=1`}
                 title="Main Video Player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -364,34 +378,32 @@ const VideoPlayer = () => {
 
           {/* Playlist */}
           <div className="lg:w-1/4 mt-7">
-            <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
+          <div className="flex justify-between items-center bg-[#880505] px-2 pt-2 rounded-t-lg ">
               <h2 className="text-xl text-white text-left">Playlist</h2>
               <h2 className="text-xl text-white text-right">
                 {videos.length} Videos
               </h2>
             </div>
-            <div className="flex flex-col lg:h-[85vh] h-[50vh] p-3 overflow-y-auto bg-[#880505] rounded-b-lg">
-              <div className="flex flex-col gap-2 mt-3">
-                {videos.map((video, index) => (
-                  <div
-                    key={index}
-                    className={`cursor-pointer ${
-                      currentVideoId === video.url.split("/")[4]
-                        ? "bg-gray-700"
-                        : ""
-                    }`}
-                    onClick={() => selectVideo(video)}
-                  >
-                    <img
-                      src={`https://img.youtube.com/vi/${
-                        video.url.split("/")[4]
-                      }/0.jpg`}
-                      alt={`Thumbnail for ${video.title}`}
-                      className="w-full h-40 object-cover rounded-lg hover:opacity-80 transition"
-                    />
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-col lg:h-[77vh] h-[50vh] p-3 overflow-y-auto bg-[#880505] rounded-b-lg">
+              {videos.map((video, index) => (
+                <div
+                  key={index}
+                  className={`cursor-pointer ${
+                    currentVideoId === video.url.split("/")[4]
+                      ? "bg-gray-700"
+                      : ""
+                  }`}
+                  onClick={() => selectVideo(video)}
+                >
+                  <img
+                    src={`https://img.youtube.com/vi/${
+                      video.url.split("/")[4]
+                    }/0.jpg`}
+                    alt={`Thumbnail`}
+                    className="w-full h-40 object-cover rounded-lg hover:opacity-80 transition"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
