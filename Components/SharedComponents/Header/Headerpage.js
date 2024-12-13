@@ -4,44 +4,47 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/my-journey", label: "My Journey" },
+  { href: "/sincerely-me", label: "Sincerely, Me" },
+  { href: "/my-constituency", label: "My Constituency" },
+  { href: "/in-my-book-shelf", label: "In My Book Shelf" },
+  { href: "/press-releases", label: "Press Releases" },
+  { href: "/newsletters", label: "Newsletters" },
+  { href: "/get-in-touch", label: "Get in Touch" },
+]
+
 const Headerpage = () => {
   const pathname = usePathname()
   const [drawerOpen, setDrawerOpen] = useState(false)
 
-  const handleLinkClick = () => {
-    setDrawerOpen(false)
-  }
-
-  const handleCloseButtonClick = () => {
-    setDrawerOpen(false)
-  }
+  const handleLinkClick = () => setDrawerOpen(false)
 
   return (
     <div>
       <nav className="bg-[#033B5F] drop-shadow-lg">
         <div className="lg:max-w-screen-xl flex lg:flex-wrap items-center justify-between p-0">
           <div className="lg:flex justify-between">
-            <div>
-              <Link href="/" passHref>
-                <div className="lg:flex items-center">
-                  <Image
-                    width={250}
-                    height={250}
-                    src="/home_images/vds-main.png"
-                    className="p-0 h-32"
-                    alt="vds"
-                  />
-                  <div className="self-center ml-4">
-                    <h6 className="text-white text-4xl font-semibold mb-1 lg:text-center merriweather-regular">
-                      V D Satheesan
-                    </h6>
-                    <p className="text-white text-[23px] merriweather-regular ms-2 font-semibold">
-                      For the people
-                    </p>
-                  </div>
+            <Link href="/" passHref>
+              <div className="lg:flex items-center">
+                <Image
+                  width={250}
+                  height={250}
+                  src="/home_images/vds-main.png"
+                  className="p-0 h-32"
+                  alt="vds"
+                />
+                <div className="self-center ml-4">
+                  <h6 className="text-white text-4xl font-semibold mb-1 lg:text-center merriweather-regular">
+                    V D Satheesan
+                  </h6>
+                  <p className="text-white text-[23px] merriweather-regular ms-2 font-semibold">
+                    For the people
+                  </p>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
 
             <div className="flex lg:grid lg:grid-col lg:py-0 lg:grid-flow-row justify-center items-center lg:w-[50%]">
               <p className="text-white m-5 merriweather-regular italic text-[23px]">
@@ -69,20 +72,21 @@ const Headerpage = () => {
           />
         </button>
       </div>
+
       <div
         id="drawer-right-example"
         className={`bg-[#033B5F] fixed top-0 right-0 z-40 h-screen overflow-y-auto transition-transform ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
-        } w-80 dark:bg-gray-800`}
+        } w-80`}
         tabIndex="-1"
       >
         <button
           type="button"
-          className="text-red-600 bg-transparent hover:bg-gray-200 rounded-lg  p-2 absolute top-2 right-2 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
-          onClick={handleCloseButtonClick}
+          className="text-red-600 bg-transparent hover:bg-gray-200 rounded-lg p-2 absolute top-2 right-2"
+          onClick={handleLinkClick}
         >
           <svg
-            className="w-5 h-5 "
+            className="w-5 h-5"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -96,109 +100,27 @@ const Headerpage = () => {
           <span className="sr-only">Close menu</span>
         </button>
 
-        <div className="merriweather-regular text-xl ">
-          <ul className="font-medium text-white ">
+        <ul className="merriweather-regular text-xl font-medium text-white">
+          {navLinks.map(({ href, label }) => (
             <li
+              key={href}
               onClick={handleLinkClick}
-              className={`border-b ${pathname === "/" ? "bg-gray-500" : ""}`}
+              className={`border-b ${pathname === href ? "bg-gray-500" : ""}`}
             >
-              <Link href="/" passHref>
+              <Link href={href} passHref>
                 <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>Home</span>
+                  <span>{label}</span>
                 </div>
               </Link>
             </li>
-            <li
-              onClick={handleLinkClick}
-              className={`border-b ${
-                pathname === "/my-journey" ? "bg-gray-500" : ""
-              }`}
-            >
-              <Link href="/my-journey" passHref>
-                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>My Journey</span>
-                </div>
-              </Link>
-            </li>
-            <li
-              onClick={handleLinkClick}
-              className={`border-b ${
-                pathname === "/sincerely-me" ? "bg-gray-500" : ""
-              }`}
-            >
-              <Link href="/sincerely-me" passHref>
-                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>Sincerely, Me</span>
-                </div>
-              </Link>
-            </li>
-            <li
-              onClick={handleLinkClick}
-              className={`border-b ${
-                pathname === "/my-constituency" ? "bg-gray-500" : ""
-              }`}
-            >
-              <Link href="/my-constituency" passHref>
-                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>My Constituency</span>
-                </div>
-              </Link>
-            </li>
-            <li
-              onClick={handleLinkClick}
-              className={`border-b ${
-                pathname === "/in-my-book-shelf" ? "bg-gray-500" : ""
-              }`}
-            >
-              <Link href="/in-my-book-shelf" passHref>
-                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>In My Book Shelf</span>
-                </div>
-              </Link>
-            </li>
-            <li
-              onClick={handleLinkClick}
-              className={`border-b ${
-                pathname === "/press-releases" ? "bg-gray-500" : ""
-              }`}
-            >
-              <Link href="/press-releases" passHref>
-                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>Press Releases</span>
-                </div>
-              </Link>
-            </li>
-            <li
-              onClick={handleLinkClick}
-              className={`border-b ${
-                pathname === "/newsletters" ? "bg-gray-500" : ""
-              }`}
-            >
-              <Link href="/newsletters" passHref>
-                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>Newsletters</span>
-                </div>
-              </Link>
-            </li>
-            <li
-              onClick={handleLinkClick}
-              className={` ${
-                pathname === "/get-in-touch" ? "bg-gray-500" : ""
-              }`}
-            >
-              <Link href="/get-in-touch" passHref>
-                <div className="flex items-center py-5 px-4 rounded-lg cursor-pointer">
-                  <span>Get in Touch </span>
-                </div>
-              </Link>
-            </li>
-          </ul>
-        </div>
+          ))}
+        </ul>
       </div>
+
       {drawerOpen && (
         <div
           className="fixed inset-0 bg-black opacity-25 z-30"
-          onClick={handleCloseButtonClick}
+          onClick={handleLinkClick}
         ></div>
       )}
     </div>
