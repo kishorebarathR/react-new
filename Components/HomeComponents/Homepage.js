@@ -56,7 +56,7 @@ const Homepage = () => {
             <Image
               width={400}
               height={350}
-              src="/home_images/vds_video_img.png"
+              src="/home_images/vds_img-home1.png"
               className="h-full  w-[89vh]"
               alt="Description"
               loading="lazy"

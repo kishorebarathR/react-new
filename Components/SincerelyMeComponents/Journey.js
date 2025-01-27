@@ -232,9 +232,9 @@ const Journey = () => {
               </p>
               <Image
                 width={300}
-                height={200}
-                className="lg:absolute right-0 bottom-0  w-80 hidden sm:block"
-                src="/sincere_images/vds_casual.png"
+                height={300}
+                className="lg:absolute right-0 bottom-0  w-96  hidden sm:block"
+                src="/sincere_images/vds-speech-img1-1.png"
                 alt="VDS Casual"
                 loading="lazy"
               />

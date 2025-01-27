@@ -19,8 +19,8 @@ const SincerelyMe = () => {
             <Image
               width={400}
               height={140}
-              className="w-96"
-              src="/sincere_images/Nettor_Kerala.png"
+              className="sm:w-96 w-44 "
+              src="/sincere_images/sincerely-img-11.png"
               alt="Nettor Kerala"
               loading="lazy"
             />
