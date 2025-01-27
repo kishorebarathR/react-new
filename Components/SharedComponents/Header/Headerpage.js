@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
@@ -20,6 +20,17 @@ const Headerpage = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   const handleLinkClick = () => setDrawerOpen(false)
+
+  useEffect(() => {
+    if (drawerOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => {
+      document.body.style.overflow = "" 
+    }
+  }, [drawerOpen])
 
   return (
     <div>
