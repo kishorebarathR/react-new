@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import FormComponents from '../../FormComponents/Contactform'
+const currentYear = new Date().getFullYear()
 const Footerpage = () => {
   const pathname = usePathname()
 
@@ -57,7 +58,7 @@ const Footerpage = () => {
 
       {/* Copyright Section */}
       <div className="bg-gradient-to-b from-[#035C96] to-[#022E4B] py-5 text-center text-white text-xl shadow-t merriweather-regular">
-        Copyright © 2022 All rights reserved.
+        Copyright © {currentYear}  All rights reserved.
       </div>
     </div>
   )

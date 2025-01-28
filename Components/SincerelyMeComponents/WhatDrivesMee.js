@@ -48,12 +48,12 @@ export default function SimpleSlider() {
     dots: false,
     arrows: false,
     infinite: true,
-    autoplaySpeed: 3000,  
-    speed: 300, 
+    autoplaySpeed: 3000,
+    speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-   
+
     responsive: [
       {
         breakpoint: 1024,
@@ -74,9 +74,7 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <div className="text-2xl font-semibold text-center lg:p-10 p-2 pt-10 merriweather-regular">
-        {/* Optional introduction or description */}
-      </div>
+     
       <div className="lg:flex container mx-auto">
         <div className="lg:w-[15%] lg:my-10 bg-[#233876] flex items-center justify-center px-2">
           <p className="text-white text-3xl font-semibold p-4 text-center merriweather-regular">

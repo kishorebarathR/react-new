@@ -119,8 +119,9 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <div className="text-2xl font-medium text-left p-4 lg:p-4 pt-10 container mx-auto ">
-        <h2 className="text-3xl merriweather-regular ">
+    <div>
+      <div className="text-2xl font-medium text-left p-4 lg:p-1 lg:pt-10 container mx-auto ">
+        <h2 className="lg:text-3xl merriweather-regular ">
           Stay updated with the latest announcements and updates on my efforts
           to create positive change in the country.
         </h2>
@@ -219,6 +220,7 @@ export default function SimpleSlider() {
           </div>
         </div>
       </Slider>
+      </div>
     </>
   )
 }
