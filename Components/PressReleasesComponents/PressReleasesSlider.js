@@ -120,7 +120,7 @@ export default function SimpleSlider() {
   return (
     <>
     <div>
-      <div className="text-2xl font-medium text-left p-4 lg:p-1 lg:pt-10 container mx-auto ">
+      <div className="text-2xl font-medium text-left px-10 pt-5 container mx-auto ">
         <h2 className="lg:text-3xl merriweather-regular ">
           Stay updated with the latest announcements and updates on my efforts
           to create positive change in the country.
@@ -133,7 +133,7 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>17/04/2023</h5>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="pb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               തിരുവനന്തപുരം
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -146,7 +146,7 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>16/04/2023</h5>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="pb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               തിരുവനന്തപുരം
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -159,7 +159,7 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>14/04/2023</h5>
-            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="pb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               തിരുവനന്തപുരം
             </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -172,11 +172,11 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>13/04/2023</h5>
-            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="pb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               തിരുവനന്തപുരം
             </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              ഹൈക്കോടതി പരാമർശം പ്രതിപക്ഷ आरोपണം അടിവരയിടുന്നു
+            ഹൈക്കോടതി പരാമർശം പ്രതിപക്ഷ ആരോപണം അടിവരയിടുന്നത്
             </p>
           </div>
         </div>
@@ -184,7 +184,7 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>12/04/2023</h5>
-            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="pb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               തിരുവനന്തപുരം
             </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -197,7 +197,7 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>09/04/2023</h5>
-            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="pb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               ഫേസ്ബുക്ക് പോസ്റ്റ്
             </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -210,7 +210,7 @@ export default function SimpleSlider() {
         <div className="lg:p-4 p-7">
           <div className="block max-w-sm p-5 bg-white rounded-2xl h-52 shadow-lg">
             <h5>09/04/2023</h5>
-            <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h3 className="pb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               കോഴിക്കോട്
             </h3>
             <p className="font-normal text-gray-700 dark:text-gray-400">
