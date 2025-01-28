@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation"
 
 const Page = () => {
   const pathname = usePathname()
-  const title = "Sincerely,Me-vdsnew"
+  const title = "Sincerely, Me - Insights from V D Satheesan, Leader of Opposition, Kerala"
   const description =
-    " I was born on May 31, 1964 to my parents, K Damodara Menon and Smt. V Vilasini Amma in Nettoor, Eranakulam. Growing up in a middle-class household as one of six siblings"
+    "Explore 'Sincerely, Me' by V D Satheesan, where he shares personal stories and his journey in politics. "
   const path = `${pathname}`
   const metaImage = ""
   return (

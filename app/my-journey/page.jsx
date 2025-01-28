@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation"
 
 const Page = () => {
   const pathname = usePathname()
-  const title = "My Journey-vdsnew"
+  const title = "V D Satheesan: A Journey Through Leadership and Advocacy"
   const description =
-    "During this period, VD Satheeshan embarked on his educational journey. He successfully passed the SSLC examination from High School in Panangad and subsequently enrolled at SH College"
+    "Discover the inspiring journey of V D Satheesan, from a passionate student leader to a significant political figure in Kerala."
   const path = `${pathname}`
   const metaImage = ""
   return (

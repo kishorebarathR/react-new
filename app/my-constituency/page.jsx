@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation"
 
 const Page = () => {
   const pathname = usePathname()
-  const title = "My Constituency-vdsnew"
+  const title = "Exploring North Paravur: V.D. Satheesan's Constituency Legacy"
   const description =
-    "North Paravur is an area with a rich and vibrant history. Paravur gets its name from the old word Parayur, which means “site of the ancient tribe of Paravar.” The Paravar were the predominant population of Kerala’s"
+    "Discover North Paravur through the eyes of V.D. Satheesan. Explore its rich history, vibrant culture, and the impactful developments shaping this unique constituency."
   const path = `${pathname}`
   const metaImage = ""
   return (

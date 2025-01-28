@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation"
 
 const Page = () => {
     const pathname = usePathname()
-    const title = "Newsletters-vdsnew"
+    const title = " V.D. Satheesan - Official Newsletters | Insights and Updates from Kerala's Leader"
     const description =
-      "Watch this space for my newsletters and download them to stay up to date on my news,  events, and policy initiatives newsletters."
+      "Stay informed with the latest updates, insights, and reflections from V.D. Satheesan, Kerala's prominent leader. Dive into our newsletters for a closer look at policies, community engagements, and more."
     const path = `${pathname}`
     const metaImage = ""
     return (

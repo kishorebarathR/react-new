@@ -5,9 +5,9 @@ import Seo from "@/Components/SeoComponents/Seo"
 import { usePathname } from "next/navigation"
 const Page = () => {
   const pathname = usePathname()
-  const title = "Press-Releases-vdsnew"
+  const title = "V D Satheesan Press Releases - Latest Updates and Announcements"
   const description =
-    "Stay updated with the latest announcements and updates on my efforts to create positive change in the country Press Releases."
+    "Stay informed with the latest press releases from V D Satheesan. Discover updates and announcements about ongoing efforts and initiatives to impact positive change in the community. "
   const path = `${pathname}`
   const metaImage = ""
   return (

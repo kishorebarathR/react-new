@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation"
 
 const Page = () => {
   const pathname = usePathname()
-  const title = "In My Book Shelf-vdsnew"
+  const title = " V. D. Satheesan’s Favourite Reads – In My Book Shelf"
   const description =
-    "Growing up, my love for reading was deeply ingrained in me by my mother, who used to tell me stories from the puranas. As I grew older, my passion for reading continued "
+    " Explore the influential bookshelf of V. D. Satheesan, featuring a diverse range of literature from historical to modern authors that have shaped his political and personal life. "
   const path = `${pathname}`
   const metaImage = ""
   return (
