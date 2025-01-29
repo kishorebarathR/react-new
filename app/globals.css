@@ -63,8 +63,8 @@ body {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   transform: translate3d(0, 0, 0);
-  /* padding-top: 15px !important;
-  padding-bottom: 15px !important; */
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 
 /* Limit dots to 3 */
