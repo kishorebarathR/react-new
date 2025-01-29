@@ -10,7 +10,7 @@ const MyConstituencyBanner = () => {
   }
   return (
     <>
-      <div>
+      <div className="">
         {!isVideoVisible ? (
           <div className="relative lg:h-[84vh] h-[60vh] w-full">
             <Image

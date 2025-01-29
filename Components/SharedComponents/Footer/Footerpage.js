@@ -21,7 +21,7 @@ const Footerpage = () => {
         }}
       >
         {/* Related Websites Section */}
-        <div className="text-white merriweather-regular">
+        <div className="text-white ">
           <h3 className="text-4xl font-semibold p-5">Related Websites</h3>
           <div className="text-2xl">
             <Link href="https://www.inc.in/">
@@ -48,7 +48,7 @@ const Footerpage = () => {
             <Image
               width={400}
               height={100}
-              className="bounce-in w-60"
+              className="bounce-in md:w-60 w-36"
               src="/footer_images/ask-me-footer.png"
               alt="Ask Me Footer"
             />
@@ -57,7 +57,7 @@ const Footerpage = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-gradient-to-b from-[#035C96] to-[#022E4B] py-5 text-center text-white text-xl shadow-t merriweather-regular">
+      <div className="bg-gradient-to-b from-[#035C96] to-[#022E4B] py-5 text-center text-white text-xl shadow-t ">
         Copyright © {currentYear}  All rights reserved.
       </div>
     </div>

@@ -111,9 +111,9 @@ const Journey = () => {
         {/* Left Side Content End */}
 
         <div className="lg:flex-1  ">
-          <h1 className="text-2xl lg:text-6xl p-4 font-bold">
+          <h3 className="text-3xl lg:text-6xl p-4 ">
             The journey that made me who I am today
-          </h1>
+          </h3>
           <h6 className="text-2xl lg:text-3xl p-4 font-medium">
             A brief history of my life
           </h6>
@@ -171,7 +171,7 @@ const Journey = () => {
           </div>
 
           {/* Work So Far Start */}
-          <h2 className=" text-2xl lg:text-6xl  p-4 font-bold">
+          <h2 className=" text-3xl lg:text-6xl  p-4 ">
             My Work So Far
           </h2>
           <div className="lg:flex p-4 gap-2 text-xl">
@@ -200,7 +200,7 @@ const Journey = () => {
           {/* Work So Far End */}
 
           {/* My Interests Start */}
-          <div className="text-2xl lg:text-6xl ms-4  font-semibold ">
+          <div className="text-3xl lg:text-6xl ms-4 ">
             My Interests
           </div>
           <h3 className="p-4 lg:w-9/12 text-xl ">
@@ -280,7 +280,7 @@ const Journey = () => {
 
           {/* Awards and  Recognitions Start*/}
           <div>
-            <h3 className="text-2xl lg:text-6xl mt-5 p-4 font-semibold">
+            <h3 className="text-3xl lg:text-6xl mt-5 p-4 ">
               Awards and Recognitions
             </h3>
           </div>
