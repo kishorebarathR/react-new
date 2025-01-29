@@ -17,9 +17,11 @@ export default function SimpleSlider() {
   const [popupImage, setPopupImage] = useState(null)
 
   const openPopup = (image) => {
-    setZoomLevel(1) // Reset zoom level
+    setZoomLevel(1) 
     setPopupImage(image)
     setIsPopupOpen(true)
+
+
   }
 
   const closePopup = () => setIsPopupOpen(false)
