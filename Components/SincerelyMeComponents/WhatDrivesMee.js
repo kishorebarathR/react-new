@@ -23,15 +23,13 @@ export default function SimpleSlider() {
 
   }
 
-
-  
   const closePopup = () => setIsPopupOpen(false)
 
   const zoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.2, 3)) // Max zoom: 3x
   const zoomOut = () => setZoomLevel((prev) => Math.max(prev - 0.2, 0.5)) // Min zoom: 0.5x
 
   const handleShare = () => {
-    setIsShareMenuOpen(!isShareMenuOpen) // Toggle share options visibility
+    setIsShareMenuOpen(!isShareMenuOpen) 
   }
 
   const handleDownload = () => {
