@@ -21,9 +21,10 @@ export default function SimpleSlider() {
     setPopupImage(image)
     setIsPopupOpen(true)
 
-
   }
 
+
+  
   const closePopup = () => setIsPopupOpen(false)
 
   const zoomIn = () => setZoomLevel((prev) => Math.min(prev + 0.2, 3)) // Max zoom: 3x
