@@ -3,9 +3,8 @@ import React, { useState } from "react"
 import Link from "next/link"
 
 const Timeline = () => {
-  const years = [1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020]
+  const years = [1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2022]
 
-  // Map each year to a corresponding image path
   const yearImagePaths = {
     1980: "/my-journey/carousel-img-2.png",
     1985: "/my-journey/carousel-img-6.png",
@@ -16,60 +15,54 @@ const Timeline = () => {
     2010: "/my-journey/carousel-img-20.png",
     2015: "/my-journey/carousel-img-24.png",
     2020: "/my-journey/carousel-img-26.png",
+    2022: "/my-journey/carousel-img-27.png",
   }
 
   const [hoveredYear, setHoveredYear] = useState(null)
 
   return (
-    <div className="w-full bg-[#035C96] p-3 hidden md:block merriweather-bold">
-      <div className="relative flex justify-between items-center">
-        {years.map((year, index) => (
+    <div className="w-full bg-[#035C96] p-3 ">
+      <div className="relative flex justify-between items-center ">
+        {years.map((year) => (
           <div
             key={year}
             className="relative flex flex-col items-center"
-            onMouseEnter={() => setHoveredYear(year)}
-            onMouseLeave={() => setHoveredYear(null)}
+            onMouseOver={() => setHoveredYear(year)}
+            // onMouseLeave={() => setHoveredYear(null)}
           >
-            {/* Wrap both image and year with the Link */}
             <Link href={`/my-journey?year=${year}`}>
               <div className="flex flex-col items-center cursor-pointer">
-                {/* Image shown above the year on hover */}
                 {hoveredYear === year && (
                   <img
                     src={yearImagePaths[year]}
                     alt={`Image for ${year}`}
-                    className="absolute top-[-75px] w-44 h-16 object-cover"
+                    className="absolute top-[-100px] w-[120px] rounded h-[88px] "
                   />
                 )}
-                <span className="text-white text-xl font-semibold">{year}</span>
+                <span className="text-white text-xl font-semibold flex justify-center items-center w-[120px]">
+                  {year}
+                </span>
               </div>
             </Link>
-
-            <div className="w-32  mt-1"></div>
-            {/* Line extending to the next year */}
-            {index < years.length - 1 && (
-              <div
-                className="absolute top-1/2 w-full h-px"
-                style={{
-                  left: `calc(100% / ${years.length} / 2)`,
-                  width: `calc(100% - 100% / ${years.length})`,
-                }}
-              ></div>
-            )}
           </div>
         ))}
       </div>
-
-      {/* Ticks below the timeline */}
-      <div className="flex justify-between mt-4">
-        {Array.from({ length: years.length * 5 }).map((_, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="w-px h-4 bg-white"> </div>
-          </div>
+      <div className=" top-0 left-0 w-full flex justify-between h-1  relative">
+        {Array.from({ length: years.length * 10 }).map((_, index) => (
+          <div
+            key={index}
+            className={`w-px ${
+              index % 10 === 0 ? "h-12 bg-white -mt-4" : "h-4 mt-4 bg-white"
+            }`}
+          ></div>
         ))}
+      </div>
+      {/* Timeline Line */}
+      <div className="w-full mt-4 relative">
+        {/* Ticks (mm and cm scale) */}
       </div>
     </div>
   )
 }
 
-export default Timeline 
+export default Timeline

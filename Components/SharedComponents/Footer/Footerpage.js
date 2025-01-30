@@ -48,7 +48,7 @@ const Footerpage = () => {
             <Image
               width={400}
               height={100}
-              className="bounce-in md:w-60 w-36"
+              className="bounce-in w-44"
               src="/footer_images/ask-me-footer.png"
               alt="Ask Me Footer"
             />

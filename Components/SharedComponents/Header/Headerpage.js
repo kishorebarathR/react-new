@@ -67,7 +67,7 @@ const Headerpage = () => {
         </div>
       </nav>
 
-      <div className="fixed top-7 right-5 z-40">
+      <div className="fixed top-4 right-5 z-40">
         <button
           className="px-5 py-2.5 mb-2 mt-2"
           type="button"
