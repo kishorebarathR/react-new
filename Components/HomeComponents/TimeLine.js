@@ -18,25 +18,27 @@ const Timeline = () => {
     2022: "/my-journey/carousel-img-27.png",
   }
 
+  // State to track the hovered year
   const [hoveredYear, setHoveredYear] = useState(null)
 
   return (
-    <div className="w-full bg-[#035C96] p-3 ">
+    <div className="w-full bg-[#035C96] p-3 relative">
       <div className="relative flex justify-between items-center ">
         {years.map((year) => (
           <div
             key={year}
             className="relative flex flex-col items-center"
             onMouseOver={() => setHoveredYear(year)}
-            // onMouseLeave={() => setHoveredYear(null)}
+           
           >
             <Link href={`/my-journey?year=${year}`}>
               <div className="flex flex-col items-center cursor-pointer">
                 {hoveredYear === year && (
                   <img
                     src={yearImagePaths[year]}
+                    
                     alt={`Image for ${year}`}
-                    className="absolute top-[-100px] w-[120px] rounded h-[88px] "
+                    className="absolute top-[-100px] w-[120px] rounded h-[88px]"
                   />
                 )}
                 <span className="text-white text-xl font-semibold flex justify-center items-center w-[120px]">
@@ -52,7 +54,7 @@ const Timeline = () => {
           <div
             key={index}
             className={`w-px ${
-              index % 10 === 0 ? "h-12 bg-white -mt-4" : "h-4 mt-4 bg-white"
+              index % 10 === 0 ? "h-12 bg-white -mt-4" : "h-4 mt-4 -ms-1 bg-white"
             }`}
           ></div>
         ))}
